@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Maven Test Suite1" duration-ms="124854" started-at="2019-01-07T01:23:15Z" finished-at="2019-01-07T01:25:20Z">
+    <groups>
+    </groups>
+    <test name="Test 1" duration-ms="124854" started-at="2019-01-07T01:23:15Z" finished-at="2019-01-07T01:25:20Z">
+      <class name="com.qa.testcases.OpenHouses_ListingsPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.OpenHouses_ListingsPageTest@327471b5]" name="setUp" is-config="true" duration-ms="4936" started-at="2019-01-06T18:24:16Z" finished-at="2019-01-06T18:24:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="acSubmitListing(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.testcases.OpenHouses_ListingsPageTest@327471b5]" name="acSubmitListing" duration-ms="58497" started-at="2019-01-06T18:24:21Z" data-provider="getACListingData" finished-at="2019-01-06T18:25:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[AC Automated Listing 1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Boise]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[83702.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Ada County]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[07-Jan-2019]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[$500,000]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[ventivedev@porchlightgroup.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acSubmitListing -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.OpenHouses_ListingsPageTest@327471b5]" name="tearDown" is-config="true" duration-ms="833" started-at="2019-01-06T18:25:19Z" finished-at="2019-01-06T18:25:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcases.OpenHouses_ListingsPageTest -->
+      <class name="com.qa.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@246ae04d]" name="setUp" is-config="true" duration-ms="4889" started-at="2019-01-06T18:23:25Z" finished-at="2019-01-06T18:23:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:0, instance:com.qa.testcases.LoginPageTest@246ae04d]" name="loginPageTitleTest" duration-ms="20" started-at="2019-01-06T18:23:29Z" finished-at="2019-01-06T18:23:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@246ae04d]" name="tearDown" is-config="true" duration-ms="776" started-at="2019-01-06T18:23:29Z" finished-at="2019-01-06T18:23:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@246ae04d]" name="setUp" is-config="true" duration-ms="4915" started-at="2019-01-06T18:23:30Z" finished-at="2019-01-06T18:23:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.qa.testcases.LoginPageTest@246ae04d]" name="loginTest" duration-ms="39524" started-at="2019-01-06T18:23:35Z" finished-at="2019-01-06T18:24:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@246ae04d]" name="tearDown" is-config="true" duration-ms="820" started-at="2019-01-06T18:24:15Z" finished-at="2019-01-06T18:24:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcases.LoginPageTest -->
+      <class name="com.qa.testcases.ExcelDataLoginTest">
+        <test-method status="PASS" signature="openBroser()[pri:0, instance:com.qa.testcases.ExcelDataLoginTest@3567135c]" name="openBroser" is-config="true" duration-ms="6451" started-at="2019-01-06T18:23:16Z" finished-at="2019-01-06T18:23:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBroser -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testcases.ExcelDataLoginTest@3567135c]" name="loginTest" duration-ms="1" started-at="2019-01-06T18:23:22Z" data-provider="getLoginData" finished-at="2019-01-06T18:23:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.testcases.ExcelDataLoginTest@3567135c]" name="closeBrowser" is-config="true" duration-ms="2129" started-at="2019-01-06T18:23:22Z" finished-at="2019-01-06T18:23:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.testcases.ExcelDataLoginTest -->
+    </test> <!-- Test 1 -->
+  </suite> <!-- Maven Test Suite1 -->
+</testng-results>

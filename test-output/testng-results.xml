@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="63298" started-at="2019-01-07T01:11:04Z" finished-at="2019-01-07T01:12:07Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="63298" started-at="2019-01-07T01:11:04Z" finished-at="2019-01-07T01:12:07Z">
+      <class name="com.qa.testcases.OpenHouses_ListingsPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.OpenHouses_ListingsPageTest@396a51ab]" name="setUp" is-config="true" duration-ms="6345" started-at="2019-01-06T18:11:05Z" finished-at="2019-01-06T18:11:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="acSubmitListing(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.testcases.OpenHouses_ListingsPageTest@396a51ab]" name="acSubmitListing" duration-ms="55294" started-at="2019-01-06T18:11:11Z" data-provider="getACListingData" finished-at="2019-01-06T18:12:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[AC Automated Listing 1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Boise]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[83702.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Ada County]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[07-Jan-2019]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[$500,000]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[ventivedev@porchlightgroup.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acSubmitListing -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.OpenHouses_ListingsPageTest@396a51ab]" name="tearDown" is-config="true" duration-ms="770" started-at="2019-01-06T18:12:06Z" finished-at="2019-01-06T18:12:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcases.OpenHouses_ListingsPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
