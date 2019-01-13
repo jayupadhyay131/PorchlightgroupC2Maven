@@ -15,7 +15,7 @@ public class OpenHouses_ListingsPageTest extends TestBase{
 
 	HomePage homePage;
 	LoginPage loginPage;
-	OpenHouses_ListingsPage openHouses_Listings;
+	OpenHouses_ListingsPage openHouses_ListingsPage;
 	
 	// Initialize all the property file data by calling TestBase class constructor
 	public OpenHouses_ListingsPageTest() {
@@ -27,13 +27,13 @@ public class OpenHouses_ListingsPageTest extends TestBase{
 		startBrowser();
 		loginPage = new LoginPage();
 		homePage = new HomePage();
-		openHouses_Listings = new OpenHouses_ListingsPage();
+		openHouses_ListingsPage = new OpenHouses_ListingsPage();
 	}
 	
 	// Get data from Excel file and store data into 2D array
 	@DataProvider
 	public Object[][] getACListingData() {
-		Object data[][] = ExcelFileImporter.getTestData("aclistingdata1");
+		Object data[][] = ExcelFileImporter.getTestData("aclistingdata");
 		return data;
 	}
 		
@@ -49,7 +49,7 @@ public class OpenHouses_ListingsPageTest extends TestBase{
 			 			  		String clientEmail) throws InterruptedException {
 		loginPage.login();
 		homePage.goToOpenHousesSchedulePage();
-		openHouses_Listings.AC_Submit_Listing(recoloradomls,
+		openHouses_ListingsPage.AC_Submit_Listing(recoloradomls,
 											  iresmls,
 											  streetaddress,
 											  city,

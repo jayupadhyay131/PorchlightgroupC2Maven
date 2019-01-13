@@ -28,4 +28,28 @@ public class HomePage extends TestBase{
 		log.info("***** END TC: GO TO OPEN HOUSE > SCHEDULE PAGE *****");
 	}
 
+	public void goToNewListingSubmission1Page() throws InterruptedException {
+		
+		log.info("***** START TC: GO TO LISTINGS > SUBMIT LISTING *****");
+		
+		WebElement listigs = driver.findElement(parser.getObjectLocator("listigs"));
+		listigs.click();
+		log.info("LEFT NAVBAR: CLICKED ON SCHEDULE");
+		
+		WebElement submitalisting = driver.findElement(parser.getObjectLocator("submitalisting"));
+		submitalisting.click();
+		log.info("LEFT NAVBAR: CLICKED ON SUBMI A LISTING");
+		Thread.sleep(5000);
+
+		log.info("***** END TC: GO TO LISTINGS > SUBMIT LISTING *****");	
+	}
+	
+	public void loginAsBroker1() throws InterruptedException {
+		
+		driver.get(property.getProperty("loginasbroker1"));
+		log.info("LOGGED IN AS BROKER 1 NOW");
+		Thread.sleep(3000);
+		
+	}
+
 }
