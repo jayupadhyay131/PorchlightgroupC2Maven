@@ -12,13 +12,19 @@ public class Listings_DealsPage extends TestBase{
 	
 	public void Broker_Fill_LS1_1AgreementTab() throws InterruptedException {
 		
-		log.info("***** START TC: SUBMIT A LS1 WITH BROKER USER *****");
+		log.info("***** START TC: SUBMIT A LS1 WITH BROKER USER > 1 AGREEMENT SECTION *****");
 		
-		WebElement addListingButton = driver.findElement(parser.getObjectLocator("addListingButton"));
-		addListingButton.click();
-		log.info("AC: CLICKED ON ADD LISTING BUTTON");
+		WebElement yes = driver.findElement(parser.getObjectLocator("yes"));
+		yes.click();
+		log.info("BROKER: SELECTED YES RADIO BUTTON");
+		Thread.sleep(1000);
+		
+		WebElement startbutton = driver.findElement(parser.getObjectLocator("startbutton"));
+		startbutton.click();
+		log.info("BROKER: SELECTED YES RADIO BUTTON");
 		Thread.sleep(5000);
-
+		
+		log.info("***** START TC: SUBMIT A LS1 WITH BROKER USER > 1 AGREEMENT SECTION *****");
 	}	
 	
 }
