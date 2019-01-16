@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.testcases.Listings_DealsPageTest">
+      <class name="com.qa.testcases.LoginPageTest">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="brokerSubmitLS1"/>
+          <include name="loginPageTitleTest"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- com.qa.testcases.Listings_DealsPageTest -->
+      </class> <!-- com.qa.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
