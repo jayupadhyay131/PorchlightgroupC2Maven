@@ -2,24 +2,36 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55204" started-at="2019-01-13T01:30:12Z" finished-at="2019-01-13T01:31:07Z">
+  <suite name="Default suite" duration-ms="11403" started-at="2019-01-15T18:53:05Z" finished-at="2019-01-15T18:53:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55204" started-at="2019-01-13T01:30:12Z" finished-at="2019-01-13T01:31:07Z">
-      <class name="com.qa.testcases.Listings_DealsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@4566e5bd]" name="setUp" is-config="true" duration-ms="6971" started-at="2019-01-12T18:30:12Z" finished-at="2019-01-12T18:30:19Z">
+    <test name="Default test" duration-ms="11403" started-at="2019-01-15T18:53:05Z" finished-at="2019-01-15T18:53:16Z">
+      <class name="com.qa.testcases.ExcelDataLoginTest">
+        <test-method status="PASS" signature="openBroser()[pri:0, instance:com.qa.testcases.ExcelDataLoginTest@396a51ab]" name="openBroser" is-config="true" duration-ms="7969" started-at="2019-01-15T11:53:06Z" finished-at="2019-01-15T11:53:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="brokerSubmitLS1()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@4566e5bd]" name="brokerSubmitLS1" duration-ms="47340" started-at="2019-01-12T18:30:19Z" finished-at="2019-01-12T18:31:06Z">
+        </test-method> <!-- openBroser -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testcases.ExcelDataLoginTest@396a51ab]" name="loginTest" duration-ms="10" started-at="2019-01-15T11:53:14Z" data-provider="getLoginData" finished-at="2019-01-15T11:53:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- brokerSubmitLS1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@4566e5bd]" name="tearDown" is-config="true" duration-ms="868" started-at="2019-01-12T18:31:06Z" finished-at="2019-01-12T18:31:07Z">
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.testcases.ExcelDataLoginTest@396a51ab]" name="closeBrowser" is-config="true" duration-ms="2170" started-at="2019-01-15T11:53:14Z" finished-at="2019-01-15T11:53:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testcases.Listings_DealsPageTest -->
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.testcases.ExcelDataLoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -50,14 +50,14 @@ public class OpenHouses_ListingsPageTest extends TestBase{
 		loginPage.login();
 		homePage.goToOpenHousesSchedulePage();
 		openHouses_ListingsPage.AC_Submit_Listing(recoloradomls,
-											  iresmls,
-											  streetaddress,
-											  city,
-											  zipcode,
-											  subarea, 
-											  date, 
-											  price, 
-											  clientEmail);
+												  iresmls,
+												  streetaddress,
+												  city,
+												  zipcode,
+												  subarea, 
+												  date, 
+												  price, 
+												  clientEmail);
 	}
 	
 	@AfterMethod

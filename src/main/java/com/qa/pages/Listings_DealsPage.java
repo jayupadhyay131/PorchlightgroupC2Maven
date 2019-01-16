@@ -21,10 +21,10 @@ public class Listings_DealsPage extends TestBase{
 		
 		WebElement startbutton = driver.findElement(parser.getObjectLocator("startbutton"));
 		startbutton.click();
-		log.info("BROKER: SELECTED YES RADIO BUTTON");
+		log.info("BROKER: SELECTED START BUTTON FOR NEXT PAGE");
 		Thread.sleep(5000);
 		
-		log.info("***** START TC: SUBMIT A LS1 WITH BROKER USER > 1 AGREEMENT SECTION *****");
+		log.info("***** END TC: SUBMIT A LS1 WITH BROKER USER > 1 AGREEMENT SECTION *****");
 	}	
 	
 }
