@@ -2,17 +2,20 @@ package com.qa.testcases;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.base.TestBase;
 import com.qa.pages.HomePage;
 import com.qa.pages.LoginPage;
-import com.qa.pages.OpenHouses_ListingsPage;
-import com.qa.util.ExcelFileImporter;
+import com.qa.users.SanityBroker;
 
 public class SanityBrokerTest  extends TestBase{
-	// Initialize all the property file data by calling TestBase class constructor
+	
+		HomePage homePage;
+		LoginPage loginPage;
+		SanityBroker sanityBroker;
+	
+		// Initialize all the property file data by calling TestBase class constructor
 		public SanityBrokerTest() {
 			super();
 		}
@@ -20,40 +23,25 @@ public class SanityBrokerTest  extends TestBase{
 		@BeforeMethod
 		public void setUp() {
 			startBrowser();
-//			loginPage = new LoginPage();
-//			homePage = new HomePage();
-//			openHouses_ListingsPage = new OpenHouses_ListingsPage();
+			loginPage = new LoginPage();
+			homePage = new HomePage();
+			sanityBroker = new SanityBroker();
 		}
 		
-		// Get data from Excel file and store data into 2D array
-		@DataProvider
-		public Object[][] getACListingData() {
-			Object data[][] = ExcelFileImporter.getTestData("aclistingdata");
-			return data;
-		}
+		@Test
+		public void sanityTestBrokerAllPages() throws InterruptedException {
 			
-//		@Test(dataProvider = "getACListingData")
-//		public void acSubmitListing(String recoloradomls,
-//				 			  		String iresmls,
-//				 			  		String streetaddress,
-//				 			  		String city,
-//				 			  		String zipcode,
-//				 			  		String subarea,
-//				 			  		String date,
-//				 			  		String price,
-//				 			  		String clientEmail) throws InterruptedException {
-//			loginPage.login();
-//			homePage.goToOpenHousesSchedulePage();
-//			openHouses_ListingsPage.AC_Submit_Listing(recoloradomls,
-//													  iresmls,
-//													  streetaddress,
-//													  city,
-//													  zipcode,
-//													  subarea, 
-//													  date, 
-//													  price, 
-//													  clientEmail);
-//		}
+			loginPage.login();
+			Thread.sleep(5000);
+			homePage.loginAsBroker1();
+			Thread.sleep(5000);
+			sanityBroker.varifyBrokerDashboard();
+			Thread.sleep(5000);
+			sanityBroker.varifyBrokerListings_SubmitLS1();	
+			sanityBroker.varifyBrokerListings_SubmitBuyerUC();
+	//		loginPage.logout();
+		}
+		
 		
 		@AfterMethod
 		public void tearDown() {

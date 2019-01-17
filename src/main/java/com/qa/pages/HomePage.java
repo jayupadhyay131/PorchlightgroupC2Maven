@@ -38,7 +38,7 @@ public class HomePage extends TestBase{
 		
 		WebElement submitalisting = driver.findElement(parser.getObjectLocator("submitalisting"));
 		submitalisting.click();
-		log.info("LEFT NAVBAR: CLICKED ON SUBMI A LISTING");
+		log.info("LEFT NAVBAR: CLICKED ON SUBMIT A LISTING");
 		Thread.sleep(5000);
 
 		log.info("***** END TC: GO TO LISTINGS > SUBMIT LISTING *****");	

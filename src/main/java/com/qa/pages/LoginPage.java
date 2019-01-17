@@ -48,7 +48,7 @@ public class LoginPage extends TestBase{
 		
 		WebElement nextButton2 = driver.findElement(parser.getObjectLocator("nextButton2"));
 		nextButton2.click();
-		log.info("CLICKE ON NEXT BUTTON");
+		log.info("CLICKED ON NEXT BUTTON");
 		Thread.sleep(5000);
 		
 		WebElement allowButton = driver.findElement(parser.getObjectLocator("allowButton"));
