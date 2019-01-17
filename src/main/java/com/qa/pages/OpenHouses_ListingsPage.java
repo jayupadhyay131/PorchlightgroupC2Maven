@@ -91,6 +91,5 @@ public class OpenHouses_ListingsPage extends TestBase{
 		
 		log.info("***** END TC: SUBMIT A LISTING WITH AC USER *****");
 
-		
 	}
 }
