@@ -2,36 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11403" started-at="2019-01-15T18:53:05Z" finished-at="2019-01-15T18:53:16Z">
+  <suite name="Default suite" duration-ms="67844" started-at="2019-01-17T22:27:29Z" finished-at="2019-01-17T22:28:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11403" started-at="2019-01-15T18:53:05Z" finished-at="2019-01-15T18:53:16Z">
-      <class name="com.qa.testcases.ExcelDataLoginTest">
-        <test-method status="PASS" signature="openBroser()[pri:0, instance:com.qa.testcases.ExcelDataLoginTest@396a51ab]" name="openBroser" is-config="true" duration-ms="7969" started-at="2019-01-15T11:53:06Z" finished-at="2019-01-15T11:53:14Z">
+    <test name="Default test" duration-ms="67844" started-at="2019-01-17T22:27:29Z" finished-at="2019-01-17T22:28:37Z">
+      <class name="com.qa.testcases.SanityBrokerTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.SanityBrokerTest@4566e5bd]" name="setUp" is-config="true" duration-ms="7230" started-at="2019-01-17T15:27:29Z" finished-at="2019-01-17T15:27:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBroser -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testcases.ExcelDataLoginTest@396a51ab]" name="loginTest" duration-ms="10" started-at="2019-01-15T11:53:14Z" data-provider="getLoginData" finished-at="2019-01-15T11:53:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[user1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[pass1]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="sanityTestBrokerAllPages()[pri:0, instance:com.qa.testcases.SanityBrokerTest@4566e5bd]" name="sanityTestBrokerAllPages" duration-ms="59616" started-at="2019-01-17T15:27:36Z" finished-at="2019-01-17T15:28:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.testcases.ExcelDataLoginTest@396a51ab]" name="closeBrowser" is-config="true" duration-ms="2170" started-at="2019-01-15T11:53:14Z" finished-at="2019-01-15T11:53:16Z">
+        </test-method> <!-- sanityTestBrokerAllPages -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.SanityBrokerTest@4566e5bd]" name="tearDown" is-config="true" duration-ms="963" started-at="2019-01-17T15:28:36Z" finished-at="2019-01-17T15:28:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.qa.testcases.ExcelDataLoginTest -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcases.SanityBrokerTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
