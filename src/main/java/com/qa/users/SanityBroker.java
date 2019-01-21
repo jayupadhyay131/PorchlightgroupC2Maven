@@ -13,7 +13,7 @@ public class SanityBroker extends TestBase{
 	/**
 	 * METHOD 1: From home page, navigate to OpenHouses > Schedule page 
 	 **/
-	public void varifyBrokerDashboard() throws InterruptedException {
+	public void verifyBrokerDashboard() throws InterruptedException {
 		
 		log.info("***** START TC: VERIFY BROKER DASHBOARD WIDGETS *****");
 		
@@ -54,8 +54,7 @@ public class SanityBroker extends TestBase{
 		log.info("***** END TC: VERIFY BROKER DASHBOARD WIDGETS *****");
 	}
 	
-	
-	public void varifyBrokerListings_SubmitLS1() throws InterruptedException {
+	public void verifyBrokerListings_SubmitLS1() throws InterruptedException {
 		
 		log.info("***** START TC: VERIFY BROKER LS1 SUBMISSION PAGE *****");
 		
@@ -76,7 +75,7 @@ public class SanityBroker extends TestBase{
 		log.info("***** END TC: VERIFY BROKER LS1 SUBMISSION PAGE *****");
 	}
 	
-	public void varifyBrokerListings_SubmitBuyerUC() throws InterruptedException {
+	public void verifyBrokerListings_SubmitBuyerUC() throws InterruptedException {
 		
 		log.info("***** START TC: VERIFY BROKER > LISTINGS > BUYER UC SUBMISSION PAGE *****");
 		
@@ -93,7 +92,7 @@ public class SanityBroker extends TestBase{
 		log.info("***** END TC: VERIFY BROKER > LISTINGS > BUYER UC SUBMISSION PAGE *****");
 	}
 	
-	public void varifyBrokerListings_CommingSoonPage() throws InterruptedException {
+	public void verifyBrokerListings_CommingSoonPage() throws InterruptedException {
 		
 		log.info("***** START TC: VERIFY BROKER > LISTINGS > COMMING SOON PAGE *****");
 		

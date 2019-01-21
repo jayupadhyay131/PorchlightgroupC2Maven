@@ -1,7 +1,7 @@
 package com.qa.testcases;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -22,7 +22,7 @@ public class OpenHouses_ListingsPageTest extends TestBase{
 		super();
 	}
 		
-	@BeforeMethod
+	@BeforeClass
 	public void setUp() {
 		startBrowser();
 		loginPage = new LoginPage();
@@ -36,9 +36,19 @@ public class OpenHouses_ListingsPageTest extends TestBase{
 		Object data[][] = ExcelFileImporter.getTestData("aclistingdata");
 		return data;
 	}
+	
+	@Test(priority=1)
+	public void verifyLogin() throws InterruptedException {
+		loginPage.login();
+	}
+	
+	@Test(priority=2)
+	public void verifyGoToOpenHousesSchedulePage() throws InterruptedException {
+		homePage.goToOpenHousesSchedulePage();
+	}
 		
-	@Test(dataProvider = "getACListingData")
-	public void acSubmitListing(String recoloradomls,
+	@Test(priority=3, dataProvider = "getACListingData")
+	public void verifyACSubmitListing(String recoloradomls,
 			 			  		String iresmls,
 			 			  		String streetaddress,
 			 			  		String city,
@@ -47,8 +57,6 @@ public class OpenHouses_ListingsPageTest extends TestBase{
 			 			  		String date,
 			 			  		String price,
 			 			  		String clientEmail) throws InterruptedException {
-		loginPage.login();
-		homePage.goToOpenHousesSchedulePage();
 		openHouses_ListingsPage.AC_Submit_Listing(recoloradomls,
 												  iresmls,
 												  streetaddress,
@@ -60,7 +68,7 @@ public class OpenHouses_ListingsPageTest extends TestBase{
 												  clientEmail);
 	}
 	
-	@AfterMethod
+	@AfterClass
 	public void tearDown() {
 		driver.quit();
 	}

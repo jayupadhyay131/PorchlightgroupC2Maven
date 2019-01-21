@@ -1,6 +1,8 @@
 package com.qa.testcases;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -19,7 +21,7 @@ public class Listings_DealsPageTest extends TestBase{
 		super();
 	}
 		
-	@BeforeMethod
+	@BeforeClass
 	public void setUp() {
 		startBrowser();
 		loginPage = new LoginPage();
@@ -27,6 +29,23 @@ public class Listings_DealsPageTest extends TestBase{
 		listings_DealsPage = new Listings_DealsPage();
 	}
 	
+	@Test(priority=1)
+	public void verifyLogin() throws InterruptedException {
+		loginPage.login();
+		Thread.sleep(5000);
+	}
+	
+	@Test(priority=2)
+	public void verifyLoginAsBroker1() throws InterruptedException {
+		homePage.loginAsBroker1();
+		Thread.sleep(5000);
+	}
+	
+	@Test(priority=3)
+	public void verifyGoToNewListingSubmission1Page() throws InterruptedException {
+		homePage.goToNewListingSubmission1Page();
+	}
+
 //	// Get data from Excel file and store data into 2D array
 //	@DataProvider
 //	public Object[][] getBrokerLS1Data() {
@@ -34,19 +53,17 @@ public class Listings_DealsPageTest extends TestBase{
 //		return data;
 //	}
 	
+	
 	//@Test(dataProvider = "getBrokerLS1Data")
-	@Test
-	public void brokerSubmitLS1( 
+	@Test(priority=4)
+	public void verifyBrokerSubmitLS1( 
 			
-								) throws InterruptedException {
-		loginPage.login();
-		homePage.loginAsBroker1();		
-		homePage.goToNewListingSubmission1Page();
+								) throws InterruptedException {	
 		listings_DealsPage.Broker_Fill_LS1_1AgreementTab();
 	}
 	
 	
-	@AfterMethod
+	@AfterClass
 	public void tearDown() {
 		driver.quit();
 	}
