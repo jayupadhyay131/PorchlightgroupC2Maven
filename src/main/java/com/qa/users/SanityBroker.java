@@ -78,7 +78,7 @@ public class SanityBroker extends TestBase{
 	
 	public void varifyBrokerListings_SubmitBuyerUC() throws InterruptedException {
 		
-		log.info("***** START TC: VERIFY BROKER BUYER UC SUBMISSION PAGE *****");
+		log.info("***** START TC: VERIFY BROKER > LISTINGS > BUYER UC SUBMISSION PAGE *****");
 		
 		WebElement buyerundercontract = driver.findElement(parser.getObjectLocator("buyerundercontract"));
 		buyerundercontract.click();
@@ -90,7 +90,51 @@ public class SanityBroker extends TestBase{
 		log.info("LS1 FORM: CLICKED ON CLOSE FORM BUTTON");
 		Thread.sleep(3000);
 
-		log.info("***** END TC: VERIFY BROKER BUYER UC SUBMISSION PAGE *****");
+		log.info("***** END TC: VERIFY BROKER > LISTINGS > BUYER UC SUBMISSION PAGE *****");
+	}
+	
+	public void varifyBrokerListings_CommingSoonPage() throws InterruptedException {
+		
+		log.info("***** START TC: VERIFY BROKER > LISTINGS > COMMING SOON PAGE *****");
+		
+		WebElement comingsoon = driver.findElement(parser.getObjectLocator("comingsoon"));
+		comingsoon.click();
+		log.info("LEFT NAVBAR: CLICKED ON COMMING SOON");
+		Thread.sleep(3000);
+		
+		WebElement commingsoonsearchbar = driver.findElement(parser.getObjectLocator("commingsoonsearchbar"));
+		commingsoonsearchbar.isDisplayed();
+		log.info("COMMING SOON PAGE: SEARCHBAR IS PRESENT");		
+		
+		WebElement commingsooncitycolumn = driver.findElement(parser.getObjectLocator("commingsooncitycolumn"));
+		commingsooncitycolumn.isDisplayed();
+		log.info("COMMING SOON PAGE: CITY COLLUMN IS PRESENT");	
+		
+		WebElement commingsoonaddresscolumn = driver.findElement(parser.getObjectLocator("commingsoonaddresscolumn"));
+		commingsoonaddresscolumn.isDisplayed();
+		log.info("COMMING SOON PAGE: ADDRESS COLLUMN IS PRESENT");
+		
+		WebElement commingsoonneighborhoodwithsort = driver.findElement(parser.getObjectLocator("commingsoonneighborhoodwithsort"));
+		commingsoonneighborhoodwithsort.isDisplayed();
+		log.info("COMMING SOON PAGE: NEIGHBORHOOD COLLUMN WITH SORT IS PRESENT");
+		
+		WebElement commingsoondigestcolumn = driver.findElement(parser.getObjectLocator("commingsoondigestcolumn"));
+		commingsoondigestcolumn.isDisplayed();
+		log.info("COMMING SOON PAGE: DIGEST COLLUMN IS PRESENT");
+		
+		WebElement commingsoonlistingagentwithsort = driver.findElement(parser.getObjectLocator("commingsoonlistingagentwithsort"));
+		commingsoonlistingagentwithsort.isDisplayed();
+		log.info("COMMING SOON PAGE: LISTING AGENT COLLUMN WITH SORT IS PRESENT");
+		
+		WebElement commingsoonpricewithsort = driver.findElement(parser.getObjectLocator("commingsoonpricewithsort"));
+		commingsoonpricewithsort.isDisplayed();
+		log.info("COMMING SOON PAGE: PRICE COLLUMN WITH SORT IS PRESENT");
+		
+		WebElement commingsoonmarketdatewithsort = driver.findElement(parser.getObjectLocator("commingsoonmarketdatewithsort"));
+		commingsoonmarketdatewithsort.isDisplayed();
+		log.info("COMMING SOON PAGE: MARKET DATE COLLUMN WITH SORT IS PRESENT");
+		
+		log.info("***** END TC: VERIFY BROKER > LISTINGS > COMMING SOON PAGE *****");
 	}
 	
 }

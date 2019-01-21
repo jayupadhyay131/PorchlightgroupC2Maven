@@ -39,6 +39,7 @@ public class SanityBrokerTest  extends TestBase{
 			Thread.sleep(5000);
 			sanityBroker.varifyBrokerListings_SubmitLS1();	
 			sanityBroker.varifyBrokerListings_SubmitBuyerUC();
+			sanityBroker.varifyBrokerListings_CommingSoonPage();
 	//		loginPage.logout();
 		}
 		
