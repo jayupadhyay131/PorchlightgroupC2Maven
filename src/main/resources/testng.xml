@@ -1,11 +1,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
  
 <suite name="Maven Test Suite1" verbose="1">
-  <test name="Test 1">
-    <packages>
-      <package name="com.qa.testcases.*" />
-   </packages>
- </test>
+
+ <test name="Regression1">
+    <classes>
+      <class name="com.qa.testcases.OpenHouses_ListingsPageTest"/>
+      <class name="com.qa.testcases.Listings_DealsPageTest"/>
+    </classes>
+  </test>
+  
 </suite>
 
 
