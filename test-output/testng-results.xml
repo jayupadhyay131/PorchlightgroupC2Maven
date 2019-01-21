@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="67844" started-at="2019-01-17T22:27:29Z" finished-at="2019-01-17T22:28:37Z">
+  <suite name="Sanity Test Suite1" duration-ms="77865" started-at="2019-01-21T00:57:24Z" finished-at="2019-01-21T00:58:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="67844" started-at="2019-01-17T22:27:29Z" finished-at="2019-01-17T22:28:37Z">
+    <test name="Sanity1" duration-ms="77865" started-at="2019-01-21T00:57:24Z" finished-at="2019-01-21T00:58:42Z">
       <class name="com.qa.testcases.SanityBrokerTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.SanityBrokerTest@4566e5bd]" name="setUp" is-config="true" duration-ms="7230" started-at="2019-01-17T15:27:29Z" finished-at="2019-01-17T15:27:36Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.SanityBrokerTest@4566e5bd]" name="setUp" is-config="true" duration-ms="9433" started-at="2019-01-20T17:57:24Z" finished-at="2019-01-20T17:57:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="sanityTestBrokerAllPages()[pri:0, instance:com.qa.testcases.SanityBrokerTest@4566e5bd]" name="sanityTestBrokerAllPages" duration-ms="59616" started-at="2019-01-17T15:27:36Z" finished-at="2019-01-17T15:28:36Z">
+        <test-method status="PASS" signature="sanityTestBrokerAllPages()[pri:0, instance:com.qa.testcases.SanityBrokerTest@4566e5bd]" name="sanityTestBrokerAllPages" duration-ms="67644" started-at="2019-01-20T17:57:33Z" finished-at="2019-01-20T17:58:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanityTestBrokerAllPages -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.SanityBrokerTest@4566e5bd]" name="tearDown" is-config="true" duration-ms="963" started-at="2019-01-17T15:28:36Z" finished-at="2019-01-17T15:28:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.SanityBrokerTest@4566e5bd]" name="tearDown" is-config="true" duration-ms="754" started-at="2019-01-20T17:58:41Z" finished-at="2019-01-20T17:58:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.testcases.SanityBrokerTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Sanity1 -->
+  </suite> <!-- Sanity Test Suite1 -->
 </testng-results>

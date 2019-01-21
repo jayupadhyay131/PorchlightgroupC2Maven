@@ -1,8 +1,10 @@
 com\qa\pages\LoginPage.class
 com\qa\pages\OpenHouses_ListingsPage.class
 com\qa\util\RunOnServer.class
-com\qa\util\TestUtil.class
-com\qa\pages\HomePage.class
 com\qa\util\ExcelFileImporter.class
 com\qa\util\RepositoryParser.class
+com\qa\pages\Listings_DealsPage.class
+com\qa\util\TestUtil.class
+com\qa\pages\HomePage.class
+com\qa\users\SanityBroker.class
 com\qa\base\TestBase.class

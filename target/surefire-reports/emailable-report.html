@@ -31,42 +31,42 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test 1</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">124.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Sanity1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">85.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Test 1 &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">com.qa.testcases.OpenHouses_ListingsPageTest</td><td><a href="#m1"><b>acSubmitListing</b>  </a></td><td class="numi">1</td><td>1546824261071</td><td class="numi">58497</td></tr>
-<tr class="passedeven"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m2"><b>loginPageTitleTest</b>  </a></td><td class="numi">1</td><td>1546824209969</td><td class="numi">20</td></tr>
-<tr class="passedodd"><td rowspan="1">com.qa.testcases.ExcelDataLoginTest</td><td><a href="#m3"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1546824202944</td><td class="numi">1</td></tr>
-<tr class="passedeven"><td rowspan="1">com.qa.testcases.LoginPageTest</td><td><a href="#m4"><b>loginTest</b>  </a></td><td class="numi">1</td><td>1546824215681</td><td class="numi">39524</td></tr>
+<tr><th colspan="4">Sanity1 &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.qa.testcases.SanityBrokerTest</td><td><a href="#m1"><b>sanityTestBrokerAllPages</b>  </a></td><td class="numi">1</td><td>1548031937197</td><td class="numi">74386</td></tr>
 </table>
-<h1>Test 1</h1>
-<h2 id="m1">com.qa.testcases.LoginPageTest:loginPageTitleTest</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.qa.testcases.ExcelDataLoginTest:loginTest</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>user1</td>
-<td>pass1</td>
-</tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">com.qa.testcases.LoginPageTest:loginTest</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">com.qa.testcases.OpenHouses_ListingsPageTest:acSubmitListing</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th></tr>
-<tr class="param stripe"><td>0.0</td>
-<td>123456.0</td>
-<td>AC Automated Listing 1</td>
-<td>Boise</td>
-<td>83702.0</td>
-<td>Ada County</td>
-<td>07-Jan-2019</td>
-<td>$500,000</td>
-<td>ventivedev@porchlightgroup.com</td>
-</tr>
-</table>
+<h1>Sanity1</h1>
+<h2 id="m1">com.qa.testcases.SanityBrokerTest:sanityTestBrokerAllPages</h2>
+<div style="padding-left:3em">
+<p>element not visible
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VENTIVE&apos;, ip: &apos;192.168.1.13&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\jayge\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 7af0eee0bbcfd4793dd3088f90b68d18</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+<br/>at com.qa.pages.LoginPage.login(LoginPage.java:46)
+<br/>at com.qa.testcases.SanityBrokerTest.sanityTestBrokerAllPages(SanityBrokerTest.java:34)
+<br/>29 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
