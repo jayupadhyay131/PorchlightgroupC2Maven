@@ -61,6 +61,14 @@ public class SanityBrokerTest  extends TestBase{
 			sanityBroker.verifyBrokerListings_CommingSoonPage();
 		}
 		
+		@Test(priority=6)
+		public void verifyBrokerListings_AllListingsPage() throws InterruptedException {
+			sanityBroker.verifyBrokerListings_AllListingsPage();
+		}
+		
+		
+		
+		
 		@AfterClass
 		public void tearDown() {
 			driver.quit();

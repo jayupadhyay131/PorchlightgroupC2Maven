@@ -1,33 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="82843" started-at="2019-01-21T03:16:53Z" finished-at="2019-01-21T03:18:16Z">
+  <suite name="Default suite" duration-ms="91108" started-at="2019-01-22T20:36:30Z" finished-at="2019-01-22T20:38:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="82843" started-at="2019-01-21T03:16:53Z" finished-at="2019-01-21T03:18:16Z">
-      <class name="com.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@13805618]" name="setUp" is-config="true" duration-ms="7062" started-at="2019-01-20T20:16:53Z" finished-at="2019-01-20T20:17:00Z">
+    <test name="Default test" duration-ms="91108" started-at="2019-01-22T20:36:30Z" finished-at="2019-01-22T20:38:01Z">
+      <class name="com.qa.testcases.SanityBrokerTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.SanityBrokerTest@13805618]" name="setUp" is-config="true" duration-ms="8622" started-at="2019-01-22T13:36:30Z" finished-at="2019-01-22T13:36:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyloginPageTitle()[pri:0, instance:com.qa.testcases.LoginPageTest@13805618]" name="verifyloginPageTitle" duration-ms="24" started-at="2019-01-20T20:17:00Z" finished-at="2019-01-20T20:17:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyloginPageTitle -->
-        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.qa.testcases.LoginPageTest@13805618]" name="verifyLogin" duration-ms="15243" started-at="2019-01-20T20:17:00Z" finished-at="2019-01-20T20:17:16Z">
+        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.qa.testcases.SanityBrokerTest@13805618]" name="verifyLogin" duration-ms="20688" started-at="2019-01-22T13:36:39Z" finished-at="2019-01-22T13:36:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="verifyLogout()[pri:0, instance:com.qa.testcases.LoginPageTest@13805618]" name="verifyLogout" duration-ms="59777" started-at="2019-01-20T20:17:16Z" finished-at="2019-01-20T20:18:15Z">
+        <test-method status="PASS" signature="verifyLoginAsBroker1()[pri:0, instance:com.qa.testcases.SanityBrokerTest@13805618]" name="verifyLoginAsBroker1" duration-ms="14181" started-at="2019-01-22T13:36:59Z" finished-at="2019-01-22T13:37:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogout -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.LoginPageTest@13805618]" name="tearDown" is-config="true" duration-ms="700" started-at="2019-01-20T20:18:15Z" finished-at="2019-01-20T20:18:16Z">
+        </test-method> <!-- verifyLoginAsBroker1 -->
+        <test-method status="PASS" signature="verifyBrokerDashboard()[pri:0, instance:com.qa.testcases.SanityBrokerTest@13805618]" name="verifyBrokerDashboard" duration-ms="5725" started-at="2019-01-22T13:37:13Z" finished-at="2019-01-22T13:37:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrokerDashboard -->
+        <test-method status="PASS" signature="verifyBrokerListings_SubmitLS1()[pri:0, instance:com.qa.testcases.SanityBrokerTest@13805618]" name="verifyBrokerListings_SubmitLS1" duration-ms="11555" started-at="2019-01-22T13:37:19Z" finished-at="2019-01-22T13:37:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrokerListings_SubmitLS1 -->
+        <test-method status="PASS" signature="verifyBrokerListings_SubmitBuyerUC()[pri:0, instance:com.qa.testcases.SanityBrokerTest@13805618]" name="verifyBrokerListings_SubmitBuyerUC" duration-ms="6616" started-at="2019-01-22T13:37:31Z" finished-at="2019-01-22T13:37:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrokerListings_SubmitBuyerUC -->
+        <test-method status="PASS" signature="verifyBrokerListings_AllListingsPage()[pri:0, instance:com.qa.testcases.SanityBrokerTest@13805618]" name="verifyBrokerListings_AllListingsPage" duration-ms="16851" started-at="2019-01-22T13:37:37Z" finished-at="2019-01-22T13:37:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrokerListings_AllListingsPage -->
+        <test-method status="PASS" signature="verifyBrokerListings_CommingSoonPage()[pri:0, instance:com.qa.testcases.SanityBrokerTest@13805618]" name="verifyBrokerListings_CommingSoonPage" duration-ms="5884" started-at="2019-01-22T13:37:54Z" finished-at="2019-01-22T13:38:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrokerListings_CommingSoonPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.SanityBrokerTest@13805618]" name="tearDown" is-config="true" duration-ms="911" started-at="2019-01-22T13:38:00Z" finished-at="2019-01-22T13:38:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testcases.LoginPageTest -->
+      </class> <!-- com.qa.testcases.SanityBrokerTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
