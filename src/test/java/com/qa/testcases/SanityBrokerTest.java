@@ -61,13 +61,50 @@ public class SanityBrokerTest  extends TestBase{
 			sanityBroker.verifyBrokerListings_CommingSoonPage();
 		}
 		
-		@Test(priority=6)
+		@Test(priority=7)
 		public void verifyBrokerListings_AllListingsPage() throws InterruptedException {
 			sanityBroker.verifyBrokerListings_AllListingsPage();
 		}
 		
+		@Test(priority=8)
+		public void verifyBrokerListings_MyDealsPage() throws InterruptedException {
+			sanityBroker.verifyBrokerListings_MyDealsPage();
+		}
 		
+		@Test(priority=9)
+		public void verifyBrokerListings_ArchivedListingsPage() throws InterruptedException {
+			sanityBroker.verifyBrokerListings_ArchivedListingsPage();
+		}
+				
+		@Test(priority=10)
+		public void verifyGoToOpenHousesSchedulePage() throws InterruptedException {
+			homePage.goToOpenHousesSchedulePage();
+		}		
 		
+		@Test(priority=11)
+		public void verifyPendingFeedbackPage() throws InterruptedException {
+			sanityBroker.verifyPendingFeedbackPage();
+		}
+		
+		@Test(priority=12)
+		public void verifyMyFeedbackPage() throws InterruptedException {
+			sanityBroker.verifyMyFeedbackPage();
+		}
+		
+		@Test(priority=13)
+		public void verifyGoToMyADRPage() throws InterruptedException {
+			homePage.goToMyADRPage();
+		}
+		
+		@Test(priority=14)
+		public void verifyMyReportADRPage() throws InterruptedException {
+			sanityBroker.verifyMyReportADRPage();
+		}
+		
+		@Test(priority=15)
+		public void verifyLinks() throws InterruptedException {
+			homePage.verifyLinks();
+		}
 		
 		@AfterClass
 		public void tearDown() {
