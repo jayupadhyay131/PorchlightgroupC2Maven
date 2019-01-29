@@ -45,15 +45,15 @@ public class OpenHouses_ListingsPage extends TestBase{
 		
 		WebElement city1 = driver.findElement(parser.getObjectLocator("city"));
 		city1.sendKeys(city);
-		log.info("AC: ENTERED CITY" + city);
+		log.info("AC: ENTERED CITY = " + city);
 		
 		WebElement zipcode1 = driver.findElement(parser.getObjectLocator("zipcode"));
 		zipcode1.sendKeys(zipcode);
-		log.info("AC: ENTERED ZIPCODE" + zipcode);
+		log.info("AC: ENTERED ZIPCODE = " + zipcode);
 
 		WebElement subarea1 = driver.findElement(parser.getObjectLocator("subarea"));
 		subarea1.sendKeys(subarea);
-		log.info("AC: ENTERED SUB-AREA" + subarea);
+		log.info("AC: ENTERED SUB-AREA = " + subarea);
 		
 		// Get Today's date in 01/06/2019 format
 		DateFormat dateFormat = new SimpleDateFormat("MM/DD/YYYY");
@@ -65,7 +65,7 @@ public class OpenHouses_ListingsPage extends TestBase{
 		date1.sendKeys(todaysdate);
 		Thread.sleep(1000);
 		date1.sendKeys(Keys.TAB);
-		log.info("AC: ENTERED TODAY'S DATE AS " + todaysdate);
+		log.info("AC: ENTERED TODAY'S DATE AS = " + todaysdate);
 		
 		WebElement price1 = driver.findElement(parser.getObjectLocator("price"));
 		price1.sendKeys(price);
