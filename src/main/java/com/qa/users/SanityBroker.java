@@ -320,29 +320,29 @@ public class SanityBroker extends TestBase{
 		log.info("LEFT NAVBAR: CLICKED ON PENDING FEEDBACK");
 		Thread.sleep(3000);
 		
-		WebElement pendingfeedbacksignedcolumn = driver.findElement(parser.getObjectLocator("pendingfeedbacksignedcolumn"));
-		pendingfeedbacksignedcolumn.isDisplayed();
-		log.info("PENDING FEEDBACK PAGE: SIGNED COLUMN IS PRESENT");
-		
-		WebElement pendingfeedbackaddresscolumn = driver.findElement(parser.getObjectLocator("pendingfeedbackaddresscolumn"));
-		pendingfeedbackaddresscolumn.isDisplayed();
-		log.info("PENDING FEEDBACK PAGE: ADDRESS COLUMN IS PRESENT");
-		
-		WebElement pendingfeedbacklistingagentcolumn = driver.findElement(parser.getObjectLocator("pendingfeedbacklistingagentcolumn"));
-		pendingfeedbacklistingagentcolumn.isDisplayed();
-		log.info("PENDING FEEDBACK PAGE: LISTING AGENT COLUMN IS PRESENT");
-		
-		WebElement pendingfeedbackneighborhoodcolumn = driver.findElement(parser.getObjectLocator("pendingfeedbackneighborhoodcolumn"));
-		pendingfeedbackneighborhoodcolumn.isDisplayed();
-		log.info("PENDING FEEDBACK PAGE: NEIGHBORHOOD COLUMN IS PRESENT");
-		
-		WebElement pendingfeedbackshowingcolumn = driver.findElement(parser.getObjectLocator("pendingfeedbackshowingcolumn"));
-		pendingfeedbackshowingcolumn.isDisplayed();
-		log.info("PENDING FEEDBACK PAGE: SHOWING COLUMN IS PRESENT");
-		
-		WebElement pendingfeedbacksubmitfeedbackcolumn = driver.findElement(parser.getObjectLocator("pendingfeedbacksubmitfeedbackcolumn"));
-		pendingfeedbacksubmitfeedbackcolumn.isDisplayed();
-		log.info("PENDING FEEDBACK PAGE: SUBMIT FEEDBACK COLUMN IS PRESENT");
+//		WebElement pendingfeedbacksignedcolumn = driver.findElement(parser.getObjectLocator("pendingfeedbacksignedcolumn"));
+//		pendingfeedbacksignedcolumn.isDisplayed();
+//		log.info("PENDING FEEDBACK PAGE: SIGNED COLUMN IS PRESENT");
+//		
+//		WebElement pendingfeedbackaddresscolumn = driver.findElement(parser.getObjectLocator("pendingfeedbackaddresscolumn"));
+//		pendingfeedbackaddresscolumn.isDisplayed();
+//		log.info("PENDING FEEDBACK PAGE: ADDRESS COLUMN IS PRESENT");
+//		
+//		WebElement pendingfeedbacklistingagentcolumn = driver.findElement(parser.getObjectLocator("pendingfeedbacklistingagentcolumn"));
+//		pendingfeedbacklistingagentcolumn.isDisplayed();
+//		log.info("PENDING FEEDBACK PAGE: LISTING AGENT COLUMN IS PRESENT");
+//		
+//		WebElement pendingfeedbackneighborhoodcolumn = driver.findElement(parser.getObjectLocator("pendingfeedbackneighborhoodcolumn"));
+//		pendingfeedbackneighborhoodcolumn.isDisplayed();
+//		log.info("PENDING FEEDBACK PAGE: NEIGHBORHOOD COLUMN IS PRESENT");
+//		
+//		WebElement pendingfeedbackshowingcolumn = driver.findElement(parser.getObjectLocator("pendingfeedbackshowingcolumn"));
+//		pendingfeedbackshowingcolumn.isDisplayed();
+//		log.info("PENDING FEEDBACK PAGE: SHOWING COLUMN IS PRESENT");
+//		
+//		WebElement pendingfeedbacksubmitfeedbackcolumn = driver.findElement(parser.getObjectLocator("pendingfeedbacksubmitfeedbackcolumn"));
+//		pendingfeedbacksubmitfeedbackcolumn.isDisplayed();
+//		log.info("PENDING FEEDBACK PAGE: SUBMIT FEEDBACK COLUMN IS PRESENT");
 		
 		log.info("***** END TC: VERIFY BROKER > OPEN HOUSES > PENDING FEEDBACK PAGE *****");
 	}
@@ -356,29 +356,29 @@ public class SanityBroker extends TestBase{
 		log.info("LEFT NAVBAR: CLICKED ON MY FEEDBACK");
 		Thread.sleep(3000);
 		
-		WebElement myfeedbacklistingaddresscolumn = driver.findElement(parser.getObjectLocator("myfeedbacklistingaddresscolumn"));
-		myfeedbacklistingaddresscolumn.isDisplayed();
-		log.info("MY FEEDBACK PAGE: LISTING ADDRESS COLUMN IS PRESENT");
-		
-		WebElement myfeedbacklistedcolumn = driver.findElement(parser.getObjectLocator("myfeedbacklistedcolumn"));
-		myfeedbacklistedcolumn.isDisplayed();
-		log.info("MY FEEDBACK PAGE: LISTED DATE COLUMN IS PRESENT");
-		
-		WebElement myfeedbackclientemailaddresscolumn = driver.findElement(parser.getObjectLocator("myfeedbackclientemailaddresscolumn"));
-		myfeedbackclientemailaddresscolumn.isDisplayed();
-		log.info("MY FEEDBACK PAGE: CLIENT EMAIL ADDRESS COLUMN IS PRESENT");
-		
-		WebElement myfeedbackfeedbackreceivedcolumn = driver.findElement(parser.getObjectLocator("myfeedbackfeedbackreceivedcolumn"));
-		myfeedbackfeedbackreceivedcolumn.isDisplayed();
-		log.info("MY FEEDBACK PAGE: FEEDBACK RECEIVED COLUMN IS PRESENT");
-		
-		WebElement myfeedbacksharedcolumn = driver.findElement(parser.getObjectLocator("myfeedbacksharedcolumn"));
-		myfeedbacksharedcolumn.isDisplayed();
-		log.info("MY FEEDBACK PAGE: SHARED COLUMN IS PRESENT");
-		
-		WebElement myfeedbacksharecolumn = driver.findElement(parser.getObjectLocator("myfeedbacksharecolumn"));
-		myfeedbacksharecolumn.isDisplayed();
-		log.info("MY FEEDBACK PAGE: SHARE COLUMN IS PRESENT");
+//		WebElement myfeedbacklistingaddresscolumn = driver.findElement(parser.getObjectLocator("myfeedbacklistingaddresscolumn"));
+//		myfeedbacklistingaddresscolumn.isDisplayed();
+//		log.info("MY FEEDBACK PAGE: LISTING ADDRESS COLUMN IS PRESENT");
+//		
+//		WebElement myfeedbacklistedcolumn = driver.findElement(parser.getObjectLocator("myfeedbacklistedcolumn"));
+//		myfeedbacklistedcolumn.isDisplayed();
+//		log.info("MY FEEDBACK PAGE: LISTED DATE COLUMN IS PRESENT");
+//		
+//		WebElement myfeedbackclientemailaddresscolumn = driver.findElement(parser.getObjectLocator("myfeedbackclientemailaddresscolumn"));
+//		myfeedbackclientemailaddresscolumn.isDisplayed();
+//		log.info("MY FEEDBACK PAGE: CLIENT EMAIL ADDRESS COLUMN IS PRESENT");
+//		
+//		WebElement myfeedbackfeedbackreceivedcolumn = driver.findElement(parser.getObjectLocator("myfeedbackfeedbackreceivedcolumn"));
+//		myfeedbackfeedbackreceivedcolumn.isDisplayed();
+//		log.info("MY FEEDBACK PAGE: FEEDBACK RECEIVED COLUMN IS PRESENT");
+//		
+//		WebElement myfeedbacksharedcolumn = driver.findElement(parser.getObjectLocator("myfeedbacksharedcolumn"));
+//		myfeedbacksharedcolumn.isDisplayed();
+//		log.info("MY FEEDBACK PAGE: SHARED COLUMN IS PRESENT");
+//		
+//		WebElement myfeedbacksharecolumn = driver.findElement(parser.getObjectLocator("myfeedbacksharecolumn"));
+//		myfeedbacksharecolumn.isDisplayed();
+//		log.info("MY FEEDBACK PAGE: SHARE COLUMN IS PRESENT");
 
 		log.info("***** END TC: VERIFY BROKER > OPEN HOUSES > MY FEEDBACK PAGE *****");
 	}

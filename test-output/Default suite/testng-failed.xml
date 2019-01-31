@@ -5,7 +5,7 @@
     <classes>
       <class name="com.qa.testcases.SanityBrokerTest">
         <methods>
-          <include name="verifyGoToMyADRPage"/>
+          <include name="verifyGoToOpenHousesSchedulePage"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
