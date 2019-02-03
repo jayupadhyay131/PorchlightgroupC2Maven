@@ -1,6 +1,7 @@
 package com.qa.users;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 import com.qa.base.TestBase;
@@ -115,4 +116,78 @@ public class SanityTC extends TestBase{
 		
 		log.info("***** END TC: VERIFY TC DASHBOARD WIDGETS *****");
 	}
+	
+	public void verifyTCListingsDealsPage() throws InterruptedException {
+		
+		log.info("***** START TC: VERIFY TC LISTINGS > DEALS PAGE *****");
+		
+		WebElement tcdealslistingssearchbar = driver.findElement(parser.getObjectLocator("tcdealslistingssearchbar"));
+		tcdealslistingssearchbar.isDisplayed();
+		log.info("TC LISTINGS > DEALS: LISTING SEARCHBAR IS PRESENT");
+		
+		WebElement tcdealslistingsstatusdropdownall = driver.findElement(parser.getObjectLocator("tcdealslistingsstatusdropdownall"));
+		tcdealslistingsstatusdropdownall.isDisplayed();
+		log.info("TC LISTINGS > DEALS: LISTING STATUS DROP-DOWN All IS PRESENT");
+		tcdealslistingsstatusdropdownall.click();
+		log.info("TC LISTINGS > DEALS: CLICKED ON LISTING STATUS DROP-DOWN");
+		
+		WebElement tcdealslistingsstatusdropdownsearchbar = driver.findElement(parser.getObjectLocator("tcdealslistingsstatusdropdownsearchbar"));
+		tcdealslistingsstatusdropdownsearchbar.sendKeys("Listings");
+		tcdealslistingsstatusdropdownsearchbar.sendKeys(Keys.ENTER);
+		log.info("TC LISTINGS > DEALS: ENTERED Listings AS TEXT AND PRESSED ENTER");
+		Thread.sleep(5000);
+		
+//		WebElement tcdealslistingsstatusdropdownlistings = driver.findElement(parser.getObjectLocator("tcdealslistingsstatusdropdownlistings"));
+//		tcdealslistingsstatusdropdownlistings.click();
+//		tcdealslistingsstatusdropdownsearchbar.sendKeys("Active");
+//		tcdealslistingsstatusdropdownsearchbar.sendKeys(Keys.ENTER);
+//		log.info("TC LISTINGS > DEALS: ENTERED Active AS TEXT AND PRESSED ENTER");
+//		
+//		WebElement tcdealslistingsstatusdropdownactive = driver.findElement(parser.getObjectLocator("tcdealslistingsstatusdropdownactive"));
+//		tcdealslistingsstatusdropdownactive.click();
+//		tcdealslistingsstatusdropdownsearchbar.sendKeys("Under Contract");
+//		tcdealslistingsstatusdropdownsearchbar.sendKeys(Keys.ENTER);
+//		log.info("TC LISTINGS > DEALS: ENTERED Under Contract AS TEXT AND PRESSED ENTER");
+
+		WebElement tcdealscolumn = driver.findElement(parser.getObjectLocator("tcdealscolumn"));
+		tcdealscolumn.isDisplayed();
+		log.info("TC LISTINGS > DEALS: DEALS COLUMN IS PRESENT");
+		
+		WebElement tcaddresscolumn = driver.findElement(parser.getObjectLocator("tcaddresscolumn"));
+		tcaddresscolumn.isDisplayed();
+		log.info("TC LISTINGS > DEALS: ADDRESS COLUMN IS PRESENT");
+		
+		WebElement tclistingagentwithsortcolumn = driver.findElement(parser.getObjectLocator("tclistingagentwithsortcolumn"));
+		tclistingagentwithsortcolumn.isDisplayed();
+		log.info("TC LISTINGS > DEALS: AGENTS WITH SORT COLUMN IS PRESENT");
+		
+		WebElement tcpricewithsortcolumn = driver.findElement(parser.getObjectLocator("tcpricewithsortcolumn"));
+		tcpricewithsortcolumn.isDisplayed();
+		log.info("TC LISTINGS > DEALS: PRICE WITH SORT COLUMN IS PRESENT");
+		
+		WebElement tcdigestcolumn = driver.findElement(parser.getObjectLocator("tcdigestcolumn"));
+		tcdigestcolumn.isDisplayed();
+		log.info("TC LISTINGS > DEALS: DIGEST COLUMN IS PRESENT");
+		
+		WebElement tcmarketdatewithsortcolumn = driver.findElement(parser.getObjectLocator("tcmarketdatewithsortcolumn"));
+		tcmarketdatewithsortcolumn.isDisplayed();
+		log.info("TC LISTINGS > DEALS: MARKET DATE WITH SORT COLUMN IS PRESENT");
+		
+		WebElement tcstatuswithsortcolumn = driver.findElement(parser.getObjectLocator("tcstatuswithsortcolumn"));
+		tcstatuswithsortcolumn.isDisplayed();
+		log.info("TC LISTINGS > DEALS: STATUS WITH SORT COLUMN IS PRESENT");
+		
+		WebElement tcmydealsvsalldealstoggle = driver.findElement(parser.getObjectLocator("tcmydealsvsalldealstoggle"));
+		tcmydealsvsalldealstoggle.click();
+		log.info("TC LISTINGS > DEALS: CLICKED ON MY DEALS VS ALL DEALS TOGGLE BUTTON");
+		Thread.sleep(5000);
+		
+		WebElement tctransactioncoordinatorcolumn = driver.findElement(parser.getObjectLocator("tctransactioncoordinatorcolumn"));
+		tctransactioncoordinatorcolumn.isDisplayed();
+		log.info("TC LISTINGS > DEALS: TC COLUMN IS PRESENT");
+		
+		
+		log.info("***** END TC: VERIFY TC LISTINGS > DEALS PAGE *****");
+	}
+	
 }

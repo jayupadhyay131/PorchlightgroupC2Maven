@@ -5,8 +5,10 @@
     <classes>
       <class name="com.qa.testcases.SanityTCTest">
         <methods>
-          <include name="verifyBrokerDashboard"/>
+          <include name="verifyLogin"/>
+          <include name="verifyTCListingsDealsPage"/>
           <include name="setUp"/>
+          <include name="verifyGotoListingsDealsPage"/>
         </methods>
       </class> <!-- com.qa.testcases.SanityTCTest -->
     </classes>

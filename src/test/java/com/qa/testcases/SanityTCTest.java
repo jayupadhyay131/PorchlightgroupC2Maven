@@ -39,9 +39,27 @@ public class SanityTCTest extends TestBase{
 		Thread.sleep(5000);
 	}
 	
-	@Test(priority=3)
-	public void verifyBrokerDashboard() throws InterruptedException {
-		sanityTC.verifyTCDashboard();
+//	@Test(priority=3)
+//	public void verifyTCDashboard() throws InterruptedException {
+//		sanityTC.verifyTCDashboard();
+//		Thread.sleep(5000);
+//	}
+//	
+//	@Test(priority=4)
+//	public void verifyCRMBetaLink() throws InterruptedException {
+//		homePage.verifyCRMBetaLink();
+//		Thread.sleep(5000);
+//	}
+	
+	@Test(priority=5)
+	public void verifyGotoListingsDealsPage() throws InterruptedException {
+		homePage.verifyGotoListingsDealsPage();
+		Thread.sleep(5000);
+	}
+	
+	@Test(priority=6)
+	public void verifyTCListingsDealsPage() throws InterruptedException {
+		sanityTC.verifyTCListingsDealsPage();
 		Thread.sleep(5000);
 	}
 	

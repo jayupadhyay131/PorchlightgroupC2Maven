@@ -32,16 +32,32 @@ public class HomePage extends TestBase{
 		
 		log.info("***** START TC: GO TO LISTINGS > SUBMIT LISTING *****");
 		
-		WebElement listigs = driver.findElement(parser.getObjectLocator("listigs"));
-		listigs.click();
+		WebElement listings = driver.findElement(parser.getObjectLocator("listings"));
+		listings.click();
 		log.info("LEFT NAVBAR: CLICKED ON SCHEDULE");
 		
 		WebElement submitalisting = driver.findElement(parser.getObjectLocator("submitalisting"));
 		submitalisting.click();
-		log.info("LEFT NAVBAR: CLICKED ON SUBMIT A LISTING");
+		log.info("LEFT NAVBAR: CLICKED ON SCHEDULE > SUBMIT A LISTING");
 		Thread.sleep(5000);
 
 		log.info("***** END TC: GO TO LISTINGS > SUBMIT LISTING *****");	
+	}
+	
+	public void verifyGotoListingsDealsPage() throws InterruptedException {
+		
+		log.info("***** START TC: GO TO LISTINGS > DEALS *****");
+		
+		WebElement tclistings = driver.findElement(parser.getObjectLocator("tclistings"));
+		tclistings.click();
+		log.info("LEFT NAVBAR: CLICKED ON LISTINGS");
+		
+		WebElement tcdeals = driver.findElement(parser.getObjectLocator("tcdeals"));
+		tcdeals.click();
+		log.info("LEFT NAVBAR: CLICKED LISTINGS > DEALS");
+		Thread.sleep(5000);
+
+		log.info("***** END TC: GO TO LISTINGS > DEALS *****");	
 	}
 	
 	public void goToMyADRPage() throws InterruptedException {
@@ -91,20 +107,22 @@ public class HomePage extends TestBase{
 		log.info("***** END TC: GO TO LINKS *****");	
 	}
 	
+	public void verifyCRMBetaLink() throws InterruptedException {
+		WebElement crmbeta = driver.findElement(parser.getObjectLocator("crmbeta"));
+		crmbeta.isDisplayed();
+		log.info("CRM BETA LINK IS PRESENT");
+	}
+	
 	public void loginAsBroker1() throws InterruptedException {
-		
 		driver.get(property.getProperty("loginasbroker1"));
 		log.info("LOGGED IN AS BROKER 1 NOW");
 		Thread.sleep(3000);
-		
 	}
 	
 	public void loginAsTC1() throws InterruptedException {
-		
 		driver.get(property.getProperty("loginastc1"));
 		log.info("LOGGED IN AS TC 1 NOW");
 		Thread.sleep(3000);
-		
 	}
 
 }

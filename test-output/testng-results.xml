@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39759" started-at="2019-02-03T02:25:10Z" finished-at="2019-02-03T02:25:50Z">
+  <suite name="Default suite" duration-ms="63761" started-at="2019-02-03T03:38:03Z" finished-at="2019-02-03T03:39:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39759" started-at="2019-02-03T02:25:10Z" finished-at="2019-02-03T02:25:50Z">
+    <test name="Default test" duration-ms="63761" started-at="2019-02-03T03:38:03Z" finished-at="2019-02-03T03:39:06Z">
       <class name="com.qa.testcases.SanityTCTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.SanityTCTest@5cb9f472]" name="setUp" is-config="true" duration-ms="5062" started-at="2019-02-02T19:25:10Z" finished-at="2019-02-02T19:25:15Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.SanityTCTest@5cb9f472]" name="setUp" is-config="true" duration-ms="5276" started-at="2019-02-02T20:38:03Z" finished-at="2019-02-02T20:38:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.qa.testcases.SanityTCTest@5cb9f472]" name="verifyLogin" duration-ms="18747" started-at="2019-02-02T19:25:15Z" finished-at="2019-02-02T19:25:34Z">
+        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.qa.testcases.SanityTCTest@5cb9f472]" name="verifyLogin" duration-ms="18689" started-at="2019-02-02T20:38:08Z" finished-at="2019-02-02T20:38:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="verifyLoginAsTC1()[pri:0, instance:com.qa.testcases.SanityTCTest@5cb9f472]" name="verifyLoginAsTC1" duration-ms="9919" started-at="2019-02-02T19:25:34Z" finished-at="2019-02-02T19:25:44Z">
+        <test-method status="PASS" signature="verifyLoginAsTC1()[pri:0, instance:com.qa.testcases.SanityTCTest@5cb9f472]" name="verifyLoginAsTC1" duration-ms="9944" started-at="2019-02-02T20:38:27Z" finished-at="2019-02-02T20:38:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginAsTC1 -->
-        <test-method status="PASS" signature="verifyBrokerDashboard()[pri:0, instance:com.qa.testcases.SanityTCTest@5cb9f472]" name="verifyBrokerDashboard" duration-ms="6028" started-at="2019-02-02T19:25:44Z" finished-at="2019-02-02T19:25:50Z">
+        <test-method status="PASS" signature="verifyGotoListingsDealsPage()[pri:0, instance:com.qa.testcases.SanityTCTest@5cb9f472]" name="verifyGotoListingsDealsPage" duration-ms="13905" started-at="2019-02-02T20:38:37Z" finished-at="2019-02-02T20:38:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyBrokerDashboard -->
+        </test-method> <!-- verifyGotoListingsDealsPage -->
+        <test-method status="PASS" signature="verifyTCListingsDealsPage()[pri:0, instance:com.qa.testcases.SanityTCTest@5cb9f472]" name="verifyTCListingsDealsPage" duration-ms="15945" started-at="2019-02-02T20:38:50Z" finished-at="2019-02-02T20:39:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTCListingsDealsPage -->
       </class> <!-- com.qa.testcases.SanityTCTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
