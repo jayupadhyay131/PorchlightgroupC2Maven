@@ -98,5 +98,13 @@ public class HomePage extends TestBase{
 		Thread.sleep(3000);
 		
 	}
+	
+	public void loginAsTC1() throws InterruptedException {
+		
+		driver.get(property.getProperty("loginastc1"));
+		log.info("LOGGED IN AS TC 1 NOW");
+		Thread.sleep(3000);
+		
+	}
 
 }

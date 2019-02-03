@@ -9,7 +9,7 @@ import com.qa.pages.HomePage;
 import com.qa.pages.LoginPage;
 import com.qa.users.SanityBroker;
 
-public class SanityBrokerTest  extends TestBase{
+public class SanityBrokerTest extends TestBase{
 	
 		HomePage homePage;
 		LoginPage loginPage;
