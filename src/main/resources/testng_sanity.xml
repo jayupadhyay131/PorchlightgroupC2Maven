@@ -5,6 +5,7 @@
   <test name="Sanity1">
     <classes>
       <class name="com.qa.testcases.SanityBrokerTest"/>
+      <class name="com.qa.testcases.SanityTCTest"/>
     </classes>
   </test>
   
