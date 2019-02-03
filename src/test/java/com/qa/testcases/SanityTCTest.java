@@ -1,5 +1,6 @@
 package com.qa.testcases;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -39,17 +40,17 @@ public class SanityTCTest extends TestBase{
 		Thread.sleep(5000);
 	}
 	
-//	@Test(priority=3)
-//	public void verifyTCDashboard() throws InterruptedException {
-//		sanityTC.verifyTCDashboard();
-//		Thread.sleep(5000);
-//	}
-//	
-//	@Test(priority=4)
-//	public void verifyCRMBetaLink() throws InterruptedException {
-//		homePage.verifyCRMBetaLink();
-//		Thread.sleep(5000);
-//	}
+	@Test(priority=3)
+	public void verifyTCDashboard() throws InterruptedException {
+		sanityTC.verifyTCDashboard();
+		Thread.sleep(5000);
+	}
+	
+	@Test(priority=4)
+	public void verifyCRMBetaLink() throws InterruptedException {
+		homePage.verifyCRMBetaLink();
+		Thread.sleep(5000);
+	}
 	
 	@Test(priority=5)
 	public void verifyGotoListingsDealsPage() throws InterruptedException {
@@ -63,5 +64,8 @@ public class SanityTCTest extends TestBase{
 		Thread.sleep(5000);
 	}
 	
-	
+	@AfterClass
+	public void tearDown() {
+		driver.quit();
+	}
 }
