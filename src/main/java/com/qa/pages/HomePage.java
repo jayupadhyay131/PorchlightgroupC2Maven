@@ -34,11 +34,12 @@ public class HomePage extends TestBase{
 		
 		WebElement listings = driver.findElement(parser.getObjectLocator("listings"));
 		listings.click();
-		log.info("LEFT NAVBAR: CLICKED ON SCHEDULE");
+		log.info("LEFT NAVBAR: CLICKED ON LISTINGS");
+		Thread.sleep(1000);
 		
 		WebElement submitalisting = driver.findElement(parser.getObjectLocator("submitalisting"));
 		submitalisting.click();
-		log.info("LEFT NAVBAR: CLICKED ON SCHEDULE > SUBMIT A LISTING");
+		log.info("LEFT NAVBAR: CLICKED ON LISTINGS > SUBMIT A LISTING");
 		Thread.sleep(5000);
 
 		log.info("***** END TC: GO TO LISTINGS > SUBMIT LISTING *****");	

@@ -2,12 +2,14 @@ package com.qa.testcases;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.base.TestBase;
 import com.qa.pages.HomePage;
 import com.qa.pages.Listings_DealsPage;
 import com.qa.pages.LoginPage;
+import com.qa.util.ExcelFileImporter;
 
 public class Listings_DealsPageTest extends TestBase{
 	
@@ -44,15 +46,14 @@ public class Listings_DealsPageTest extends TestBase{
 		homePage.goToNewListingSubmission1Page();
 	}
 
-//	// Get data from Excel file and store data into 2D array
+	// Get data from Excel file and store data into 2D array
 //	@DataProvider
 //	public Object[][] getBrokerLS1Data() {
 //		Object data[][] = ExcelFileImporter.getTestData("brokerls1data");
 //		return data;
 //	}
-	
-	
-	//@Test(dataProvider = "getBrokerLS1Data")
+
+	//@Test(priority=4, dataProvider = "getBrokerLS1Data")
 	@Test(priority=4)
 	public void verifyBrokerSubmitLS1( 
 			
@@ -60,6 +61,10 @@ public class Listings_DealsPageTest extends TestBase{
 		listings_DealsPage.Broker_Fill_LS1_1AgreementTab();
 	}
 	
+//	@Test(priority=5)
+//	public void Broker_Fill_LS1_2PropertyOverview() throws InterruptedException {	
+//		listings_DealsPage.Broker_Fill_LS1_2PropertyOverview();
+//	}
 	
 	@AfterClass
 	public void tearDown() {

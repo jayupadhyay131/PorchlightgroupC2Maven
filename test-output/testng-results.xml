@@ -1,41 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="75770" started-at="2019-02-03T03:40:48Z" finished-at="2019-02-03T03:42:04Z">
+  <suite name="Default suite" duration-ms="58741" started-at="2019-02-07T23:37:57Z" finished-at="2019-02-07T23:38:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="75770" started-at="2019-02-03T03:40:48Z" finished-at="2019-02-03T03:42:04Z">
-      <class name="com.qa.testcases.SanityTCTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.SanityTCTest@5cb9f472]" name="setUp" is-config="true" duration-ms="5311" started-at="2019-02-02T20:40:48Z" finished-at="2019-02-02T20:40:53Z">
+    <test name="Default test" duration-ms="58741" started-at="2019-02-07T23:37:57Z" finished-at="2019-02-07T23:38:56Z">
+      <class name="com.qa.testcases.Listings_DealsPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="setUp" is-config="true" duration-ms="6733" started-at="2019-02-07T16:37:57Z" finished-at="2019-02-07T16:38:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.qa.testcases.SanityTCTest@5cb9f472]" name="verifyLogin" duration-ms="18873" started-at="2019-02-02T20:40:53Z" finished-at="2019-02-02T20:41:12Z">
+        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyLogin" duration-ms="20531" started-at="2019-02-07T16:38:04Z" finished-at="2019-02-07T16:38:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="verifyLoginAsTC1()[pri:0, instance:com.qa.testcases.SanityTCTest@5cb9f472]" name="verifyLoginAsTC1" duration-ms="10830" started-at="2019-02-02T20:41:12Z" finished-at="2019-02-02T20:41:23Z">
+        <test-method status="PASS" signature="verifyLoginAsBroker1()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyLoginAsBroker1" duration-ms="13088" started-at="2019-02-07T16:38:25Z" finished-at="2019-02-07T16:38:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginAsTC1 -->
-        <test-method status="PASS" signature="verifyTCDashboard()[pri:0, instance:com.qa.testcases.SanityTCTest@5cb9f472]" name="verifyTCDashboard" duration-ms="6053" started-at="2019-02-02T20:41:23Z" finished-at="2019-02-02T20:41:29Z">
+        </test-method> <!-- verifyLoginAsBroker1 -->
+        <test-method status="PASS" signature="verifyGoToNewListingSubmission1Page()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyGoToNewListingSubmission1Page" duration-ms="10789" started-at="2019-02-07T16:38:38Z" finished-at="2019-02-07T16:38:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTCDashboard -->
-        <test-method status="PASS" signature="verifyCRMBetaLink()[pri:0, instance:com.qa.testcases.SanityTCTest@5cb9f472]" name="verifyCRMBetaLink" duration-ms="5031" started-at="2019-02-02T20:41:29Z" finished-at="2019-02-02T20:41:34Z">
+        </test-method> <!-- verifyGoToNewListingSubmission1Page -->
+        <test-method status="PASS" signature="verifyBrokerSubmitLS1()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyBrokerSubmitLS1" duration-ms="6619" started-at="2019-02-07T16:38:49Z" finished-at="2019-02-07T16:38:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCRMBetaLink -->
-        <test-method status="PASS" signature="verifyGotoListingsDealsPage()[pri:0, instance:com.qa.testcases.SanityTCTest@5cb9f472]" name="verifyGotoListingsDealsPage" duration-ms="13751" started-at="2019-02-02T20:41:34Z" finished-at="2019-02-02T20:41:48Z">
+        </test-method> <!-- verifyBrokerSubmitLS1 -->
+        <test-method status="FAIL" signature="Broker_Fill_LS1_2PropertyOverview()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="Broker_Fill_LS1_2PropertyOverview" duration-ms="10" started-at="2019-02-07T16:38:55Z" finished-at="2019-02-07T16:38:55Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.qa.pages.Listings_DealsPage.Broker_Fill_LS1_2PropertyOverview(Listings_DealsPage.java:34)
+	at com.qa.testcases.Listings_DealsPageTest.Broker_Fill_LS1_2PropertyOverview(Listings_DealsPageTest.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyGotoListingsDealsPage -->
-        <test-method status="PASS" signature="verifyTCListingsDealsPage()[pri:0, instance:com.qa.testcases.SanityTCTest@5cb9f472]" name="verifyTCListingsDealsPage" duration-ms="15920" started-at="2019-02-02T20:41:48Z" finished-at="2019-02-02T20:42:04Z">
+        </test-method> <!-- Broker_Fill_LS1_2PropertyOverview -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="tearDown" is-config="true" duration-ms="899" started-at="2019-02-07T16:38:55Z" finished-at="2019-02-07T16:38:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTCListingsDealsPage -->
-      </class> <!-- com.qa.testcases.SanityTCTest -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcases.Listings_DealsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
