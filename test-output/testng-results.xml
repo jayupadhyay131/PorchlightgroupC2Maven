@@ -1,39 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="5" passed="4">
+<testng-results skipped="0" failed="1" total="16" passed="15">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="58741" started-at="2019-02-07T23:37:57Z" finished-at="2019-02-07T23:38:56Z">
+  <suite name="Default suite" duration-ms="201159" started-at="2019-02-10T01:20:49Z" finished-at="2019-02-10T01:24:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="58741" started-at="2019-02-07T23:37:57Z" finished-at="2019-02-07T23:38:56Z">
-      <class name="com.qa.testcases.Listings_DealsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="setUp" is-config="true" duration-ms="6733" started-at="2019-02-07T16:37:57Z" finished-at="2019-02-07T16:38:04Z">
+    <test name="Default test" duration-ms="201159" started-at="2019-02-10T01:20:49Z" finished-at="2019-02-10T01:24:10Z">
+      <class name="com.qa.testcases.SanityBrokerTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.SanityBrokerTest@56ef9176]" name="setUp" is-config="true" duration-ms="10874" started-at="2019-02-09T18:20:49Z" finished-at="2019-02-09T18:21:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyLogin" duration-ms="20531" started-at="2019-02-07T16:38:04Z" finished-at="2019-02-07T16:38:25Z">
+        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.qa.testcases.SanityBrokerTest@56ef9176]" name="verifyLogin" duration-ms="20684" started-at="2019-02-09T18:21:00Z" finished-at="2019-02-09T18:21:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="verifyLoginAsBroker1()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyLoginAsBroker1" duration-ms="13088" started-at="2019-02-07T16:38:25Z" finished-at="2019-02-07T16:38:38Z">
+        <test-method status="PASS" signature="verifyLoginAsBroker1()[pri:0, instance:com.qa.testcases.SanityBrokerTest@56ef9176]" name="verifyLoginAsBroker1" duration-ms="13160" started-at="2019-02-09T18:21:21Z" finished-at="2019-02-09T18:21:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginAsBroker1 -->
-        <test-method status="PASS" signature="verifyGoToNewListingSubmission1Page()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyGoToNewListingSubmission1Page" duration-ms="10789" started-at="2019-02-07T16:38:38Z" finished-at="2019-02-07T16:38:49Z">
+        <test-method status="PASS" signature="verifyBrokerDashboard()[pri:0, instance:com.qa.testcases.SanityBrokerTest@56ef9176]" name="verifyBrokerDashboard" duration-ms="5723" started-at="2019-02-09T18:21:34Z" finished-at="2019-02-09T18:21:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyGoToNewListingSubmission1Page -->
-        <test-method status="PASS" signature="verifyBrokerSubmitLS1()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyBrokerSubmitLS1" duration-ms="6619" started-at="2019-02-07T16:38:49Z" finished-at="2019-02-07T16:38:55Z">
+        </test-method> <!-- verifyBrokerDashboard -->
+        <test-method status="PASS" signature="verifyCRMBetaLink()[pri:0, instance:com.qa.testcases.SanityBrokerTest@56ef9176]" name="verifyCRMBetaLink" duration-ms="5112" started-at="2019-02-09T18:21:40Z" finished-at="2019-02-09T18:21:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyBrokerSubmitLS1 -->
-        <test-method status="FAIL" signature="Broker_Fill_LS1_2PropertyOverview()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="Broker_Fill_LS1_2PropertyOverview" duration-ms="10" started-at="2019-02-07T16:38:55Z" finished-at="2019-02-07T16:38:55Z">
-          <exception class="java.lang.NullPointerException">
+        </test-method> <!-- verifyCRMBetaLink -->
+        <test-method status="PASS" signature="verifyBrokerListings_SubmitLS1()[pri:0, instance:com.qa.testcases.SanityBrokerTest@56ef9176]" name="verifyBrokerListings_SubmitLS1" duration-ms="11612" started-at="2019-02-09T18:21:45Z" finished-at="2019-02-09T18:21:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrokerListings_SubmitLS1 -->
+        <test-method status="PASS" signature="verifyBrokerListings_SubmitBuyerUC()[pri:0, instance:com.qa.testcases.SanityBrokerTest@56ef9176]" name="verifyBrokerListings_SubmitBuyerUC" duration-ms="6694" started-at="2019-02-09T18:21:56Z" finished-at="2019-02-09T18:22:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrokerListings_SubmitBuyerUC -->
+        <test-method status="PASS" signature="verifyBrokerListings_CommingSoonPage()[pri:0, instance:com.qa.testcases.SanityBrokerTest@56ef9176]" name="verifyBrokerListings_CommingSoonPage" duration-ms="5197" started-at="2019-02-09T18:22:03Z" finished-at="2019-02-09T18:22:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrokerListings_CommingSoonPage -->
+        <test-method status="PASS" signature="verifyBrokerListings_AllListingsPage()[pri:0, instance:com.qa.testcases.SanityBrokerTest@56ef9176]" name="verifyBrokerListings_AllListingsPage" duration-ms="20003" started-at="2019-02-09T18:22:08Z" finished-at="2019-02-09T18:22:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrokerListings_AllListingsPage -->
+        <test-method status="PASS" signature="verifyBrokerListings_MyDealsPage()[pri:0, instance:com.qa.testcases.SanityBrokerTest@56ef9176]" name="verifyBrokerListings_MyDealsPage" duration-ms="8717" started-at="2019-02-09T18:22:28Z" finished-at="2019-02-09T18:22:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrokerListings_MyDealsPage -->
+        <test-method status="PASS" signature="verifyBrokerListings_ArchivedListingsPage()[pri:0, instance:com.qa.testcases.SanityBrokerTest@56ef9176]" name="verifyBrokerListings_ArchivedListingsPage" duration-ms="5156" started-at="2019-02-09T18:22:37Z" finished-at="2019-02-09T18:22:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrokerListings_ArchivedListingsPage -->
+        <test-method status="PASS" signature="verifyGoToOpenHousesSchedulePage()[pri:0, instance:com.qa.testcases.SanityBrokerTest@56ef9176]" name="verifyGoToOpenHousesSchedulePage" duration-ms="12235" started-at="2019-02-09T18:22:42Z" finished-at="2019-02-09T18:22:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGoToOpenHousesSchedulePage -->
+        <test-method status="PASS" signature="verifyPendingFeedbackPage()[pri:0, instance:com.qa.testcases.SanityBrokerTest@56ef9176]" name="verifyPendingFeedbackPage" duration-ms="4630" started-at="2019-02-09T18:22:54Z" finished-at="2019-02-09T18:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPendingFeedbackPage -->
+        <test-method status="PASS" signature="verifyMyFeedbackPage()[pri:0, instance:com.qa.testcases.SanityBrokerTest@56ef9176]" name="verifyMyFeedbackPage" duration-ms="4717" started-at="2019-02-09T18:22:59Z" finished-at="2019-02-09T18:23:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMyFeedbackPage -->
+        <test-method status="PASS" signature="verifyGoToMyADRPage()[pri:0, instance:com.qa.testcases.SanityBrokerTest@56ef9176]" name="verifyGoToMyADRPage" duration-ms="5375" started-at="2019-02-09T18:23:04Z" finished-at="2019-02-09T18:23:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGoToMyADRPage -->
+        <test-method status="FAIL" signature="verifyMyReportADRPage()[pri:0, instance:com.qa.testcases.SanityBrokerTest@56ef9176]" name="verifyMyReportADRPage" duration-ms="60096" started-at="2019-02-09T18:23:09Z" finished-at="2019-02-09T18:24:09Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h5[(text()='Production YTD')]"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VENTIVE', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\jayge\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 9cceb765058b00004587de23b5717380
+*** Element info: {Using=xpath, value=//h5[(text()='Production YTD')]}]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h5[(text()='Production YTD')]"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VENTIVE', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\jayge\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 9cceb765058b00004587de23b5717380
+*** Element info: {Using=xpath, value=//h5[(text()='Production YTD')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.qa.pages.Listings_DealsPage.Broker_Fill_LS1_2PropertyOverview(Listings_DealsPage.java:34)
-	at com.qa.testcases.Listings_DealsPageTest.Broker_Fill_LS1_2PropertyOverview(Listings_DealsPageTest.java:66)
+	at com.qa.users.SanityBroker.verifyMyReportADRPage(SanityBroker.java:390)
+	at com.qa.testcases.SanityBrokerTest.verifyMyReportADRPage(SanityBrokerTest.java:107)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -60,15 +138,19 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Broker_Fill_LS1_2PropertyOverview -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="tearDown" is-config="true" duration-ms="899" started-at="2019-02-07T16:38:55Z" finished-at="2019-02-07T16:38:56Z">
+        </test-method> <!-- verifyMyReportADRPage -->
+        <test-method status="PASS" signature="verifyLinks()[pri:0, instance:com.qa.testcases.SanityBrokerTest@56ef9176]" name="verifyLinks" duration-ms="377" started-at="2019-02-09T18:24:09Z" finished-at="2019-02-09T18:24:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLinks -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.SanityBrokerTest@56ef9176]" name="tearDown" is-config="true" duration-ms="709" started-at="2019-02-09T18:24:10Z" finished-at="2019-02-09T18:24:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testcases.Listings_DealsPageTest -->
+      </class> <!-- com.qa.testcases.SanityBrokerTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

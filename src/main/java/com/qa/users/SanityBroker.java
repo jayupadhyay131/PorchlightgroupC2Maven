@@ -58,8 +58,8 @@ public class SanityBroker extends TestBase{
 		
 		log.info("***** START TC: VERIFY BROKER LS1 SUBMISSION PAGE *****");
 		
-		WebElement listigs = driver.findElement(parser.getObjectLocator("listigs"));
-		listigs.click();
+		WebElement listings = driver.findElement(parser.getObjectLocator("listings"));
+		listings.click();
 		log.info("LEFT NAVBAR: CLICKED ON SCHEDULE");
 		
 		WebElement submitalisting = driver.findElement(parser.getObjectLocator("submitalisting"));

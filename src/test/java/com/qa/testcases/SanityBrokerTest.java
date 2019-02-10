@@ -47,61 +47,67 @@ public class SanityBrokerTest extends TestBase{
 		}
 		
 		@Test(priority=4)
+		public void verifyCRMBetaLink() throws InterruptedException {
+			homePage.verifyCRMBetaLink();
+			Thread.sleep(5000);
+		}
+		
+		@Test(priority=5)
 		public void verifyBrokerListings_SubmitLS1() throws InterruptedException {
 			sanityBroker.verifyBrokerListings_SubmitLS1();
 		}
 		
-		@Test(priority=5)
+		@Test(priority=6)
 		public void verifyBrokerListings_SubmitBuyerUC() throws InterruptedException {
 			sanityBroker.verifyBrokerListings_SubmitBuyerUC();
 		}
 		
-		@Test(priority=6)
+		@Test(priority=7)
 		public void verifyBrokerListings_CommingSoonPage() throws InterruptedException {
 			sanityBroker.verifyBrokerListings_CommingSoonPage();
 		}
 		
-		@Test(priority=7)
+		@Test(priority=8)
 		public void verifyBrokerListings_AllListingsPage() throws InterruptedException {
 			sanityBroker.verifyBrokerListings_AllListingsPage();
 		}
 		
-		@Test(priority=8)
+		@Test(priority=9)
 		public void verifyBrokerListings_MyDealsPage() throws InterruptedException {
 			sanityBroker.verifyBrokerListings_MyDealsPage();
 		}
 		
-		@Test(priority=9)
+		@Test(priority=10)
 		public void verifyBrokerListings_ArchivedListingsPage() throws InterruptedException {
 			sanityBroker.verifyBrokerListings_ArchivedListingsPage();
 		}
 				
-		@Test(priority=10)
+		@Test(priority=11)
 		public void verifyGoToOpenHousesSchedulePage() throws InterruptedException {
 			homePage.goToOpenHousesSchedulePage();
 		}		
 		
-		@Test(priority=11)
+		@Test(priority=12)
 		public void verifyPendingFeedbackPage() throws InterruptedException {
 			sanityBroker.verifyPendingFeedbackPage();
 		}
 		
-		@Test(priority=12)
+		@Test(priority=13)
 		public void verifyMyFeedbackPage() throws InterruptedException {
 			sanityBroker.verifyMyFeedbackPage();
 		}
 		
-		@Test(priority=13)
+		@Test(priority=14)
 		public void verifyGoToMyADRPage() throws InterruptedException {
 			homePage.goToMyADRPage();
 		}
 		
-		@Test(priority=14)
+		@Test(priority=15)
 		public void verifyMyReportADRPage() throws InterruptedException {
 			sanityBroker.verifyMyReportADRPage();
 		}
 		
-		@Test(priority=15)
+		@Test(priority=16)
 		public void verifyLinks() throws InterruptedException {
 			homePage.verifyLinks();
 		}
