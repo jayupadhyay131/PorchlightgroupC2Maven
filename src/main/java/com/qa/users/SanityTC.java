@@ -72,7 +72,7 @@ public class SanityTC extends TestBase{
 		
 		WebElement plsreport = driver.findElement(parser.getObjectLocator("plsreport"));
 		plsreport.isDisplayed();
-		log.info("TC DASHBOARD: MARKET DATE COLUMN IS PRESENT");
+		log.info("TC DASHBOARD: REPORT COLUMN IS PRESENT");
 		
 		WebElement plsfloorplan = driver.findElement(parser.getObjectLocator("plsfloorplan"));
 		plsfloorplan.isDisplayed();

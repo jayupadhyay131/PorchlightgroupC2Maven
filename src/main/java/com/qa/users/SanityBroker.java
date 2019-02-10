@@ -175,7 +175,7 @@ public class SanityBroker extends TestBase{
 		
 		WebElement alllistingsstatuswithsort = driver.findElement(parser.getObjectLocator("alllistingsstatuswithsort"));
 		alllistingsstatuswithsort.isDisplayed();
-		log.info("ALL LISTINGS PAGE: MARKET DATE COLLUMN WITH SORT IS PRESENT");
+		log.info("ALL LISTINGS PAGE: LISTING STATUS COLLUMN WITH SORT IS PRESENT");
 		
 		log.info("***** END TC: VERIFY BROKER > LISTINGS > ALL LISTINGS PAGE *****");
 	}

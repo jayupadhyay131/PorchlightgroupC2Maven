@@ -31,78 +31,31 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">15</td><td class="numi">15</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">201.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">76.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">com.qa.testcases.SanityBrokerTest</td><td><a href="#m1"><b>verifyMyReportADRPage</b>  </a></td><td class="numi">1</td><td>1549761789603</td><td class="numi">60096</td></tr>
 <tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="15">com.qa.testcases.SanityBrokerTest</td><td><a href="#m2"><b>verifyLogin</b>  </a></td><td class="numi">1</td><td>1549761660553</td><td class="numi">20684</td></tr><tr class="passedodd"><td><a href="#m3"><b>verifyLoginAsBroker1</b>  </a></td><td class="numi">1</td><td>1549761681239</td><td class="numi">13160</td></tr><tr class="passedodd"><td><a href="#m4"><b>verifyBrokerDashboard</b>  </a></td><td class="numi">1</td><td>1549761694408</td><td class="numi">5723</td></tr><tr class="passedodd"><td><a href="#m5"><b>verifyCRMBetaLink</b>  </a></td><td class="numi">1</td><td>1549761700131</td><td class="numi">5112</td></tr><tr class="passedodd"><td><a href="#m6"><b>verifyBrokerListings_SubmitLS1</b>  </a></td><td class="numi">1</td><td>1549761705243</td><td class="numi">11612</td></tr><tr class="passedodd"><td><a href="#m7"><b>verifyBrokerListings_SubmitBuyerUC</b>  </a></td><td class="numi">1</td><td>1549761716859</td><td class="numi">6694</td></tr><tr class="passedodd"><td><a href="#m8"><b>verifyBrokerListings_CommingSoonPage</b>  </a></td><td class="numi">1</td><td>1549761723557</td><td class="numi">5197</td></tr><tr class="passedodd"><td><a href="#m9"><b>verifyBrokerListings_AllListingsPage</b>  </a></td><td class="numi">1</td><td>1549761728754</td><td class="numi">20003</td></tr><tr class="passedodd"><td><a href="#m10"><b>verifyBrokerListings_MyDealsPage</b>  </a></td><td class="numi">1</td><td>1549761748758</td><td class="numi">8717</td></tr><tr class="passedodd"><td><a href="#m11"><b>verifyBrokerListings_ArchivedListingsPage</b>  </a></td><td class="numi">1</td><td>1549761757475</td><td class="numi">5156</td></tr><tr class="passedodd"><td><a href="#m12"><b>verifyGoToOpenHousesSchedulePage</b>  </a></td><td class="numi">1</td><td>1549761762631</td><td class="numi">12235</td></tr><tr class="passedodd"><td><a href="#m13"><b>verifyPendingFeedbackPage</b>  </a></td><td class="numi">1</td><td>1549761774870</td><td class="numi">4630</td></tr><tr class="passedodd"><td><a href="#m14"><b>verifyMyFeedbackPage</b>  </a></td><td class="numi">1</td><td>1549761779504</td><td class="numi">4717</td></tr><tr class="passedodd"><td><a href="#m15"><b>verifyGoToMyADRPage</b>  </a></td><td class="numi">1</td><td>1549761784225</td><td class="numi">5375</td></tr><tr class="passedodd"><td><a href="#m16"><b>verifyLinks</b>  </a></td><td class="numi">1</td><td>1549761849715</td><td class="numi">377</td></tr>
+<tr class="passedodd"><td rowspan="3">com.qa.testcases.OpenHouses_ListingsPageTest</td><td><a href="#m1"><b>verifyLogin</b>  </a></td><td class="numi">1</td><td>1549763632734</td><td class="numi">14896</td></tr><tr class="passedodd"><td><a href="#m2"><b>verifyGoToOpenHousesSchedulePage</b>  </a></td><td class="numi">1</td><td>1549763647631</td><td class="numi">18155</td></tr><tr class="passedodd"><td><a href="#m3"><b>verifyACSubmitListing</b>  </a></td><td class="numi">1</td><td>1549763666813</td><td class="numi">34058</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">com.qa.testcases.SanityBrokerTest:verifyMyReportADRPage</h2>
-<div style="padding-left:3em">
-<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h5[(text()=&apos;Production YTD&apos;)]&quot;}
-  (Session info: chrome=71.0.3578.98)
-  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;VENTIVE&apos;, ip: &apos;192.168.1.13&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\jayge\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 9cceb765058b00004587de23b5717380
-*** Element info: {Using=xpath, value=//h5[(text()=&apos;Production YTD&apos;)]}</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-<br/>at com.qa.users.SanityBroker.verifyMyReportADRPage(SanityBroker.java:390)
-<br/>at com.qa.testcases.SanityBrokerTest.verifyMyReportADRPage(SanityBrokerTest.java:107)
-<br/>25 lines not shown
-</div>
+<h2 id="m1">com.qa.testcases.OpenHouses_ListingsPageTest:verifyGoToOpenHousesSchedulePage</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.qa.testcases.SanityBrokerTest:verifyGoToMyADRPage</h2>
+<h2 id="m2">com.qa.testcases.OpenHouses_ListingsPageTest:verifyACSubmitListing</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th></tr>
+<tr class="param stripe"><td>0.0</td>
+<td>123456.0</td>
+<td>AC Automated Listing 1</td>
+<td>Boise</td>
+<td>83702.0</td>
+<td>Ada County</td>
+<td>07-Jan-2019</td>
+<td>$500,000</td>
+<td>ventivedev@porchlightgroup.com</td>
+</tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">com.qa.testcases.SanityBrokerTest:verifyLinks</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">com.qa.testcases.SanityBrokerTest:verifyBrokerDashboard</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">com.qa.testcases.SanityBrokerTest:verifyBrokerListings_MyDealsPage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">com.qa.testcases.SanityBrokerTest:verifyPendingFeedbackPage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m7">com.qa.testcases.SanityBrokerTest:verifyLoginAsBroker1</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m8">com.qa.testcases.SanityBrokerTest:verifyBrokerListings_AllListingsPage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m9">com.qa.testcases.SanityBrokerTest:verifyBrokerListings_SubmitBuyerUC</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m10">com.qa.testcases.SanityBrokerTest:verifyMyFeedbackPage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m11">com.qa.testcases.SanityBrokerTest:verifyLogin</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m12">com.qa.testcases.SanityBrokerTest:verifyBrokerListings_SubmitLS1</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m13">com.qa.testcases.SanityBrokerTest:verifyCRMBetaLink</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m14">com.qa.testcases.SanityBrokerTest:verifyBrokerListings_CommingSoonPage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m15">com.qa.testcases.SanityBrokerTest:verifyBrokerListings_ArchivedListingsPage</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m16">com.qa.testcases.SanityBrokerTest:verifyGoToOpenHousesSchedulePage</h2>
+<h2 id="m3">com.qa.testcases.OpenHouses_ListingsPageTest:verifyLogin</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

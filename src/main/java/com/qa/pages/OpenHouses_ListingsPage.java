@@ -71,6 +71,11 @@ public class OpenHouses_ListingsPage extends TestBase{
 		price1.sendKeys(price);
 		log.info("AC: ENTERED PRICE = " + price);
 		
+		WebElement listingagentname1 = driver.findElement(parser.getObjectLocator("listingagentname"));
+		listingagentname1.sendKeys(clientEmail);
+		listingagentname1.sendKeys(Keys.ENTER);
+		log.info("AC: ENTERED LISTING AGENT NAME OR EMAILL ADRESS = " + clientEmail);
+
 		WebElement clientEmail1 = driver.findElement(parser.getObjectLocator("clientEmail"));
 		clientEmail1.sendKeys(clientEmail);
 		clientEmail1.sendKeys(Keys.ENTER);
