@@ -55,16 +55,16 @@ public class Listings_DealsPageTest extends TestBase{
 
 	//@Test(priority=4, dataProvider = "getBrokerLS1Data")
 	@Test(priority=4)
-	public void verifyBrokerSubmitLS1( 
+	public void verifyBroker_Fill_LS1_1AgreementTab( 
 			
 								) throws InterruptedException {	
 		listings_DealsPage.Broker_Fill_LS1_1AgreementTab();
 	}
 	
-//	@Test(priority=5)
-//	public void Broker_Fill_LS1_2PropertyOverview() throws InterruptedException {	
-//		listings_DealsPage.Broker_Fill_LS1_2PropertyOverview();
-//	}
+	@Test(priority=5)
+	public void verifyBroker_Fill_LS1_2PropertyOverview() throws InterruptedException {	
+		listings_DealsPage.Broker_Fill_LS1_2PropertyOverview();
+	}
 	
 	@AfterClass
 	public void tearDown() {

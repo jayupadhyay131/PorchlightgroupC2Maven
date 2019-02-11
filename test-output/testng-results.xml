@@ -1,80 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="76013" started-at="2019-02-10T01:53:45Z" finished-at="2019-02-10T01:55:01Z">
+  <suite name="Default suite" duration-ms="56281" started-at="2019-02-11T03:24:41Z" finished-at="2019-02-11T03:25:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="76013" started-at="2019-02-10T01:53:45Z" finished-at="2019-02-10T01:55:01Z">
-      <class name="com.qa.testcases.OpenHouses_ListingsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.OpenHouses_ListingsPageTest@ff5b51f]" name="setUp" is-config="true" duration-ms="7025" started-at="2019-02-09T18:53:45Z" finished-at="2019-02-09T18:53:52Z">
+    <test name="Default test" duration-ms="56281" started-at="2019-02-11T03:24:41Z" finished-at="2019-02-11T03:25:37Z">
+      <class name="com.qa.testcases.Listings_DealsPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="setUp" is-config="true" duration-ms="5705" started-at="2019-02-10T20:24:41Z" finished-at="2019-02-10T20:24:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.qa.testcases.OpenHouses_ListingsPageTest@ff5b51f]" name="verifyLogin" duration-ms="14896" started-at="2019-02-09T18:53:52Z" finished-at="2019-02-09T18:54:07Z">
+        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyLogin" duration-ms="18927" started-at="2019-02-10T20:24:47Z" finished-at="2019-02-10T20:25:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="verifyGoToOpenHousesSchedulePage()[pri:0, instance:com.qa.testcases.OpenHouses_ListingsPageTest@ff5b51f]" name="verifyGoToOpenHousesSchedulePage" duration-ms="18155" started-at="2019-02-09T18:54:07Z" finished-at="2019-02-09T18:54:25Z">
+        <test-method status="PASS" signature="verifyLoginAsBroker1()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyLoginAsBroker1" duration-ms="13409" started-at="2019-02-10T20:25:06Z" finished-at="2019-02-10T20:25:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyGoToOpenHousesSchedulePage -->
-        <test-method status="PASS" signature="verifyACSubmitListing(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.testcases.OpenHouses_ListingsPageTest@ff5b51f]" name="verifyACSubmitListing" duration-ms="34058" started-at="2019-02-09T18:54:26Z" data-provider="getACListingData" finished-at="2019-02-09T18:55:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[0.0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[AC Automated Listing 1]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Boise]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[83702.0]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Ada County]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[07-Jan-2019]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[$500,000]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[ventivedev@porchlightgroup.com]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- verifyLoginAsBroker1 -->
+        <test-method status="PASS" signature="verifyGoToNewListingSubmission1Page()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyGoToNewListingSubmission1Page" duration-ms="10359" started-at="2019-02-10T20:25:19Z" finished-at="2019-02-10T20:25:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyACSubmitListing -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.OpenHouses_ListingsPageTest@ff5b51f]" name="tearDown" is-config="true" duration-ms="825" started-at="2019-02-09T18:55:00Z" finished-at="2019-02-09T18:55:01Z">
+        </test-method> <!-- verifyGoToNewListingSubmission1Page -->
+        <test-method status="PASS" signature="verifyBroker_Fill_LS1_1AgreementTab()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyBroker_Fill_LS1_1AgreementTab" duration-ms="6342" started-at="2019-02-10T20:25:29Z" finished-at="2019-02-10T20:25:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBroker_Fill_LS1_1AgreementTab -->
+        <test-method status="PASS" signature="Broker_Fill_LS1_2PropertyOverview()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="Broker_Fill_LS1_2PropertyOverview" duration-ms="666" started-at="2019-02-10T20:25:36Z" finished-at="2019-02-10T20:25:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Broker_Fill_LS1_2PropertyOverview -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="tearDown" is-config="true" duration-ms="848" started-at="2019-02-10T20:25:36Z" finished-at="2019-02-10T20:25:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testcases.OpenHouses_ListingsPageTest -->
+      </class> <!-- com.qa.testcases.Listings_DealsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

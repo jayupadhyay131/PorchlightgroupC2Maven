@@ -3,6 +3,7 @@ package com.qa.pages;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import com.qa.base.TestBase;
 
@@ -33,11 +34,17 @@ public class Listings_DealsPage extends TestBase{
 		
 		WebElement ls1colistingagentdropdown = driver.findElement(parser.getObjectLocator("ls1colistingagentdropdown"));
 		ls1colistingagentdropdown.click();
-		log.info("BROKER: SELECTED YES RADIO BUTTON");
+		log.info("BROKER: CLICKED ON CO-LISTING AGENT DROP-DOWN MENU");
 		
-		WebElement ls1colistingagentsearchbar = driver.findElement(parser.getObjectLocator("yes"));
+		WebElement ls1colistingagentsearchbar = driver.findElement(parser.getObjectLocator("ls1colistingagentsearchbar"));
 		ls1colistingagentsearchbar.sendKeys("Jay Upadhyay");
 		ls1colistingagentsearchbar.sendKeys(Keys.ENTER);
+		log.info("BROKER: ENTERED CO-LISTING AGENT AS JAY UPADHYAY AND PRESSED ENTER");
+		
+//		
+//		Actions actions = new Actions(driver);
+//		actions.moveToElement(ls1colistingagentsearchbar).build().perform();
+		
 		log.info("BROKER: SELECTED YES RADIO BUTTON");
 		
 		log.info("***** END TC: SUBMIT A LS1 WITH BROKER USER > 2 PROPERTY OVERVIEW *****");
