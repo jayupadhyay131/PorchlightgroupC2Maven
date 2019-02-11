@@ -32,20 +32,46 @@ public class Listings_DealsPage extends TestBase{
 		
 		log.info("***** START TC: SUBMIT A LS1 WITH BROKER USER > 2 PROPERTY OVERVIEW *****");
 		
-		WebElement ls1colistingagentdropdown = driver.findElement(parser.getObjectLocator("ls1colistingagentdropdown"));
-		ls1colistingagentdropdown.click();
+		WebElement ls1colisting1agentdropdown = driver.findElement(parser.getObjectLocator("ls1colisting1agentdropdown"));
+		ls1colisting1agentdropdown.click();
 		log.info("BROKER: CLICKED ON CO-LISTING AGENT DROP-DOWN MENU");
 		
-		WebElement ls1colistingagentsearchbar = driver.findElement(parser.getObjectLocator("ls1colistingagentsearchbar"));
-		ls1colistingagentsearchbar.sendKeys("Jay Upadhyay");
-		ls1colistingagentsearchbar.sendKeys(Keys.ENTER);
+		WebElement ls1colisting1agentsearchbar = driver.findElement(parser.getObjectLocator("ls1colisting1agentsearchbar"));
+		ls1colisting1agentsearchbar.sendKeys("Jay Upadhyay");
+		ls1colisting1agentsearchbar.sendKeys(Keys.ENTER);
 		log.info("BROKER: ENTERED CO-LISTING AGENT AS JAY UPADHYAY AND PRESSED ENTER");
 		
-//		
-//		Actions actions = new Actions(driver);
-//		actions.moveToElement(ls1colistingagentsearchbar).build().perform();
+		WebElement ls1propertystreet2 = driver.findElement(parser.getObjectLocator("ls1propertystreet2"));
+		ls1propertystreet2.sendKeys("AUTO BROKER LISTING 1");
+		log.info("BROKER: ENTERED STREET ADDRESS");
 		
-		log.info("BROKER: SELECTED YES RADIO BUTTON");
+		WebElement ls1city3 = driver.findElement(parser.getObjectLocator("ls1city3"));
+		ls1city3.sendKeys("BOISE");
+		log.info("BROKER: ENTERED CITY");
+		
+		WebElement ls1zip4 = driver.findElement(parser.getObjectLocator("ls1zip4"));
+		ls1zip4.sendKeys("83702");
+		log.info("BROKER: ENTERED ZIP CODE");
+		
+		WebElement ls1neighborhood6 = driver.findElement(parser.getObjectLocator("ls1neighborhood6"));
+		ls1neighborhood6.sendKeys("ADA COUNTY");
+		log.info("BROKER: ENTERED NEIGHBORHOOD");
+		Thread.sleep(5000);
+		
+		WebElement ls1addressgobackbutton5 = driver.findElement(parser.getObjectLocator("ls1addressgobackbutton5"));
+		ls1addressgobackbutton5.click();
+		log.info("BROKER: CLICKED ON GO BACK BUTTON FOR INCORRECT ADDRESS AUTO-SUGGEST POP-UP");
+		
+		WebElement ls1typeofhomedropdown7 = driver.findElement(parser.getObjectLocator("ls1typeofhomedropdown7"));
+		ls1typeofhomedropdown7.click();
+		log.info("BROKER: CLICKED ON TYPE OF HOME DROP-DOWN MENU");
+		ls1typeofhomedropdown7.sendKeys(Keys.DOWN);
+		ls1typeofhomedropdown7.sendKeys(Keys.ENTER);
+		log.info("BROKER: PRESSED DOWN AND PRESSED ENTER");
+
+//		WebElement ls1typeofhomedropdownattached8 = driver.findElement(parser.getObjectLocator("ls1typeofhomedropdownattached8"));
+//		ls1typeofhomedropdownattached8.click();
+//		log.info("BROKER: SELECTED TYPE OF HOME VALUE AS ATTACHED");
 		
 		log.info("***** END TC: SUBMIT A LS1 WITH BROKER USER > 2 PROPERTY OVERVIEW *****");
 	}
