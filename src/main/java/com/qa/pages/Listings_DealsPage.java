@@ -65,13 +65,31 @@ public class Listings_DealsPage extends TestBase{
 		WebElement ls1typeofhomedropdown7 = driver.findElement(parser.getObjectLocator("ls1typeofhomedropdown7"));
 		ls1typeofhomedropdown7.click();
 		log.info("BROKER: CLICKED ON TYPE OF HOME DROP-DOWN MENU");
-		ls1typeofhomedropdown7.sendKeys(Keys.DOWN);
-		ls1typeofhomedropdown7.sendKeys(Keys.ENTER);
-		log.info("BROKER: PRESSED DOWN AND PRESSED ENTER");
-
-//		WebElement ls1typeofhomedropdownattached8 = driver.findElement(parser.getObjectLocator("ls1typeofhomedropdownattached8"));
-//		ls1typeofhomedropdownattached8.click();
-//		log.info("BROKER: SELECTED TYPE OF HOME VALUE AS ATTACHED");
+		Thread.sleep(1000);
+		
+		WebElement ls1typeofhomedropdownattached7 = driver.findElement(parser.getObjectLocator("ls1typeofhomedropdownattached7"));
+		ls1typeofhomedropdownattached7.click();
+		log.info("BROKER: CLICKED ON TYPE OF HOME = ATTACHED");
+		Thread.sleep(1000);
+		
+		WebElement ls1styledropdown8 = driver.findElement(parser.getObjectLocator("ls1styledropdown8"));
+		ls1styledropdown8.click();
+		log.info("BROKER: CLICKED ON SOURCE DROP-DOWN MENU");
+		Thread.sleep(1000);
+	
+		WebElement ls1stylefropdowncondominium8 = driver.findElement(parser.getObjectLocator("ls1stylefropdowncondominium8"));
+		ls1stylefropdowncondominium8.click();
+		log.info("BROKER: CLICKED ON SOURCE = CONDOMINIUM");
+		Thread.sleep(1000);
+		
+		WebElement ls1bedroomone9 = driver.findElement(parser.getObjectLocator("ls1bedroomone9"));
+		ls1bedroomone9.sendKeys("1");
+		log.info("BROKER: ENTERED BEDROOMS AS 1");
+		
+		WebElement ls1bedroomonedropdown9 = driver.findElement(parser.getObjectLocator("ls1bedroomonedropdown9"));
+		ls1bedroomonedropdown9.click();
+		log.info("BROKER: SELETED BEDROOMS AS 1 FROM DROP-DOWN MENU");
+		
 		
 		log.info("***** END TC: SUBMIT A LS1 WITH BROKER USER > 2 PROPERTY OVERVIEW *****");
 	}
