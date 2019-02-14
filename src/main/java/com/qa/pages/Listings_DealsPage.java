@@ -84,11 +84,54 @@ public class Listings_DealsPage extends TestBase{
 		
 		WebElement ls1bedroomone9 = driver.findElement(parser.getObjectLocator("ls1bedroomone9"));
 		ls1bedroomone9.sendKeys("1");
+		//ls1bedroomone9.sendKeys(Keys.ENTER);
 		log.info("BROKER: ENTERED BEDROOMS AS 1");
+		Thread.sleep(1000);
 		
 		WebElement ls1bedroomonedropdown9 = driver.findElement(parser.getObjectLocator("ls1bedroomonedropdown9"));
 		ls1bedroomonedropdown9.click();
 		log.info("BROKER: SELETED BEDROOMS AS 1 FROM DROP-DOWN MENU");
+		
+		WebElement ls1bathroomone10 = driver.findElement(parser.getObjectLocator("ls1bathroomone10"));
+		ls1bathroomone10.sendKeys("1");
+		//ls1bathroomone10.sendKeys(Keys.ENTER);
+		log.info("BROKER: ENTERED BATHROOMS AS 1");
+		Thread.sleep(1000);
+		
+		WebElement ls1bathroomonedropdown10 = driver.findElement(parser.getObjectLocator("ls1bathroomonedropdown10"));
+		ls1bathroomonedropdown10.click();
+		log.info("BROKER: SELETED BATHROOMS AS 1 FROM DROP-DOWN MENU");
+		
+		WebElement ls1totalfinishedtextbox11 = driver.findElement(parser.getObjectLocator("ls1totalfinishedtextbox11"));
+		ls1totalfinishedtextbox11.sendKeys("1000");
+		log.info("BROKER: ENTERED TOTAL FINISHED = 1000");
+		
+		WebElement ls1totalfinishedabovegound12 = driver.findElement(parser.getObjectLocator("ls1totalfinishedabovegound12"));
+		ls1totalfinishedabovegound12.sendKeys("2000");
+		log.info("BROKER: ENTERED TOTAL FINISHED ABOVE GROUND = 2000");
+		
+		WebElement ls1basementfinisheddropdown13 = driver.findElement(parser.getObjectLocator("ls1basementfinisheddropdown13"));
+		ls1basementfinisheddropdown13.click();
+		log.info("BROKER: CLICKED ON BASEMENT FINISHED DROP-DOWN MENU");
+		Thread.sleep(1000);
+		
+		WebElement ls1basementfinisheddropdownfullyfinished14 = driver.findElement(parser.getObjectLocator("ls1basementfinisheddropdownfullyfinished14"));
+		ls1basementfinisheddropdownfullyfinished14.click();
+		log.info("BROKER: SELECTED FULLY FINISHED FROM DROP-DOWN MENU");
+		Thread.sleep(1000);
+		
+		WebElement ls1listpricefrom15 = driver.findElement(parser.getObjectLocator("ls1listpricefrom15"));
+		ls1listpricefrom15.sendKeys("1000000");
+		log.info("BROKER: ENTERED LIST PRICE FROM = 1,000,000");
+		
+		WebElement ls1listpriceto15 = driver.findElement(parser.getObjectLocator("ls1listpriceto15"));
+		ls1listpriceto15.sendKeys("2000000");
+		log.info("BROKER: ENTERED LIST PRICE TO = 2,000,000");
+		Thread.sleep(1000);
+		
+		WebElement ls1doesthishomebelongstoanhoayesradio16 = driver.findElement(parser.getObjectLocator("ls1doesthishomebelongstoanhoayesradio16"));
+		ls1doesthishomebelongstoanhoayesradio16.click();
+		log.info("BROKER: SELECTED DOES THIS HOME BELONGS TO AN HOA? TO YES RADIO BUTTON");
 		
 		
 		log.info("***** END TC: SUBMIT A LS1 WITH BROKER USER > 2 PROPERTY OVERVIEW *****");
