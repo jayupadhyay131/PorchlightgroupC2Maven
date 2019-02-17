@@ -19,6 +19,7 @@ public class HomePage extends TestBase{
 		WebElement openHouses = driver.findElement(parser.getObjectLocator("openHouses"));
 		openHouses.click();
 		log.info("LEFT NAVBAR: CLICKED ON OPENHOUSES");
+		Thread.sleep(1000);
 		
 		WebElement schedule = driver.findElement(parser.getObjectLocator("schedule"));
 		schedule.click();
@@ -68,6 +69,7 @@ public class HomePage extends TestBase{
 		WebElement reports = driver.findElement(parser.getObjectLocator("reports"));
 		reports.click();
 		log.info("LEFT NAVBAR: CLICKED ON REPORTS");
+		Thread.sleep(1000);
 		
 		WebElement myreports = driver.findElement(parser.getObjectLocator("myreports"));
 		myreports.click();
