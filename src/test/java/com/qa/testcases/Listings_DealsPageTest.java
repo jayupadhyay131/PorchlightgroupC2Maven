@@ -65,9 +65,9 @@ public class Listings_DealsPageTest extends TestBase{
 	public void verifyBroker_Fill_LS1_2PropertyOverview() throws InterruptedException {	
 		listings_DealsPage.Broker_Fill_LS1_2PropertyOverview();
 	}
-	
+
 	@AfterClass
 	public void tearDown() {
-		driver.quit();
+		//driver.quit();
 	}
 }

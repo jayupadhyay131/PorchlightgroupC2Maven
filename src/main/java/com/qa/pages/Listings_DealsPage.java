@@ -1,9 +1,15 @@
 package com.qa.pages;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.apache.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.qa.base.TestBase;
 
@@ -129,10 +135,73 @@ public class Listings_DealsPage extends TestBase{
 		log.info("BROKER: ENTERED LIST PRICE TO = 2,000,000");
 		Thread.sleep(1000);
 		
+		EventFiringWebDriver eventFiringWebDriver = new EventFiringWebDriver(driver);
+		eventFiringWebDriver.executeScript("document.querySelector('#PropertySavePart1 > div.col-md-12.panel-body.bg-white.form-body').scrollTop=-1000");
+		log.info("BROKER: SCROLLED UP FOR FORM TO TOP");
+		Thread.sleep(1000);
+		
 		WebElement ls1doesthishomebelongstoanhoayesradio16 = driver.findElement(parser.getObjectLocator("ls1doesthishomebelongstoanhoayesradio16"));
 		ls1doesthishomebelongstoanhoayesradio16.click();
 		log.info("BROKER: SELECTED DOES THIS HOME BELONGS TO AN HOA? TO YES RADIO BUTTON");
 		
+		WebElement ls1hoadues16 = driver.findElement(parser.getObjectLocator("ls1hoadues16"));
+		ls1hoadues16.sendKeys("100");
+		log.info("BROKER: ENTERED HOA DUES AS 100");
+		
+		WebElement 	ls1hoaduesmonthradiobutton16 = driver.findElement(parser.getObjectLocator("ls1hoaduesmonthradiobutton16"));
+		ls1hoaduesmonthradiobutton16.click();
+		log.info("BROKER: CLICKED ON MONTH RADIO BUTTON FOR HOA DUES");
+		
+		WebElement ls1parkingspaces17 = driver.findElement(parser.getObjectLocator("ls1parkingspaces17"));
+		ls1parkingspaces17.sendKeys("1");
+		log.info("BROKER: ENTERED PARKING SPACES AS 1");
+		
+		WebElement ls1parkingspacesdropdown17 = driver.findElement(parser.getObjectLocator("ls1parkingspacesdropdown17"));
+		ls1parkingspacesdropdown17.click();
+		log.info("BROKER: SELETED PARKING SPACES AS 1 FROM DROP-DOWN MENU");
+		Thread.sleep(1000);
+		
+		WebElement ls1typeofparkingdropdown18 = driver.findElement(parser.getObjectLocator("ls1typeofparkingdropdown18"));
+		ls1typeofparkingdropdown18.click();
+		log.info("BROKER: CLICKED ON TYPE OF PARKING DROP-DOWN MENU");
+		Thread.sleep(1000);
+		
+		WebElement ls1typeofparkingcarportdetached19 = driver.findElement(parser.getObjectLocator("ls1typeofparkingcarportdetached19"));
+		ls1typeofparkingcarportdetached19.click();
+		log.info("BROKER: CLICKED ON TYPE OF PARKING DROP-DOWN MENU");
+		
+		WebElement ls1typeofparkingtextarea19 = driver.findElement(parser.getObjectLocator("ls1typeofparkingtextarea19"));
+		ls1typeofparkingtextarea19.sendKeys("Type of Parking");
+		log.info("BROKER: CLICKED ON TYPE OF PARKING DROP-DOWN MENU");
+		
+		// Get Today's date in 01/06/2019 format
+		DateFormat dateFormat = new SimpleDateFormat("MM/DD/YYYY");
+		Date todaysDate = new Date();
+		String todaysdate = dateFormat.format(todaysDate);
+		
+		WebElement ls1servicestartdate21 = driver.findElement(parser.getObjectLocator("ls1servicestartdate21"));
+		ls1servicestartdate21.clear();
+		ls1servicestartdate21.sendKeys(todaysdate);
+		Thread.sleep(1000);
+		ls1servicestartdate21.sendKeys(Keys.TAB);
+		log.info("BROKER: ENTERED SERVICE START DATE AS = " + todaysdate);		
+		
+		WebElement ls1sourceoflistingdropdown22 = driver.findElement(parser.getObjectLocator("ls1sourceoflistingdropdown22"));
+		ls1sourceoflistingdropdown22.click();
+		log.info("BROKER: CLICKED ON SOURCE OF LISTING DROP-DOWN MENU");
+		
+		WebElement ls1sourceoflistingreferalfromexisting23 = driver.findElement(parser.getObjectLocator("ls1sourceoflistingreferalfromexisting23"));
+		ls1sourceoflistingreferalfromexisting23.click();
+		log.info("BROKER: SELECTED SOURCE OF LISTING AS REFERAL FROM EXISTING");
+		
+		WebElement ls1issellerinconnectdatabaseyesradio25 = driver.findElement(parser.getObjectLocator("ls1issellerinconnectdatabaseyesradio25"));
+		ls1issellerinconnectdatabaseyesradio25.click();
+		log.info("BROKER: CLICKED ON YES RADIO BUTTON FOR IS SELLER IN CONNECT DATABASE");
+
+		WebElement ls1propertyoverviewnextbutton26 = driver.findElement(parser.getObjectLocator("ls1propertyoverviewnextbutton26"));
+		ls1propertyoverviewnextbutton26.click();
+		log.info("BROKER: CLICKED ON NEXT BUTTON PROPERTY OVERVIEW PAGE");
+
 		
 		log.info("***** END TC: SUBMIT A LS1 WITH BROKER USER > 2 PROPERTY OVERVIEW *****");
 	}
