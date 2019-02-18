@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.testcases.SanityBrokerTest">
+      <class name="com.qa.testcases.Listings_DealsPageTest">
         <methods>
-          <include name="verifyGoToMyADRPage"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyLinks"/>
-          <include name="verifyMyReportADRPage"/>
+          <include name="verifyBroker_Fill_LS1_2PropertyOverview"/>
         </methods>
-      </class> <!-- com.qa.testcases.SanityBrokerTest -->
+      </class> <!-- com.qa.testcases.Listings_DealsPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

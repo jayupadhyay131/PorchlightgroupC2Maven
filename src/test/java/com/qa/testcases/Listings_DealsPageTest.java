@@ -65,6 +65,11 @@ public class Listings_DealsPageTest extends TestBase{
 	public void verifyBroker_Fill_LS1_2PropertyOverview() throws InterruptedException {	
 		listings_DealsPage.Broker_Fill_LS1_2PropertyOverview();
 	}
+	
+	@Test(priority=6)
+	public void verifyBroker_Fill_LS1_3FieldServices() throws InterruptedException {	
+		listings_DealsPage.Broker_Fill_LS1_3FieldServices();
+	}
 
 	@AfterClass
 	public void tearDown() {

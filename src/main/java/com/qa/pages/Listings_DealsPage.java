@@ -201,9 +201,108 @@ public class Listings_DealsPage extends TestBase{
 		WebElement ls1propertyoverviewnextbutton26 = driver.findElement(parser.getObjectLocator("ls1propertyoverviewnextbutton26"));
 		ls1propertyoverviewnextbutton26.click();
 		log.info("BROKER: CLICKED ON NEXT BUTTON PROPERTY OVERVIEW PAGE");
-
+		Thread.sleep(5000);
 		
 		log.info("***** END TC: SUBMIT A LS1 WITH BROKER USER > 2 PROPERTY OVERVIEW *****");
+	}
+	
+	public void Broker_Fill_LS1_3FieldServices() throws InterruptedException {
+		
+		log.info("***** START TC: SUBMIT A LS1 WITH BROKER USER > 3 FIELD SERVICES *****");
+		
+		WebElement ls1propertystatusoccupiedradio1 = driver.findElement(parser.getObjectLocator("ls1propertystatusoccupiedradio1"));
+		ls1propertystatusoccupiedradio1.click();
+		log.info("BROKER: SELECTED OCCUPIED FOR PROPERTY STATUS RADIO BUTON");
+		
+		WebElement ls1needstagingconsultyesradio2 = driver.findElement(parser.getObjectLocator("ls1needstagingconsultyesradio2"));
+		ls1needstagingconsultyesradio2.click();
+		log.info("BROKER: SELECTED YES TO NEED STAGING OR STAGING CONSULT RADIO BUTTON");
+		
+		WebElement ls1typeofservicerequesteddropdown3 = driver.findElement(parser.getObjectLocator("ls1typeofservicerequesteddropdown3"));
+		ls1typeofservicerequesteddropdown3.click();
+		log.info("BROKER: CLICKED ON TYPE OF SERVICE REQUESTED DROP-DOWN");
+		Thread.sleep(1000);
+		
+		WebElement ls1typeofserviceoccupiedstagermeetswithclient3 = driver.findElement(parser.getObjectLocator("ls1typeofserviceoccupiedstagermeetswithclient3"));
+		ls1typeofserviceoccupiedstagermeetswithclient3.click();
+		log.info("BROKER: SELECTED AS OCCUPIED - STAGER MEETS WITH CLIENT");
+		
+		WebElement ls1anyspecialinstructionsforstagertextarea4 = driver.findElement(parser.getObjectLocator("ls1anyspecialinstructionsforstagertextarea4"));
+		ls1anyspecialinstructionsforstagertextarea4.sendKeys("Any special instructions for the stager");
+		log.info("BROKER: ENTERED TEXT FOR ANY SPECIAL INSTRUCTIONS FOR STAGER");
+		
+		WebElement ls1needmeasurementsyesradio5 = driver.findElement(parser.getObjectLocator("ls1needmeasurementsyesradio5"));
+		ls1needmeasurementsyesradio5.click();
+		log.info("BROKER: SELECTED YES TO NEED MEASUREMENTS RADIO BUTTON");
+		
+		WebElement ls1lasedmeasuredradio6 = driver.findElement(parser.getObjectLocator("ls1lasedmeasuredradio6"));
+		ls1lasedmeasuredradio6.click();
+		log.info("BROKER: SELECTED LASERED MEASURED RADIO BUTTON");
+
+		WebElement ls1anyspecialinstructionsformeasurertextarea7 = driver.findElement(parser.getObjectLocator("ls1anyspecialinstructionsformeasurertextarea7"));
+		ls1anyspecialinstructionsformeasurertextarea7.sendKeys("Any special instructions for the measurer");
+		log.info("BROKER: ENTERD TEXT FOR ANY SPECIAL INSTRUCTIONS FOR MEASURER");
+
+		WebElement ls1needmarketshinecleaning8 = driver.findElement(parser.getObjectLocator("ls1needmarketshinecleaning8"));
+		ls1needmarketshinecleaning8.click();
+		log.info("BROKER: CLICKED ON DROP-DOWN FOR NEED MARKET SHINE CLEANING");
+		Thread.sleep(1000);
+		
+		WebElement ls1needmarketshinecleaningyes8 = driver.findElement(parser.getObjectLocator("ls1needmarketshinecleaningyes8"));
+		ls1needmarketshinecleaningyes8.click();
+		log.info("BROKER: SELECTED YES FROM DROP-DOWN FOR NEED MARKET SHINE CLEANING");
+		
+		WebElement ls1anyspecialinstructionsforcleanerstextarea9 = driver.findElement(parser.getObjectLocator("ls1anyspecialinstructionsforcleanerstextarea9"));
+		ls1anyspecialinstructionsforcleanerstextarea9.sendKeys("Any special instructions for the cleaners");
+		log.info("BROKER: ENTERED TEXT FOR ANY SPECIAL INSTRUCTIONS FOR CLEANER");
+
+		EventFiringWebDriver eventFiringWebDriver = new EventFiringWebDriver(driver);
+		eventFiringWebDriver.executeScript("document.querySelector('#FieldServicesSavePart1 > div.col-md-12.panel-body.form-body.bg-white').scrollTop=-1000");
+		log.info("BROKER: SCROLLED UP FOR FORM TO TOP");
+		Thread.sleep(1000);
+		
+		WebElement ls1needdeepcleandropdown10 = driver.findElement(parser.getObjectLocator("ls1needdeepcleandropdown10"));
+		ls1needdeepcleandropdown10.click();
+		log.info("BROKER: CLICKED ON DROP-DOWN FOR NEED A DEEP CLEAN");
+		Thread.sleep(1000);
+		
+		WebElement ls1needdeepcleanyes1to4deepclean10 = driver.findElement(parser.getObjectLocator("ls1needdeepcleanyes1to4deepclean10"));
+		ls1needdeepcleanyes1to4deepclean10.click();
+		log.info("BROKER: SELECTED AS YES 1-4 DEEP CLEAN SELECTIONS");
+
+		WebElement ls1deepcleanrequestcheckbox11 = driver.findElement(parser.getObjectLocator("ls1deepcleanrequestcheckbox11"));
+		ls1deepcleanrequestcheckbox11.click();
+		log.info("BROKER: SELECTED DEEP CLEAN REQUEST CHECKBOX - Kitchen - cabinet exteriors, backsplsh, stove");
+		
+		
+		WebElement ls1deepcleanrequestsmodel11 = driver.findElement(parser.getObjectLocator("ls1deepcleanrequestsmodel11"));
+		ls1deepcleanrequestsmodel11.sendKeys("Kitchen - cabinet exteriors, backsplsh, stove");
+		log.info("BROKER: SELECTED DEEP CLEAN REQUEST CHECKBOX - Kitchen - cabinet exteriors, backsplsh, stove");
+
+		WebElement ls1deepcleanrequestsokbutton11 = driver.findElement(parser.getObjectLocator("ls1deepcleanrequestsokbutton11"));
+		ls1deepcleanrequestsokbutton11.click();
+		log.info("BROKER: CLICKED ON OK BUTTON FOR CLEAN REQUEST MODEL");
+		Thread.sleep(1000);
+		
+		WebElement ls1doyouwantyardsigncheckbox2yardsign12 = driver.findElement(parser.getObjectLocator("ls1doyouwantyardsigncheckbox2yardsign12"));
+		ls1doyouwantyardsigncheckbox2yardsign12.click();
+		log.info("BROKER: CLICKED ON YARD SIGN FOR DO YOU WANT YARD SIGN");
+		Thread.sleep(1000);
+		
+		WebElement ls1flagplacedforsignreplacementyesradio13 = driver.findElement(parser.getObjectLocator("ls1flagplacedforsignreplacementyesradio13"));
+		ls1flagplacedforsignreplacementyesradio13.click();
+		log.info("BROKER: SELCTED YES TO RADIO BUTTON FOR HAVE YOU PLACED FLAG FOR SING REPLACEMENT");
+		
+		WebElement ls1fieldservicesnextbutton14 = driver.findElement(parser.getObjectLocator("ls1fieldservicesnextbutton14"));
+		ls1fieldservicesnextbutton14.click();
+		log.info("BROKER: CLICKED ON NEXT BUTTON FIELD SERVICES PAGE");
+		Thread.sleep(5000);
+		
+		
+		
+		
+		
+		log.info("***** END TC: SUBMIT A LS1 WITH BROKER USER > 3 FIELD SERVICES *****");
 	}
 	
 }

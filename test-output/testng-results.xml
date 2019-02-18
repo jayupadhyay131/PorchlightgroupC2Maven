@@ -2,44 +2,44 @@
 <testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="76720" started-at="2019-02-17T03:07:57Z" finished-at="2019-02-17T03:09:13Z">
+  <suite name="Default suite" duration-ms="108279" started-at="2019-02-18T03:08:43Z" finished-at="2019-02-18T03:10:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="76720" started-at="2019-02-17T03:07:57Z" finished-at="2019-02-17T03:09:13Z">
-      <class name="com.qa.testcases.SanityTCTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.SanityTCTest@13805618]" name="setUp" is-config="true" duration-ms="5479" started-at="2019-02-16T20:07:57Z" finished-at="2019-02-16T20:08:02Z">
+    <test name="Default test" duration-ms="108279" started-at="2019-02-18T03:08:43Z" finished-at="2019-02-18T03:10:31Z">
+      <class name="com.qa.testcases.Listings_DealsPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="setUp" is-config="true" duration-ms="7033" started-at="2019-02-17T20:08:43Z" finished-at="2019-02-17T20:08:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.qa.testcases.SanityTCTest@13805618]" name="verifyLogin" duration-ms="18730" started-at="2019-02-16T20:08:02Z" finished-at="2019-02-16T20:08:21Z">
+        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyLogin" duration-ms="20492" started-at="2019-02-17T20:08:50Z" finished-at="2019-02-17T20:09:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="verifyLoginAsTC1()[pri:0, instance:com.qa.testcases.SanityTCTest@13805618]" name="verifyLoginAsTC1" duration-ms="10163" started-at="2019-02-16T20:08:21Z" finished-at="2019-02-16T20:08:31Z">
+        <test-method status="PASS" signature="verifyLoginAsBroker1()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyLoginAsBroker1" duration-ms="12831" started-at="2019-02-17T20:09:11Z" finished-at="2019-02-17T20:09:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginAsTC1 -->
-        <test-method status="PASS" signature="verifyTCDashboard()[pri:0, instance:com.qa.testcases.SanityTCTest@13805618]" name="verifyTCDashboard" duration-ms="6307" started-at="2019-02-16T20:08:31Z" finished-at="2019-02-16T20:08:37Z">
+        </test-method> <!-- verifyLoginAsBroker1 -->
+        <test-method status="PASS" signature="verifyGoToNewListingSubmission1Page()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyGoToNewListingSubmission1Page" duration-ms="11102" started-at="2019-02-17T20:09:23Z" finished-at="2019-02-17T20:09:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTCDashboard -->
-        <test-method status="PASS" signature="verifyCRMBetaLink()[pri:0, instance:com.qa.testcases.SanityTCTest@13805618]" name="verifyCRMBetaLink" duration-ms="5047" started-at="2019-02-16T20:08:37Z" finished-at="2019-02-16T20:08:42Z">
+        </test-method> <!-- verifyGoToNewListingSubmission1Page -->
+        <test-method status="PASS" signature="verifyBroker_Fill_LS1_1AgreementTab()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyBroker_Fill_LS1_1AgreementTab" duration-ms="6645" started-at="2019-02-17T20:09:35Z" finished-at="2019-02-17T20:09:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCRMBetaLink -->
-        <test-method status="PASS" signature="verifyGotoListingsDealsPage()[pri:0, instance:com.qa.testcases.SanityTCTest@13805618]" name="verifyGotoListingsDealsPage" duration-ms="14156" started-at="2019-02-16T20:08:42Z" finished-at="2019-02-16T20:08:57Z">
+        </test-method> <!-- verifyBroker_Fill_LS1_1AgreementTab -->
+        <test-method status="PASS" signature="verifyBroker_Fill_LS1_2PropertyOverview()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyBroker_Fill_LS1_2PropertyOverview" duration-ms="33649" started-at="2019-02-17T20:09:41Z" finished-at="2019-02-17T20:10:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyGotoListingsDealsPage -->
-        <test-method status="PASS" signature="verifyTCListingsDealsPage()[pri:0, instance:com.qa.testcases.SanityTCTest@13805618]" name="verifyTCListingsDealsPage" duration-ms="15969" started-at="2019-02-16T20:08:57Z" finished-at="2019-02-16T20:09:12Z">
+        </test-method> <!-- verifyBroker_Fill_LS1_2PropertyOverview -->
+        <test-method status="PASS" signature="verifyBroker_Fill_LS1_3FieldServices()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyBroker_Fill_LS1_3FieldServices" duration-ms="16487" started-at="2019-02-17T20:10:15Z" finished-at="2019-02-17T20:10:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTCListingsDealsPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.SanityTCTest@13805618]" name="tearDown" is-config="true" duration-ms="859" started-at="2019-02-16T20:09:12Z" finished-at="2019-02-16T20:09:13Z">
+        </test-method> <!-- verifyBroker_Fill_LS1_3FieldServices -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-02-17T20:10:31Z" finished-at="2019-02-17T20:10:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testcases.SanityTCTest -->
+      </class> <!-- com.qa.testcases.Listings_DealsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
