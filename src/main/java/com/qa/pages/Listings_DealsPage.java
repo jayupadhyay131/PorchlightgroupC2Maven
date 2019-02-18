@@ -298,11 +298,50 @@ public class Listings_DealsPage extends TestBase{
 		log.info("BROKER: CLICKED ON NEXT BUTTON FIELD SERVICES PAGE");
 		Thread.sleep(5000);
 		
-		
-		
-		
-		
 		log.info("***** END TC: SUBMIT A LS1 WITH BROKER USER > 3 FIELD SERVICES *****");
 	}
+	
+	public void Broker_Fill_LS1_4Photography() throws InterruptedException {
+		
+		log.info("***** START TC: SUBMIT A LS1 WITH BROKER USER > 4 PHOTOGRAPHY *****");
+		
+		WebElement ls1doyouneedphotosandvirtualtour1 = driver.findElement(parser.getObjectLocator("ls1doyouneedphotosandvirtualtour1"));
+		ls1doyouneedphotosandvirtualtour1.click();
+		log.info("BROKER: SELECTED YES FOR Do you need photos and a virtual tour");
+		
+		WebElement ls1willtheagentbepresentfortheshoot2 = driver.findElement(parser.getObjectLocator("ls1willtheagentbepresentfortheshoot2"));
+		ls1willtheagentbepresentfortheshoot2.click();
+		log.info("BROKER: SELECTED YES FOR Will the agent be present for the shoot");
+		
+		WebElement ls1willtheownerbepresentfortheshoot3 = driver.findElement(parser.getObjectLocator("ls1willtheownerbepresentfortheshoot3"));
+		ls1willtheownerbepresentfortheshoot3.click();
+		log.info("BROKER: SELECTED YES FOR Will the owner be present for the shoot");
+		
+		WebElement ls1anyspecialinstructionsforthephotographertextarea4 = driver.findElement(parser.getObjectLocator("ls1anyspecialinstructionsforthephotographertextarea4"));
+		ls1anyspecialinstructionsforthephotographertextarea4.sendKeys("Any special instructions for the photographer");
+		log.info("BROKER: ENTER ANY INSTRUCTIONS FOR PHOTOGRAPHER TEXT-AREA");
+		
+		WebElement ls1reshootanypartofpropertycheckbox5 = driver.findElement(parser.getObjectLocator("ls1reshootanypartofpropertycheckbox5"));
+		ls1reshootanypartofpropertycheckbox5.click();
+		log.info("BROKER: CLICKED ON CHECKBOX FOR RE-SHOOT ANY PART OF THE PROPERTY");
+		Thread.sleep(1000);
+	
+		WebElement ls1reshootanypartofpropertycheckboxmodel5 = driver.findElement(parser.getObjectLocator("ls1reshootanypartofpropertycheckboxmodel5"));
+		ls1reshootanypartofpropertycheckboxmodel5.sendKeys("Re-shoot any part of property - $75");
+		log.info("BROKER: ENTERED TEXT FOR RE-SHOOT ANY PART OF THE PROPERTY");
+		
+		WebElement ls1reshootanypartofpropertycheckboxmodelokbutton5 = driver.findElement(parser.getObjectLocator("ls1reshootanypartofpropertycheckboxmodelokbutton5"));
+		ls1reshootanypartofpropertycheckboxmodelokbutton5.sendKeys("Re-shoot any part of property - $75");
+		log.info("BROKER: CLICKED OK BUTTON FOR RE-SHOOT ANY PART OF THE PROPERTY MODEL");
+		Thread.sleep(1000);
+		
+		WebElement ls1photographynextbutton6 = driver.findElement(parser.getObjectLocator("ls1photographynextbutton6"));
+		ls1photographynextbutton6.click();
+		log.info("BROKER: CLICKED ON NEXT BUTTON PHOTOGRAPHY PAGE");
+		Thread.sleep(5000);
+		
+		log.info("***** END TC: SUBMIT A LS1 WITH BROKER USER > 4 PHOTOGRAPHY *****");
+	}
+	
 	
 }

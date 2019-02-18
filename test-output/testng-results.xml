@@ -1,41 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="108279" started-at="2019-02-18T03:08:43Z" finished-at="2019-02-18T03:10:31Z">
+  <suite name="Default suite" duration-ms="117553" started-at="2019-02-18T03:59:01Z" finished-at="2019-02-18T04:00:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="108279" started-at="2019-02-18T03:08:43Z" finished-at="2019-02-18T03:10:31Z">
+    <test name="Default test" duration-ms="117553" started-at="2019-02-18T03:59:01Z" finished-at="2019-02-18T04:00:59Z">
       <class name="com.qa.testcases.Listings_DealsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="setUp" is-config="true" duration-ms="7033" started-at="2019-02-17T20:08:43Z" finished-at="2019-02-17T20:08:50Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="setUp" is-config="true" duration-ms="6964" started-at="2019-02-17T20:59:01Z" finished-at="2019-02-17T20:59:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyLogin" duration-ms="20492" started-at="2019-02-17T20:08:50Z" finished-at="2019-02-17T20:09:11Z">
+        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyLogin" duration-ms="20040" started-at="2019-02-17T20:59:08Z" finished-at="2019-02-17T20:59:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="verifyLoginAsBroker1()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyLoginAsBroker1" duration-ms="12831" started-at="2019-02-17T20:09:11Z" finished-at="2019-02-17T20:09:23Z">
+        <test-method status="PASS" signature="verifyLoginAsBroker1()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyLoginAsBroker1" duration-ms="12830" started-at="2019-02-17T20:59:28Z" finished-at="2019-02-17T20:59:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginAsBroker1 -->
-        <test-method status="PASS" signature="verifyGoToNewListingSubmission1Page()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyGoToNewListingSubmission1Page" duration-ms="11102" started-at="2019-02-17T20:09:23Z" finished-at="2019-02-17T20:09:35Z">
+        <test-method status="PASS" signature="verifyGoToNewListingSubmission1Page()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyGoToNewListingSubmission1Page" duration-ms="11034" started-at="2019-02-17T20:59:41Z" finished-at="2019-02-17T20:59:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGoToNewListingSubmission1Page -->
-        <test-method status="PASS" signature="verifyBroker_Fill_LS1_1AgreementTab()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyBroker_Fill_LS1_1AgreementTab" duration-ms="6645" started-at="2019-02-17T20:09:35Z" finished-at="2019-02-17T20:09:41Z">
+        <test-method status="PASS" signature="verifyBroker_Fill_LS1_1AgreementTab()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyBroker_Fill_LS1_1AgreementTab" duration-ms="6617" started-at="2019-02-17T20:59:52Z" finished-at="2019-02-17T20:59:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBroker_Fill_LS1_1AgreementTab -->
-        <test-method status="PASS" signature="verifyBroker_Fill_LS1_2PropertyOverview()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyBroker_Fill_LS1_2PropertyOverview" duration-ms="33649" started-at="2019-02-17T20:09:41Z" finished-at="2019-02-17T20:10:15Z">
+        <test-method status="PASS" signature="verifyBroker_Fill_LS1_2PropertyOverview()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyBroker_Fill_LS1_2PropertyOverview" duration-ms="33937" started-at="2019-02-17T20:59:58Z" finished-at="2019-02-17T21:00:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBroker_Fill_LS1_2PropertyOverview -->
-        <test-method status="PASS" signature="verifyBroker_Fill_LS1_3FieldServices()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyBroker_Fill_LS1_3FieldServices" duration-ms="16487" started-at="2019-02-17T20:10:15Z" finished-at="2019-02-17T20:10:31Z">
+        <test-method status="PASS" signature="verifyBroker_Fill_LS1_3FieldServices()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyBroker_Fill_LS1_3FieldServices" duration-ms="16354" started-at="2019-02-17T21:00:32Z" finished-at="2019-02-17T21:00:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBroker_Fill_LS1_3FieldServices -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-02-17T20:10:31Z" finished-at="2019-02-17T20:10:31Z">
+        <test-method status="PASS" signature="verifyBroker_Fill_LS1_4Photography()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="verifyBroker_Fill_LS1_4Photography" duration-ms="9736" started-at="2019-02-17T21:00:49Z" finished-at="2019-02-17T21:00:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBroker_Fill_LS1_4Photography -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@13805618]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-02-17T21:00:59Z" finished-at="2019-02-17T21:00:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

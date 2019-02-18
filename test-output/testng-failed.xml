@@ -5,9 +5,9 @@
     <classes>
       <class name="com.qa.testcases.Listings_DealsPageTest">
         <methods>
+          <include name="verifyBroker_Fill_LS1_4Photography"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyBroker_Fill_LS1_2PropertyOverview"/>
         </methods>
       </class> <!-- com.qa.testcases.Listings_DealsPageTest -->
     </classes>
