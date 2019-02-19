@@ -62,11 +62,11 @@ public class Listings_DealsPage extends TestBase{
 		WebElement ls1neighborhood6 = driver.findElement(parser.getObjectLocator("ls1neighborhood6"));
 		ls1neighborhood6.sendKeys("ADA COUNTY");
 		log.info("BROKER: ENTERED NEIGHBORHOOD");
-		Thread.sleep(5000);
+//		Thread.sleep(5000);
 		
-		WebElement ls1addressgobackbutton5 = driver.findElement(parser.getObjectLocator("ls1addressgobackbutton5"));
-		ls1addressgobackbutton5.click();
-		log.info("BROKER: CLICKED ON GO BACK BUTTON FOR INCORRECT ADDRESS AUTO-SUGGEST POP-UP");
+//		WebElement ls1addressgobackbutton5 = driver.findElement(parser.getObjectLocator("ls1addressgobackbutton5"));
+//		ls1addressgobackbutton5.click();
+//		log.info("BROKER: CLICKED ON GO BACK BUTTON FOR INCORRECT ADDRESS AUTO-SUGGEST POP-UP");
 		
 		WebElement ls1typeofhomedropdown7 = driver.findElement(parser.getObjectLocator("ls1typeofhomedropdown7"));
 		ls1typeofhomedropdown7.click();
@@ -343,5 +343,145 @@ public class Listings_DealsPage extends TestBase{
 		log.info("***** END TC: SUBMIT A LS1 WITH BROKER USER > 4 PHOTOGRAPHY *****");
 	}
 	
+	public void Broker_Fill_LS1_5Access() throws InterruptedException {
+		
+		log.info("***** START TC: SUBMIT A LS1 WITH BROKER USER > 5 ACCESS *****");
+		
+		WebElement ls1sellername1 = driver.findElement(parser.getObjectLocator("ls1sellername1"));
+		ls1sellername1.sendKeys("Seller1");
+		log.info("BROKER: ENTERED SELLER NAME AS Seller1");
+		
+		WebElement ls1sellernickname2 = driver.findElement(parser.getObjectLocator("ls1sellernickname2"));
+		ls1sellernickname2.sendKeys("S1");
+		log.info("BROKER: ENTERED SELLER NICK NAME AS S1");
+		
+		WebElement ls1sellerphone3 = driver.findElement(parser.getObjectLocator("ls1sellerphone3"));
+		ls1sellerphone3.sendKeys("1111111111");
+		log.info("BROKER: ENTERED SELLER PHONE AS 111-111-1111");
+		
+		WebElement ls1selleremail4 = driver.findElement(parser.getObjectLocator("ls1selleremail4"));
+		ls1selleremail4.sendKeys("jay.upadhyay@porchlightgroup.com");
+		log.info("BROKER: ENTERED SELLER EMAIL AS jay.upadhyay@porchlightgroup.com");
+		
+		WebElement ls1seller2name5 = driver.findElement(parser.getObjectLocator("ls1seller2name5"));
+		ls1seller2name5.sendKeys("Seller2");
+		log.info("BROKER: ENTERED SELLER 2 NAME AS Seller2");
+		
+		WebElement ls1seller2nickname6 = driver.findElement(parser.getObjectLocator("ls1seller2nickname6"));
+		ls1seller2nickname6.sendKeys("S2");
+		log.info("BROKER: ENTERED SELLER 2 NICK NAME AS S2");
+		
+		WebElement ls1seller2phone7 = driver.findElement(parser.getObjectLocator("ls1seller2phone7"));
+		ls1seller2phone7.sendKeys("2222222222");
+		log.info("BROKER: ENTERED SELLER 2 PHONE AS 222-222-2222");
+
+		WebElement ls1seller2email8 = driver.findElement(parser.getObjectLocator("ls1seller2email8"));
+		ls1seller2email8.sendKeys("jay.upadhyay@porchlightgroup.com");
+		log.info("BROKER: ENTERED SELLER EMAIL AS jay.upadhyay@porchlightgroup.com");
+
+		WebElement ls1secureorhoaradiobuttonyes9 = driver.findElement(parser.getObjectLocator("ls1secureorhoaradiobuttonyes9"));
+		ls1secureorhoaradiobuttonyes9.click();
+		log.info("BROKER: CLICKED ON YES RADIO BUTTON FOR Is property in a secure or HOA building?");
+		Thread.sleep(2000);
+		
+		WebElement ls1lockboxtypedropdown16 = driver.findElement(parser.getObjectLocator("ls1lockboxtypedropdown16"));
+		ls1lockboxtypedropdown16.click();
+		log.info("BROKER: CLICKED ON DROP-DOWN MENU FOR LOCKBOX TYPE");
+		Thread.sleep(1000);
+		
+		WebElement ls1lockboxtypedropdowncombo17 = driver.findElement(parser.getObjectLocator("ls1lockboxtypedropdowncombo17"));
+		ls1lockboxtypedropdowncombo17.click();
+		log.info("BROKER: SELECTED COMBO VALUE FROM DROP-DOWN MENU FOR LOCKBOX TYPE");
+		
+		WebElement ls1codeorserial18 = driver.findElement(parser.getObjectLocator("ls1codeorserial18"));
+		ls1codeorserial18.sendKeys("Code or Serial");
+		log.info("BROKER: ENTERED CODE OR SERIAL AS Code or Serial");
+		
+		WebElement ls1lockboxlocation19 = driver.findElement(parser.getObjectLocator("ls1lockboxlocation19"));
+		ls1lockboxlocation19.sendKeys("Lockbox location");
+		log.info("BROKER: ENTERED LOCKBOX LOCATION AS Lockbox location");
+		
+		WebElement ls1gatecode20 = driver.findElement(parser.getObjectLocator("ls1gatecode20"));
+		ls1gatecode20.sendKeys("Gate code");
+		log.info("BROKER: ENTERED GATE CODE AS Gate code");
+		
+		WebElement ls1garagecode21 = driver.findElement(parser.getObjectLocator("ls1garagecode21"));
+		ls1garagecode21.sendKeys("Garage code");
+		log.info("BROKER: ENTERED GARAGE CODE AS Garage code");
+		
+		WebElement ls1doesthispropertyhaveanalarmyesradiobutton22 = driver.findElement(parser.getObjectLocator("ls1doesthispropertyhaveanalarmyesradiobutton22"));
+		ls1doesthispropertyhaveanalarmyesradiobutton22.click();
+		log.info("BROKER: SELECTED YES RADIO BUTTON FOR Does this property have an alarm?");
+		
+		WebElement ls1alarmcode122 = driver.findElement(parser.getObjectLocator("ls1alarmcode122"));
+		ls1alarmcode122.sendKeys("Alarm code");
+		log.info("BROKER: ENTERED ALARM CODE 1 AS Alarm code");
+		
+		WebElement ls1alarmcode222 = driver.findElement(parser.getObjectLocator("ls1alarmcode222"));
+		ls1alarmcode222.sendKeys("Alarm code");
+		log.info("BROKER: ENTERED ALARM CODE 2 AS Alarm code");
+		
+		WebElement ls1alarmlocation22 = driver.findElement(parser.getObjectLocator("ls1alarmlocation22"));
+		ls1alarmlocation22.sendKeys("Alarm location");
+		log.info("BROKER: ENTERED ALARM CODE 2 AS Alarm location");
+		
+		WebElement ls1petsonpropertyyesradionbutton23 = driver.findElement(parser.getObjectLocator("ls1petsonpropertyyesradionbutton23"));
+		ls1petsonpropertyyesradionbutton23.click();
+		log.info("BROKER: SELECTED YES TO RADIO BUTTON FOR Pets on property");
+		
+		WebElement ls1specialinstructionsforpremarkettextarea24 = driver.findElement(parser.getObjectLocator("ls1specialinstructionsforpremarkettextarea24"));
+		ls1specialinstructionsforpremarkettextarea24.sendKeys("Special instructions for pre-market services access to the home and/or building");
+		log.info("BROKER: ENTERED SPECIAL INSTRUCTIONS FOR PRE-MARKET AS Special instructions for pre-market services access to the home and/or building");
+
+		WebElement ls1fsappointmentsanyradiobutton25 = driver.findElement(parser.getObjectLocator("ls1fsappointmentsanyradiobutton25"));
+		ls1fsappointmentsanyradiobutton25.click();
+		log.info("BROKER: ENTERED FIELD SERVICES APPOINTMENTS AS Anytime");
+		
+		//scroll down
+		EventFiringWebDriver eventFiringWebDriver = new EventFiringWebDriver(driver);
+		eventFiringWebDriver.executeScript("document.querySelector('#AccessOrShowingSavePart1 > div.col-md-12.panel-body.form-body.bg-white').scrollTop=1000");
+		log.info("BROKER: SCROLLED DOWN TO BOTTOM FORM IN ACCESS TAB");
+		Thread.sleep(1000);
+		
+		WebElement ls1hoaname10 = driver.findElement(parser.getObjectLocator("ls1hoaname10"));
+		ls1hoaname10.sendKeys("HOA Name");
+		log.info("BROKER: ENTERED HOA NAME AS HOA Name");
+		
+		WebElement ls1hoacontact11 = driver.findElement(parser.getObjectLocator("ls1hoacontact11"));
+		ls1hoacontact11.sendKeys("HOA Contact");
+		log.info("BROKER: ENTERED HOA CONTACT AS HOA Contact");
+		
+		WebElement ls1hoacontactphone12 = driver.findElement(parser.getObjectLocator("ls1hoacontactphone12"));
+		ls1hoacontactphone12.sendKeys("1111111111");
+		log.info("BROKER: ENTERED CONTACT PHONE AS 111-111-1111");
+		
+		WebElement ls1hoa2contact13 = driver.findElement(parser.getObjectLocator("ls1hoa2contact13"));
+		ls1hoa2contact13.sendKeys("HOA Contact 2");
+		log.info("BROKER: ENTERED HOA CONTACT 2 AS HOA Contact 2");
+		
+		WebElement ls1hoa2contactphone14 = driver.findElement(parser.getObjectLocator("ls1hoa2contactphone14"));
+		ls1hoa2contactphone14.sendKeys("2222222222");
+		log.info("BROKER: ENTERED CONTACT 2 PHONE AS 222-222-2222");
+		
+		WebElement ls1hoa2othercontact15 = driver.findElement(parser.getObjectLocator("ls1hoa2othercontact15"));
+		ls1hoa2othercontact15.sendKeys("2222222222");
+		log.info("BROKER: ENTERED CONTACT 2 PHONE AS 222-222-2222");
+		
+		WebElement ls1hoaelevatorrequiredyesradiobutton26 = driver.findElement(parser.getObjectLocator("ls1hoaelevatorrequiredyesradiobutton26"));
+		ls1hoaelevatorrequiredyesradiobutton26.click();
+		log.info("BROKER: SELECTED YES RADIO BUTTON FOR Is an elevator (freight) reservation required for Staging?");
+
+		WebElement ls1buildinginstructionsoraccesstextarea27 = driver.findElement(parser.getObjectLocator("ls1buildinginstructionsoraccesstextarea27"));
+		ls1buildinginstructionsoraccesstextarea27.sendKeys("Any special instructions for building or access");
+		log.info("BROKER: ENTERED TEXT FOR ACCESS INSTRUCTIONS AS Any special instructions for building or access");
+		Thread.sleep(1000);
+		
+		WebElement ls1accessnextbutton28 = driver.findElement(parser.getObjectLocator("ls1accessnextbutton28"));
+		ls1accessnextbutton28.click();
+		log.info("BROKER: CLICKED ON NEXT BUTTON ACCESS PAGE");
+
+		log.info("***** END TC: SUBMIT A LS1 WITH BROKER USER > 5 ACCESS *****");
+	}
+
 	
 }

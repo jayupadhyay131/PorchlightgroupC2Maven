@@ -5,7 +5,7 @@
     <classes>
       <class name="com.qa.testcases.Listings_DealsPageTest">
         <methods>
-          <include name="verifyBroker_Fill_LS1_4Photography"/>
+          <include name="verifyBroker_Fill_LS1_5Access"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
