@@ -80,8 +80,17 @@ public class Listings_DealsPageTest extends TestBase{
 	public void verifyBroker_Fill_LS1_5Access() throws InterruptedException {	
 		listings_DealsPage.Broker_Fill_LS1_5Access();
 	}
+	
+	@Test(priority=9)
+	public void verifyBroker_Fill_LS1_6OpenHouses() throws InterruptedException {	
+		listings_DealsPage.Broker_Fill_LS1_6OpenHouses();
+	}
 
-
+	@Test(priority=10)
+	public void verifyBroker_Fill_LS1_7SummaryTab() throws InterruptedException {	
+		listings_DealsPage.Broker_Fill_LS1_7SummaryTab();
+	}
+	
 	@AfterClass
 	public void tearDown() {
 		//driver.quit();

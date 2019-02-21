@@ -464,8 +464,8 @@ public class Listings_DealsPage extends TestBase{
 		log.info("BROKER: ENTERED CONTACT 2 PHONE AS 222-222-2222");
 		
 		WebElement ls1hoa2othercontact15 = driver.findElement(parser.getObjectLocator("ls1hoa2othercontact15"));
-		ls1hoa2othercontact15.sendKeys("2222222222");
-		log.info("BROKER: ENTERED CONTACT 2 PHONE AS 222-222-2222");
+		ls1hoa2othercontact15.sendKeys("HOA other name");
+		log.info("BROKER: ENTERED HOA OTHER NAME AS HOA other name");
 		
 		WebElement ls1hoaelevatorrequiredyesradiobutton26 = driver.findElement(parser.getObjectLocator("ls1hoaelevatorrequiredyesradiobutton26"));
 		ls1hoaelevatorrequiredyesradiobutton26.click();
@@ -479,9 +479,74 @@ public class Listings_DealsPage extends TestBase{
 		WebElement ls1accessnextbutton28 = driver.findElement(parser.getObjectLocator("ls1accessnextbutton28"));
 		ls1accessnextbutton28.click();
 		log.info("BROKER: CLICKED ON NEXT BUTTON ACCESS PAGE");
+		Thread.sleep(5000);
 
 		log.info("***** END TC: SUBMIT A LS1 WITH BROKER USER > 5 ACCESS *****");
 	}
 
+	public void Broker_Fill_LS1_6OpenHouses() throws InterruptedException {
+		
+		log.info("***** START TC: SUBMIT A LS1 WITH BROKER USER > 6 OPEN HOUSES *****");
+		
+		WebElement ls1listingavailableyesradiobutton1 = driver.findElement(parser.getObjectLocator("ls1listingavailableyesradiobutton1"));
+		ls1listingavailableyesradiobutton1.click();
+		log.info("BROKER: SELECTED YES TO Listing available for Open Houses?");
+		
+		WebElement ls1doesthisrequired2agenst2 = driver.findElement(parser.getObjectLocator("ls1doesthisrequired2agenst2"));
+		ls1doesthisrequired2agenst2.click();
+		log.info("BROKER: SELECTED NO TO Does this listing require 2 Agents?");
+		
+		WebElement ls1ohslots1thursady3 = driver.findElement(parser.getObjectLocator("ls1ohslots1thursady3"));
+		ls1ohslots1thursady3.click();
+		log.info("BROKER: CLICKED ON Thursday 12pm - 2pm");
+		
+		WebElement ls1ohslots1saturday4 = driver.findElement(parser.getObjectLocator("ls1ohslots1saturday4"));
+		ls1ohslots1saturday4.click();
+		log.info("BROKER: CLICKED ON Saturday 10am - 12pm");
+		
+		WebElement ls1ohslots2saturday5 = driver.findElement(parser.getObjectLocator("ls1ohslots2saturday5"));
+		ls1ohslots2saturday5.click();
+		log.info("BROKER: CLICKED ON Saturday 12pm - 2pm");
+		
+		WebElement ls1ohslots3saturday6 = driver.findElement(parser.getObjectLocator("ls1ohslots3saturday6"));
+		ls1ohslots3saturday6.click();
+		log.info("BROKER: CLICKED ON Saturday 2pm - 4pm");
+		
+		WebElement ls1ohslots1sunday8 = driver.findElement(parser.getObjectLocator("ls1ohslots1sunday8"));
+		ls1ohslots1sunday8.click();
+		log.info("BROKER: CLICKED ON Sunday 10am - 12pm");
+		
+		WebElement ls1ohslots2sunday9 = driver.findElement(parser.getObjectLocator("ls1ohslots2sunday9"));
+		ls1ohslots2sunday9.click();
+		log.info("BROKER: CLICKED ON Sunday 12pm - 2pm");
+		
+		WebElement ls1ohslots3sunday10 = driver.findElement(parser.getObjectLocator("ls1ohslots3sunday10"));
+		ls1ohslots3sunday10.click();
+		log.info("BROKER: CLICKED ON Sunday 2pm - 4pm");
+		
+		WebElement ls1openhousenextbutton11 = driver.findElement(parser.getObjectLocator("ls1openhousenextbutton11"));
+		ls1openhousenextbutton11.click();
+		log.info("BROKER: CLICKED ON NEXT BUTTON OPEN HOUSES PAGE");
+		Thread.sleep(5000);
+
+		log.info("***** END TC: SUBMIT A LS1 WITH BROKER USER > 6 OPEN HOUSES *****");
+	}
 	
+	public void Broker_Fill_LS1_7SummaryTab() throws InterruptedException {
+		
+		log.info("***** START TC: SUBMIT A LS1 WITH BROKER USER > 6 OPEN HOUSES *****");
+		
+		WebElement ls1summarytabsubmitbutton1 = driver.findElement(parser.getObjectLocator("ls1summarytabsubmitbutton1"));
+		ls1summarytabsubmitbutton1.click();
+		log.info("BROKER: CLICKED ON SUBMIT BUTTON FROM SUMMARY TAB");
+		Thread.sleep(3000);
+		
+		WebElement ls1summarytabyesbutton2 = driver.findElement(parser.getObjectLocator("ls1summarytabyesbutton2"));
+		ls1summarytabyesbutton2.click();
+		log.info("BROKER: CLICKED ON YES BUTTON FOR SENDING TO TC FOR REVIEW LS1 SUBMISSION");
+		Thread.sleep(5000);
+		
+		log.info("***** END TC: SUBMIT A LS1 WITH BROKER USER > 6 OPEN HOUSES *****");
+	}
+		
 }

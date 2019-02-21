@@ -1,49 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="143003" started-at="2019-02-19T22:26:06Z" finished-at="2019-02-19T22:28:29Z">
+  <suite name="Default suite" duration-ms="161965" started-at="2019-02-21T00:28:33Z" finished-at="2019-02-21T00:31:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="143003" started-at="2019-02-19T22:26:06Z" finished-at="2019-02-19T22:28:29Z">
+    <test name="Default test" duration-ms="161965" started-at="2019-02-21T00:28:33Z" finished-at="2019-02-21T00:31:15Z">
       <class name="com.qa.testcases.Listings_DealsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="setUp" is-config="true" duration-ms="7181" started-at="2019-02-19T15:26:06Z" finished-at="2019-02-19T15:26:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="setUp" is-config="true" duration-ms="7872" started-at="2019-02-20T17:28:33Z" finished-at="2019-02-20T17:28:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="verifyLogin" duration-ms="21774" started-at="2019-02-19T15:26:13Z" finished-at="2019-02-19T15:26:35Z">
+        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="verifyLogin" duration-ms="20556" started-at="2019-02-20T17:28:41Z" finished-at="2019-02-20T17:29:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="verifyLoginAsBroker1()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="verifyLoginAsBroker1" duration-ms="14844" started-at="2019-02-19T15:26:35Z" finished-at="2019-02-19T15:26:50Z">
+        <test-method status="PASS" signature="verifyLoginAsBroker1()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="verifyLoginAsBroker1" duration-ms="13434" started-at="2019-02-20T17:29:01Z" finished-at="2019-02-20T17:29:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginAsBroker1 -->
-        <test-method status="PASS" signature="verifyGoToNewListingSubmission1Page()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="verifyGoToNewListingSubmission1Page" duration-ms="13400" started-at="2019-02-19T15:26:50Z" finished-at="2019-02-19T15:27:03Z">
+        <test-method status="PASS" signature="verifyGoToNewListingSubmission1Page()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="verifyGoToNewListingSubmission1Page" duration-ms="11642" started-at="2019-02-20T17:29:15Z" finished-at="2019-02-20T17:29:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGoToNewListingSubmission1Page -->
-        <test-method status="PASS" signature="verifyBroker_Fill_LS1_1AgreementTab()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="verifyBroker_Fill_LS1_1AgreementTab" duration-ms="6689" started-at="2019-02-19T15:27:03Z" finished-at="2019-02-19T15:27:10Z">
+        <test-method status="PASS" signature="verifyBroker_Fill_LS1_1AgreementTab()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="verifyBroker_Fill_LS1_1AgreementTab" duration-ms="6622" started-at="2019-02-20T17:29:26Z" finished-at="2019-02-20T17:29:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBroker_Fill_LS1_1AgreementTab -->
-        <test-method status="PASS" signature="verifyBroker_Fill_LS1_2PropertyOverview()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="verifyBroker_Fill_LS1_2PropertyOverview" duration-ms="32928" started-at="2019-02-19T15:27:10Z" finished-at="2019-02-19T15:27:43Z">
+        <test-method status="PASS" signature="verifyBroker_Fill_LS1_2PropertyOverview()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="verifyBroker_Fill_LS1_2PropertyOverview" duration-ms="31143" started-at="2019-02-20T17:29:33Z" finished-at="2019-02-20T17:30:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBroker_Fill_LS1_2PropertyOverview -->
-        <test-method status="PASS" signature="verifyBroker_Fill_LS1_3FieldServices()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="verifyBroker_Fill_LS1_3FieldServices" duration-ms="17048" started-at="2019-02-19T15:27:43Z" finished-at="2019-02-19T15:28:00Z">
+        <test-method status="PASS" signature="verifyBroker_Fill_LS1_3FieldServices()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="verifyBroker_Fill_LS1_3FieldServices" duration-ms="17960" started-at="2019-02-20T17:30:04Z" finished-at="2019-02-20T17:30:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBroker_Fill_LS1_3FieldServices -->
-        <test-method status="PASS" signature="verifyBroker_Fill_LS1_4Photography()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="verifyBroker_Fill_LS1_4Photography" duration-ms="10327" started-at="2019-02-19T15:28:00Z" finished-at="2019-02-19T15:28:10Z">
+        <test-method status="PASS" signature="verifyBroker_Fill_LS1_4Photography()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="verifyBroker_Fill_LS1_4Photography" duration-ms="10158" started-at="2019-02-20T17:30:22Z" finished-at="2019-02-20T17:30:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBroker_Fill_LS1_4Photography -->
-        <test-method status="PASS" signature="verifyBroker_Fill_LS1_5Access()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="verifyBroker_Fill_LS1_5Access" duration-ms="18704" started-at="2019-02-19T15:28:10Z" finished-at="2019-02-19T15:28:29Z">
+        <test-method status="PASS" signature="verifyBroker_Fill_LS1_5Access()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="verifyBroker_Fill_LS1_5Access" duration-ms="24930" started-at="2019-02-20T17:30:32Z" finished-at="2019-02-20T17:30:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBroker_Fill_LS1_5Access -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-02-19T15:28:29Z" finished-at="2019-02-19T15:28:29Z">
+        <test-method status="PASS" signature="verifyBroker_Fill_LS1_6OpenHouses()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="verifyBroker_Fill_LS1_6OpenHouses" duration-ms="8816" started-at="2019-02-20T17:30:57Z" finished-at="2019-02-20T17:31:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBroker_Fill_LS1_6OpenHouses -->
+        <test-method status="PASS" signature="verifyBroker_Fill_LS1_7SummaryTab()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="verifyBroker_Fill_LS1_7SummaryTab" duration-ms="8735" started-at="2019-02-20T17:31:06Z" finished-at="2019-02-20T17:31:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBroker_Fill_LS1_7SummaryTab -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.Listings_DealsPageTest@56ef9176]" name="tearDown" is-config="true" duration-ms="2" started-at="2019-02-20T17:31:15Z" finished-at="2019-02-20T17:31:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
