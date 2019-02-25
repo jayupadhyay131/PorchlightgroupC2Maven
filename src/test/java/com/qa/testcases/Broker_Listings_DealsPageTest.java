@@ -6,18 +6,18 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.base.TestBase;
+import com.qa.pages.Broker_Listings_DealsPage;
 import com.qa.pages.HomePage;
-import com.qa.pages.Listings_DealsPage;
 import com.qa.pages.LoginPage;
 import com.qa.util.ExcelFileImporter;
 
-public class Listings_DealsPageTest extends TestBase{
+public class Broker_Listings_DealsPageTest extends TestBase{
 	
 	HomePage homePage;
 	LoginPage loginPage;
-	Listings_DealsPage listings_DealsPage;
+	Broker_Listings_DealsPage listings_DealsPage;
 	
-	public Listings_DealsPageTest() {
+	public Broker_Listings_DealsPageTest() {
 		super();
 	}
 		
@@ -26,7 +26,7 @@ public class Listings_DealsPageTest extends TestBase{
 		startBrowser();
 		loginPage = new LoginPage();
 		homePage = new HomePage();
-		listings_DealsPage = new Listings_DealsPage();
+		listings_DealsPage = new Broker_Listings_DealsPage();
 	}
 	
 	@Test(priority=1)

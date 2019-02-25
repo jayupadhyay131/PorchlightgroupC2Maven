@@ -13,7 +13,7 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.qa.base.TestBase;
 
-public class Listings_DealsPage extends TestBase{
+public class Broker_Listings_DealsPage extends TestBase{
 
 	Logger log = Logger.getLogger(LoginPage.class);
 	
