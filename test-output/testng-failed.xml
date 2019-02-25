@@ -7,7 +7,10 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="verifyTC_Approve_LS1_2PropertyOverviewTab"/>
+          <include name="verifyTC_TakeLs1Task_From_Dashboard"/>
           <include name="verifyTC_Approve_LS1_1AgreementTab"/>
+          <include name="verifyLogin"/>
         </methods>
       </class> <!-- com.qa.testcases.TC_Listings_DealsPageTest -->
     </classes>

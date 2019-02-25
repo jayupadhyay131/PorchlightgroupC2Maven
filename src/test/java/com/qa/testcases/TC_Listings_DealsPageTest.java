@@ -40,13 +40,22 @@ public class TC_Listings_DealsPageTest extends TestBase{
 	}
 	
 	@Test(priority=3)
-	public void verifyTC_Approve_LS1_1AgreementTab() throws InterruptedException {
+	public void verifyTC_TakeLs1Task_From_Dashboard() throws InterruptedException {
 		tc_Listings_DealsPage.TC_TakeLs1Task_From_Dashboard();
 		Thread.sleep(5000);
 	}
 
-	
+	@Test(priority=4)
+	public void verifyTC_Approve_LS1_1AgreementTab() throws InterruptedException {
+		tc_Listings_DealsPage.TC_Approve_LS1_1AgreementTab();
+		Thread.sleep(5000);
+	}
 
+	@Test(priority=4)
+	public void verifyTC_Approve_LS1_2PropertyOverviewTab() throws InterruptedException {
+		tc_Listings_DealsPage.TC_Approve_LS1_2PropertyOverviewTab();
+		Thread.sleep(5000);
+	}
 	
 	@AfterClass
 	public void tearDown() {

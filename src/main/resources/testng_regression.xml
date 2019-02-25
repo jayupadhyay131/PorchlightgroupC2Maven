@@ -5,7 +5,8 @@
  <test name="Regression1">
     <classes>
       <class name="com.qa.testcases.OpenHouses_ListingsPageTest"/>
-      <class name="com.qa.testcases.Listings_DealsPageTest"/>
+      <class name="com.qa.testcases.Broker_Listings_DealsPageTest"/>
+      <class name="com.qa.testcases.TC_Listings_DealsPageTest"/>
     </classes>
   </test>
   
