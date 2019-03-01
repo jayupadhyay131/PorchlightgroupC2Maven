@@ -165,8 +165,147 @@ public class TC_Listings_DealsPage extends TestBase{
 		WebElement ls1tcpropertyoverviewnextbutton29 = driver.findElement(parser.getObjectLocator("ls1tcpropertyoverviewnextbutton29"));
 		ls1tcpropertyoverviewnextbutton29.click();
 		log.info("TC: CLICKED ON NEXT BUTTON FROM PROPERTY OVERVIEW TAB");
-
+		Thread.sleep(5000);
+		
 		log.info("***** END TC: APPROVE LS1 WITH TC USER > 2 PROPERTY OVERVIEW TAB *****");
+	}
+	
+	public void TC_Approve_LS1_3FieldServicesTab() throws InterruptedException {
+		
+		log.info("***** START TC: APPROVE LS1 WITH TC USER > 3 FIELD SERVICES TAB *****");
+		
+		WebElement ls1tcpropertystatusoccupied1 = driver.findElement(parser.getObjectLocator("ls1tcpropertystatusoccupied1"));
+		ls1tcpropertystatusoccupied1.isDisplayed();
+		log.info("TC: PROPERTY STATUS WITH OCCUPIED RADIO BUTTON IS PRESENT");
+		
+		WebElement ls1tcneedstagingconsultuntyes2 = driver.findElement(parser.getObjectLocator("ls1tcneedstagingconsultuntyes2"));
+		ls1tcneedstagingconsultuntyes2.isDisplayed();
+		log.info("TC: NEED STAGING OR STAGING CONSULT? YES BUTTON IS PRESENT");
+		
+		WebElement ls1tctypeofserviceoccupiedstagermeetswithclient3 = driver.findElement(parser.getObjectLocator("ls1tctypeofserviceoccupiedstagermeetswithclient3"));
+		ls1tctypeofserviceoccupiedstagermeetswithclient3.isDisplayed();
+		log.info("TC: TYPE OF SERVICES REQUESTED AS OCCUPIED - STAGER MEETS WITH CLIENT");
+		
+		WebElement ls1tcspecialinstructionstostager4 = driver.findElement(parser.getObjectLocator("ls1tcspecialinstructionstostager4"));
+		ls1tcspecialinstructionstostager4.isDisplayed();
+		log.info("TC: ANY SPECIAL INSTRUCTONS FOR STAGER TEXTAREA IS PRESENT");
+
+		WebElement ls1tcneedmeasurementsyes5 = driver.findElement(parser.getObjectLocator("ls1tcneedmeasurementsyes5"));
+		ls1tcneedmeasurementsyes5.isDisplayed();
+		log.info("TC: NEED A MARKET SHINE CLEANING AS YES RADIO BUTTON");
+		
+		WebElement ls1tcspecialinstructionstomeasurer6 = driver.findElement(parser.getObjectLocator("ls1tcspecialinstructionstomeasurer6"));
+		ls1tcspecialinstructionstomeasurer6.isDisplayed();
+		log.info("TC: ANY SPECIAL INSTRUCTONS FOR CLEANERS TEXTAREA IS PRESENT");
+		
+		WebElement ls1tcneedmarketshineyes7 = driver.findElement(parser.getObjectLocator("ls1tcneedmarketshineyes7"));
+		ls1tcneedmarketshineyes7.isDisplayed();
+		log.info("TC: NEED MARKET SHINE CLEANING YES RADIO BUTTON IS PRESENT");
+		
+		WebElement ls1tcspecialinstructionstocleaners8 = driver.findElement(parser.getObjectLocator("ls1tcspecialinstructionstocleaners8"));
+		ls1tcspecialinstructionstocleaners8.isDisplayed();
+		log.info("TC: ANY SPECIAL INSTRUCTONS FOR CLEANERS TEXTAREA IS PRESENT");
+		
+		WebElement ls1tcneedadeepcleanyes1to4selections9 = driver.findElement(parser.getObjectLocator("ls1tcneedadeepcleanyes1to4selections9"));
+		ls1tcneedadeepcleanyes1to4selections9.isDisplayed();
+		log.info("TC: NEED A DEEP CLEAN SELECTED AS YES. 1-4 DEEP CLEAN SELECTIONS");
+		
+		WebElement ls1tcdeepselectionsrequestskitchen10 = driver.findElement(parser.getObjectLocator("ls1tcdeepselectionsrequestskitchen10"));
+		ls1tcdeepselectionsrequestskitchen10.isDisplayed();
+		log.info("TC: SELECT ANY DEEP CLEAN REQUESTS FOR THIS LISTING AS Kitchen - cabinet exteriors, backsplsh, stove");
+		
+		WebElement ls1tcdoyouwantsignsyesyardsign11 = driver.findElement(parser.getObjectLocator("ls1tcdoyouwantsignsyesyardsign11"));
+		ls1tcdoyouwantsignsyesyardsign11.isDisplayed();
+		log.info("TC: DO YOU WANT SIGN SELECTED AS YARD SIGN");
+		
+		WebElement ls1tchaveyouplacedflagsignreplacementyes12 = driver.findElement(parser.getObjectLocator("ls1tchaveyouplacedflagsignreplacementyes12"));
+		ls1tchaveyouplacedflagsignreplacementyes12.isDisplayed();
+		log.info("TC: HAVE YOU PALCED FLAG FOR SIGN PLACEMENT? YES RADIO IS PRESENT");
+		
+		WebElement ls1tcfieldservicestabeditbutton13 = driver.findElement(parser.getObjectLocator("ls1tcfieldservicestabeditbutton13"));
+		ls1tcfieldservicestabeditbutton13.isDisplayed();
+		log.info("TC: FORM EDIT BUTTON IS PRESENT FOR FIELD SERVICES SECTION");
+		
+		WebElement ls1tcfieldservicestabbackbutton14 = driver.findElement(parser.getObjectLocator("ls1tcfieldservicestabbackbutton14"));
+		ls1tcfieldservicestabbackbutton14.isDisplayed();
+		log.info("TC: FORM BACK BUTTON IS PRESENT FOR FIELD SERVICES SECTION");
+		
+		WebElement ls1tcapprovebutton15 = driver.findElement(parser.getObjectLocator("ls1tcapprovebutton15"));
+		ls1tcapprovebutton15.click();
+		log.info("TC: CLICKED ON APPROVE CHECKBOX FOR FIELD SERVICES SECTION");
+		Thread.sleep(1000);
+		
+		WebElement ls1tcfieldservicsesnextbutton16 = driver.findElement(parser.getObjectLocator("ls1tcfieldservicsesnextbutton16"));
+		ls1tcfieldservicsesnextbutton16.click();
+		log.info("TC: CLICKED ON APPROVE CHECKBOX FOR FIELD SERVICES SECTION");
+		Thread.sleep(5000);
+		
+		log.info("***** END TC: APPROVE LS1 WITH TC USER > 3 FIELD SERVICES TAB *****");
+	}
+	
+	public void TC_Approve_LS1_4PhotographyTab() throws InterruptedException {
+		
+		log.info("***** START TC: APPROVE LS1 WITH TC USER > 4 PHOTOGRAPHT TAB *****");
+		
+		WebElement ls1tcdoyouneedphotosandavirtualtouryesradio1 = driver.findElement(parser.getObjectLocator("ls1tcdoyouneedphotosandavirtualtouryesradio1"));
+		ls1tcdoyouneedphotosandavirtualtouryesradio1.isDisplayed();
+		log.info("TC: DO YOU NEED PHOTOS AND A VIRTUAL TOUR YES RADIO BUTTON IS PRESENT");
+		
+		WebElement ls1tcwilltheagentbepresentfortheshootyesradio2 = driver.findElement(parser.getObjectLocator("ls1tcwilltheagentbepresentfortheshootyesradio2"));
+		ls1tcwilltheagentbepresentfortheshootyesradio2.isDisplayed();
+		log.info("TC: WILL THE AGENT BE PRESENT FOR THE SHOOT YES RADIO BUTTON IS PRESENT");
+		
+		WebElement ls1tcwilltheownerbepresentfortheshootyesradio3 = driver.findElement(parser.getObjectLocator("ls1tcwilltheownerbepresentfortheshootyesradio3"));
+		ls1tcwilltheownerbepresentfortheshootyesradio3.isDisplayed();
+		log.info("TC: WILL THE OWNER BE PRESENT FOR THE SHOOT YES RADIO BUTTON IS PRESENT");
+		
+		WebElement ls1tcanyspecialinstructionsforthephotographertextarea4 = driver.findElement(parser.getObjectLocator("ls1tcanyspecialinstructionsforthephotographertextarea4"));
+		ls1tcanyspecialinstructionsforthephotographertextarea4.isDisplayed();
+		log.info("TC: ANY SPECIAL INSTRUCTIONS FOR THE PHOTOGRAPHER TEXTAREA IS PRESENT");
+		
+		WebElement ls1tcadditionalserviceshootanypartofpropertycheckbox5 = driver.findElement(parser.getObjectLocator("ls1tcadditionalserviceshootanypartofpropertycheckbox5"));
+		ls1tcadditionalserviceshootanypartofpropertycheckbox5.isDisplayed();
+		log.info("TC: ADDITIONAL SERVICE: RESHOOT ANY PART OF THE PROPERTY IS PRESENT");
+		
+		WebElement ls1tc75dollarsservicesfee6 = driver.findElement(parser.getObjectLocator("ls1tc75dollarsservicesfee6"));
+		ls1tc75dollarsservicesfee6.isDisplayed();
+		log.info("TC: $75 SERVICE FEE FOR ADDITIONAL SERVICE IS PRESENT");
+		
+		WebElement ls1tcphotographyeditbutton7 = driver.findElement(parser.getObjectLocator("ls1tcphotographyeditbutton7"));
+		ls1tcphotographyeditbutton7.isDisplayed();
+		log.info("TC: PHOTOGRAPHY EDIT BUTTON IS PRESENT");
+		
+		WebElement ls1tcphotographybackbutton8 = driver.findElement(parser.getObjectLocator("ls1tcphotographybackbutton8"));
+		ls1tcphotographybackbutton8.isDisplayed();
+		log.info("TC: PHOTOGRAPHY BACK BUTTON IS PRESENT");
+		
+		WebElement ls1tcphotographyapprovecheckbox9 = driver.findElement(parser.getObjectLocator("ls1tcphotographyapprovecheckbox9"));
+		ls1tcphotographyapprovecheckbox9.click();
+		log.info("TC: PHOTOGRAPHY TAB CLICKED ON APPROVE CHECKBOX");
+		Thread.sleep(1000);
+		
+		WebElement ls1tcphotographynextbutton10 = driver.findElement(parser.getObjectLocator("ls1tcphotographynextbutton10"));
+		ls1tcphotographynextbutton10.click();
+		log.info("TC: PHOTOGRAPHY TAB CLICKED ON NEXT BUTTON");
+		Thread.sleep(5000);		
+		
+		log.info("***** END TC: APPROVE LS1 WITH TC USER > 4 PHOTOGRAPHT TAB *****");
+	}
+	
+	public void TC_Approve_LS1_5AccessTab() throws InterruptedException {
+		
+		log.info("***** START TC: APPROVE LS1 WITH TC USER > 5 ACCESS TAB *****");
+		
+//		WebElement ls1tcdoyouneedphotosandavirtualtouryesradio1 = driver.findElement(parser.getObjectLocator("ls1tcdoyouneedphotosandavirtualtouryesradio1"));
+//		ls1tcdoyouneedphotosandavirtualtouryesradio1.isDisplayed();
+//		log.info("TC: DO YOU NEED PHOTOS AND A VIRTUAL TOUR YES RADIO BUTTON IS PRESENT");
+//		
+//		WebElement ls1tcphotographynextbutton10 = driver.findElement(parser.getObjectLocator("ls1tcphotographynextbutton10"));
+//		ls1tcphotographynextbutton10.click();
+//		log.info("TC: PHOTOGRAPHY TAB CLICKED ON NEXT BUTTON");
+//		Thread.sleep(5000);		
+		
+		log.info("***** END TC: APPROVE LS1 WITH TC USER > 5 ACCESS TAB *****");
 	}
 	
 }

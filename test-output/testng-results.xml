@@ -1,37 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="62598" started-at="2019-02-25T03:36:36Z" finished-at="2019-02-25T03:37:38Z">
+  <suite name="Default suite" duration-ms="96711" started-at="2019-03-01T22:23:16Z" finished-at="2019-03-01T22:24:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="62598" started-at="2019-02-25T03:36:36Z" finished-at="2019-02-25T03:37:38Z">
+    <test name="Default test" duration-ms="96711" started-at="2019-03-01T22:23:16Z" finished-at="2019-03-01T22:24:52Z">
       <class name="com.qa.testcases.TC_Listings_DealsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.TC_Listings_DealsPageTest@13805618]" name="setUp" is-config="true" duration-ms="5442" started-at="2019-02-24T20:36:36Z" finished-at="2019-02-24T20:36:41Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.TC_Listings_DealsPageTest@13805618]" name="setUp" is-config="true" duration-ms="6656" started-at="2019-03-01T15:23:16Z" finished-at="2019-03-01T15:23:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.qa.testcases.TC_Listings_DealsPageTest@13805618]" name="verifyLogin" duration-ms="18765" started-at="2019-02-24T20:36:41Z" finished-at="2019-02-24T20:37:00Z">
+        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:com.qa.testcases.TC_Listings_DealsPageTest@13805618]" name="verifyLogin" duration-ms="20498" started-at="2019-03-01T15:23:22Z" finished-at="2019-03-01T15:23:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="verifyLoginAsTC1()[pri:0, instance:com.qa.testcases.TC_Listings_DealsPageTest@13805618]" name="verifyLoginAsTC1" duration-ms="10191" started-at="2019-02-24T20:37:00Z" finished-at="2019-02-24T20:37:10Z">
+        <test-method status="PASS" signature="verifyLoginAsTC1()[pri:0, instance:com.qa.testcases.TC_Listings_DealsPageTest@13805618]" name="verifyLoginAsTC1" duration-ms="10453" started-at="2019-03-01T15:23:43Z" finished-at="2019-03-01T15:23:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginAsTC1 -->
-        <test-method status="PASS" signature="verifyTC_TakeLs1Task_From_Dashboard()[pri:0, instance:com.qa.testcases.TC_Listings_DealsPageTest@13805618]" name="verifyTC_TakeLs1Task_From_Dashboard" duration-ms="11416" started-at="2019-02-24T20:37:10Z" finished-at="2019-02-24T20:37:21Z">
+        <test-method status="PASS" signature="verifyTC_TakeLs1Task_From_Dashboard()[pri:0, instance:com.qa.testcases.TC_Listings_DealsPageTest@13805618]" name="verifyTC_TakeLs1Task_From_Dashboard" duration-ms="11638" started-at="2019-03-01T15:23:53Z" finished-at="2019-03-01T15:24:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTC_TakeLs1Task_From_Dashboard -->
-        <test-method status="PASS" signature="verifyTC_Approve_LS1_1AgreementTab()[pri:0, instance:com.qa.testcases.TC_Listings_DealsPageTest@13805618]" name="verifyTC_Approve_LS1_1AgreementTab" duration-ms="10386" started-at="2019-02-24T20:37:21Z" finished-at="2019-02-24T20:37:32Z">
+        <test-method status="PASS" signature="verifyTC_Approve_LS1_1AgreementTab()[pri:0, instance:com.qa.testcases.TC_Listings_DealsPageTest@13805618]" name="verifyTC_Approve_LS1_1AgreementTab" duration-ms="10876" started-at="2019-03-01T15:24:05Z" finished-at="2019-03-01T15:24:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTC_Approve_LS1_1AgreementTab -->
-        <test-method status="PASS" signature="verifyTC_Approve_LS1_2PropertyOverviewTab()[pri:0, instance:com.qa.testcases.TC_Listings_DealsPageTest@13805618]" name="verifyTC_Approve_LS1_2PropertyOverviewTab" duration-ms="6388" started-at="2019-02-24T20:37:32Z" finished-at="2019-02-24T20:37:38Z">
+        <test-method status="PASS" signature="verifyTC_Approve_LS1_2PropertyOverviewTab()[pri:0, instance:com.qa.testcases.TC_Listings_DealsPageTest@13805618]" name="verifyTC_Approve_LS1_2PropertyOverviewTab" duration-ms="12226" started-at="2019-03-01T15:24:16Z" finished-at="2019-03-01T15:24:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTC_Approve_LS1_2PropertyOverviewTab -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.TC_Listings_DealsPageTest@13805618]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-02-24T20:37:38Z" finished-at="2019-02-24T20:37:38Z">
+        <test-method status="PASS" signature="verifyTC_Approve_LS1_3FieldServicesTab()[pri:0, instance:com.qa.testcases.TC_Listings_DealsPageTest@13805618]" name="verifyTC_Approve_LS1_3FieldServicesTab" duration-ms="12284" started-at="2019-03-01T15:24:28Z" finished-at="2019-03-01T15:24:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTC_Approve_LS1_3FieldServicesTab -->
+        <test-method status="PASS" signature="verifyTC_Approve_LS1_4PhotographyTab()[pri:0, instance:com.qa.testcases.TC_Listings_DealsPageTest@13805618]" name="verifyTC_Approve_LS1_4PhotographyTab" duration-ms="12019" started-at="2019-03-01T15:24:40Z" finished-at="2019-03-01T15:24:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTC_Approve_LS1_4PhotographyTab -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.TC_Listings_DealsPageTest@13805618]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-03-01T15:24:52Z" finished-at="2019-03-01T15:24:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

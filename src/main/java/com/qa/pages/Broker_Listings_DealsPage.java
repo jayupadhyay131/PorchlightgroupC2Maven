@@ -329,6 +329,7 @@ public class Broker_Listings_DealsPage extends TestBase{
 		WebElement ls1reshootanypartofpropertycheckboxmodel5 = driver.findElement(parser.getObjectLocator("ls1reshootanypartofpropertycheckboxmodel5"));
 		ls1reshootanypartofpropertycheckboxmodel5.sendKeys("Re-shoot any part of property - $75");
 		log.info("BROKER: ENTERED TEXT FOR RE-SHOOT ANY PART OF THE PROPERTY");
+		Thread.sleep(1000);
 		
 		WebElement ls1reshootanypartofpropertycheckboxmodelokbutton5 = driver.findElement(parser.getObjectLocator("ls1reshootanypartofpropertycheckboxmodelokbutton5"));
 		ls1reshootanypartofpropertycheckboxmodelokbutton5.sendKeys("Re-shoot any part of property - $75");
