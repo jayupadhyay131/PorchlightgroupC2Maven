@@ -5,17 +5,9 @@
     <classes>
       <class name="com.qa.testcases.TC_Listings_DealsPageTest">
         <methods>
-          <include name="verifyTC_Approve_LS1_5AccessTab"/>
           <include name="tearDown"/>
-          <include name="verifyTC_Approve_LS1_6OpenhousesTab"/>
-          <include name="verifyTC_Approve_LS1_3FieldServicesTab"/>
-          <include name="verifyTC_Approve_LS1_4PhotographyTab"/>
           <include name="setUp"/>
-          <include name="verifyTC_Approve_LS1_2PropertyOverviewTab"/>
           <include name="verifyTC_Approve_LS1_7SummaryTab"/>
-          <include name="verifyTC_Approve_LS1_1AgreementTab"/>
-          <include name="verifyTC_Reject_LS1_7SummaryTab"/>
-          <include name="verifyTC_Reject_LS1_6OpenhousesTab"/>
         </methods>
       </class> <!-- com.qa.testcases.TC_Listings_DealsPageTest -->
     </classes>

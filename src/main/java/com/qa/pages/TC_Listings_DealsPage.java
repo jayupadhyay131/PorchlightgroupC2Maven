@@ -495,8 +495,14 @@ public class TC_Listings_DealsPage extends TestBase{
 		log.info("***** START TC: REJECT LS1 WITH TC USER > 7 SUMMARY TAB *****");
 		
 		WebElement ls1tcsummarytabrejectbutton1 = driver.findElement(parser.getObjectLocator("ls1tcsummarytabrejectbutton1"));
-		ls1tcsummarytabrejectbutton1.isDisplayed();
-		log.info("TC: SUMMARY TAB REJECT BUTTON IS PRESENT");
+		ls1tcsummarytabrejectbutton1.click();
+		log.info("TC: SUMMARY TAB CLICKED ON REJECT BUTTON");
+		Thread.sleep(1000);
+		
+		WebElement ls1tcsummarytabrejectconfirmationnobutton3 = driver.findElement(parser.getObjectLocator("ls1tcsummarytabrejectconfirmationnobutton3"));
+		ls1tcsummarytabrejectconfirmationnobutton3.click();
+		log.info("TC: SUMMARY TAB CLICKED ON NO BUTTON FOR REJECT CONFIRMATION WINDOW");
+		Thread.sleep(1000);
 		
 		WebElement ls1tcsummarytabbackbutton2 = driver.findElement(parser.getObjectLocator("ls1tcsummarytabbackbutton2"));
 		ls1tcsummarytabbackbutton2.click();
@@ -534,8 +540,17 @@ public class TC_Listings_DealsPage extends TestBase{
 		WebElement ls1tcsummaryapprovebutton4 = driver.findElement(parser.getObjectLocator("ls1tcsummaryapprovebutton4"));
 		ls1tcsummaryapprovebutton4.click();
 		log.info("TC: SUMMARY TAB CLICKED ON APPROVE BUTTON");
-		Thread.sleep(5000);		
+		Thread.sleep(1000);
 		
+		WebElement ls1tcsummaryconfirmationnobutton5 = driver.findElement(parser.getObjectLocator("ls1tcsummaryconfirmationnobutton5"));
+		ls1tcsummaryconfirmationnobutton5.click();
+		log.info("TC: SUMMARY TAB CLICKED ON NO BUTTON FOR CONFIRMATION FOR APPROVAL");
+		Thread.sleep(1000);
+		
+		ls1tcsummaryapprovebutton4.click();
+		log.info("TC: SUMMARY TAB CLICKED ON APPROVE BUTTON");
+		Thread.sleep(5000);		
+
 		log.info("***** END TC: APPROVE LS1 WITH TC USER > 7 SUMMARY TAB *****");
 	}
 	
