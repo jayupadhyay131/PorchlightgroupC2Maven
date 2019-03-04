@@ -237,7 +237,7 @@ public class TC_Listings_DealsPage extends TestBase{
 		
 		WebElement ls1tcfieldservicsesnextbutton16 = driver.findElement(parser.getObjectLocator("ls1tcfieldservicsesnextbutton16"));
 		ls1tcfieldservicsesnextbutton16.click();
-		log.info("TC: CLICKED ON APPROVE CHECKBOX FOR FIELD SERVICES SECTION");
+		log.info("TC: CLICKED ON NEXT BUTTON");
 		Thread.sleep(5000);
 		
 		log.info("***** END TC: APPROVE LS1 WITH TC USER > 3 FIELD SERVICES TAB *****");
@@ -296,14 +296,135 @@ public class TC_Listings_DealsPage extends TestBase{
 		
 		log.info("***** START TC: APPROVE LS1 WITH TC USER > 5 ACCESS TAB *****");
 		
-//		WebElement ls1tcdoyouneedphotosandavirtualtouryesradio1 = driver.findElement(parser.getObjectLocator("ls1tcdoyouneedphotosandavirtualtouryesradio1"));
-//		ls1tcdoyouneedphotosandavirtualtouryesradio1.isDisplayed();
-//		log.info("TC: DO YOU NEED PHOTOS AND A VIRTUAL TOUR YES RADIO BUTTON IS PRESENT");
-//		
-//		WebElement ls1tcphotographynextbutton10 = driver.findElement(parser.getObjectLocator("ls1tcphotographynextbutton10"));
-//		ls1tcphotographynextbutton10.click();
-//		log.info("TC: PHOTOGRAPHY TAB CLICKED ON NEXT BUTTON");
-//		Thread.sleep(5000);		
+		WebElement ls1tcsellername1 = driver.findElement(parser.getObjectLocator("ls1tcsellername1"));
+		ls1tcsellername1.isDisplayed();
+		log.info("TC: SELLER NAME FIELD IS PRESENT");
+		
+		WebElement ls1tcsellernickname2 = driver.findElement(parser.getObjectLocator("ls1tcsellernickname2"));
+		ls1tcsellernickname2.isDisplayed();
+		log.info("TC: SELLER NICKNAME FIELD IS PRESENT");
+		
+		WebElement ls1tcsellerphone3 = driver.findElement(parser.getObjectLocator("ls1tcsellerphone3"));
+		ls1tcsellerphone3.isDisplayed();
+		log.info("TC: SELLER PHONE FIELD IS PRESENT");
+		
+		WebElement ls1tcselleremail4 = driver.findElement(parser.getObjectLocator("ls1tcselleremail4"));
+		ls1tcselleremail4.isDisplayed();
+		log.info("TC: SELLER PHONE FIELD IS PRESENT");
+		
+		WebElement ls1tcseller2name5 = driver.findElement(parser.getObjectLocator("ls1tcseller2name5"));
+		ls1tcseller2name5.isDisplayed();
+		log.info("TC: SELLER 2 NAME FIELD IS PRESENT");
+		
+		WebElement ls1tcseller2nickname6 = driver.findElement(parser.getObjectLocator("ls1tcseller2nickname6"));
+		ls1tcseller2nickname6.isDisplayed();
+		log.info("TC: SELLER 2 NICKNAME FIELD IS PRESENT");
+		
+		WebElement ls1tcseller2phone7 = driver.findElement(parser.getObjectLocator("ls1tcseller2phone7"));
+		ls1tcseller2phone7.isDisplayed();
+		log.info("TC: SELLER 2 PHONE FIELD IS PRESENT");
+		
+		WebElement ls1tcseller2email8 = driver.findElement(parser.getObjectLocator("ls1tcseller2email8"));
+		ls1tcseller2email8.isDisplayed();
+		log.info("TC: SELLER 2 EMAIL FIELD IS PRESENT");
+		
+		WebElement ls1tcissecurehoabuilding9 = driver.findElement(parser.getObjectLocator("ls1tcissecurehoabuilding9"));
+		ls1tcissecurehoabuilding9.isDisplayed();
+		log.info("TC: SELLER 2 EMAIL FIELD IS PRESENT");
+		
+		WebElement ls1tclockboxtypecombo10 = driver.findElement(parser.getObjectLocator("ls1tclockboxtypecombo10"));
+		ls1tclockboxtypecombo10.isDisplayed();
+		log.info("TC: SELLER 2 EMAIL FIELD IS PRESENT");
+		
+		WebElement ls1tccodeorserial11 = driver.findElement(parser.getObjectLocator("ls1tccodeorserial11"));
+		ls1tccodeorserial11.isDisplayed();
+		log.info("TC: CODE OR SERIAL FIELD IS PRESENT");
+		
+		WebElement ls1tclockboxlocation12 = driver.findElement(parser.getObjectLocator("ls1tclockboxlocation12"));
+		ls1tclockboxlocation12.isDisplayed();
+		log.info("TC: LOCKBOX LOCATION FIELD IS PRESENT");
+		
+		WebElement ls1tcgatecode13 = driver.findElement(parser.getObjectLocator("ls1tcgatecode13"));
+		ls1tcgatecode13.isDisplayed();
+		log.info("TC: GATE CODE FIELD IS PRESENT");
+		
+		WebElement ls1tcgaragecode14 = driver.findElement(parser.getObjectLocator("ls1tcgaragecode14"));
+		ls1tcgaragecode14.isDisplayed();
+		log.info("TC: GARAGE CODE FIELD IS PRESENT");
+		
+		WebElement ls1tcdoesthispropertyhaveanalarm15 = driver.findElement(parser.getObjectLocator("ls1tcdoesthispropertyhaveanalarm15"));
+		ls1tcdoesthispropertyhaveanalarm15.isDisplayed();
+		log.info("TC: DOES THIS PROPERTY HAVE AN ALARM? FILED IS PRESENT");
+		
+		WebElement ls1tcalarmcode116 = driver.findElement(parser.getObjectLocator("ls1tcalarmcode116"));
+		ls1tcalarmcode116.isDisplayed();
+		log.info("TC: ALARM CODE 1 FILED IS PRESENT");
+		
+		WebElement ls1tcalarmcode217 = driver.findElement(parser.getObjectLocator("ls1tcalarmcode217"));
+		ls1tcalarmcode217.isDisplayed();
+		log.info("TC: ALARM CODE 2 FILED IS PRESENT");
+		
+		WebElement ls1tcalarmlocation18 = driver.findElement(parser.getObjectLocator("ls1tcalarmlocation18"));
+		ls1tcalarmlocation18.isDisplayed();
+		log.info("TC: ALARM LOCATION FILED IS PRESENT");
+		
+		WebElement ls1tcpetsonpropery19 = driver.findElement(parser.getObjectLocator("ls1tcpetsonpropery19"));
+		ls1tcpetsonpropery19.isDisplayed();
+		log.info("TC: PETS ON PROPERTY FILED IS PRESENT");
+		
+		WebElement ls1tcspecialinstructionsforpremarkeservices20 = driver.findElement(parser.getObjectLocator("ls1tcspecialinstructionsforpremarkeservices20"));
+		ls1tcspecialinstructionsforpremarkeservices20.isDisplayed();
+		log.info("TC: SPECIAL INSTRUCTIONS FOR PRE-MARKET SERVICES TEXTAREA FILED IS PRESENT");
+		
+		WebElement ls1tchoaname21 = driver.findElement(parser.getObjectLocator("ls1tchoaname21"));
+		ls1tchoaname21.isDisplayed();
+		log.info("TC: HOA NAME FILED IS PRESENT");
+		
+		WebElement ls1tchoacontact22 = driver.findElement(parser.getObjectLocator("ls1tchoacontact22"));
+		ls1tchoacontact22.isDisplayed();
+		log.info("TC: HOA NAME FILED IS PRESENT");
+		
+		WebElement ls1tccontactphone23 = driver.findElement(parser.getObjectLocator("ls1tccontactphone23"));
+		ls1tccontactphone23.isDisplayed();
+		log.info("TC: CONTACT PHONE FILED IS PRESENT");
+		
+		WebElement ls1tchoacontact24 = driver.findElement(parser.getObjectLocator("ls1tchoacontact24"));
+		ls1tchoacontact24.isDisplayed();
+		log.info("TC: HOA CONTACT 2 FILED IS PRESENT");
+		
+		WebElement ls1tcontact2phone25 = driver.findElement(parser.getObjectLocator("ls1tcontact2phone25"));
+		ls1tcontact2phone25.isDisplayed();
+		log.info("TC: HOA CONTACT 2 FILED IS PRESENT");
+		
+		WebElement ls1tchoaothername26 = driver.findElement(parser.getObjectLocator("ls1tchoaothername26"));
+		ls1tchoaothername26.isDisplayed();
+		log.info("TC: HOA OTHER NAME 2 FILED IS PRESENT");
+		
+		WebElement ls1tcisreservationrequiredforstaging27 = driver.findElement(parser.getObjectLocator("ls1tcisreservationrequiredforstaging27"));
+		ls1tcisreservationrequiredforstaging27.isDisplayed();
+		log.info("TC: IS RESERVATION REQUERED FOR STAGING FOR ELEVATOR? FILED IS PRESENT");
+		
+		WebElement ls1tcanyspecialinstructionsforbuildingoraccess28 = driver.findElement(parser.getObjectLocator("ls1tcanyspecialinstructionsforbuildingoraccess28"));
+		ls1tcanyspecialinstructionsforbuildingoraccess28.isDisplayed();
+		log.info("TC: ANY SPECIAL INSTRUCTIONS FOR BUIULDING OR ACCESS TEXTAREA FILED IS PRESENT");
+		
+		WebElement ls1tcaccesstabeditbutton29 = driver.findElement(parser.getObjectLocator("ls1tcaccesstabeditbutton29"));
+		ls1tcaccesstabeditbutton29.isDisplayed();
+		log.info("TC: ACCESS TAB EDIT BUTTON IS PRESENT");
+		
+		WebElement ls1tcaccesstabbackbutton30 = driver.findElement(parser.getObjectLocator("ls1tcaccesstabbackbutton30"));
+		ls1tcaccesstabbackbutton30.isDisplayed();
+		log.info("TC: ACCESS TAB BACK BUTTON IS PRESENT");
+		
+		WebElement ls1tcapprovecheckbox31 = driver.findElement(parser.getObjectLocator("ls1tcapprovecheckbox31"));
+		ls1tcapprovecheckbox31.click();
+		log.info("TC: ACCESS TAB CLICKED ON APPROVE CHECKBOX");
+		Thread.sleep(1000);	
+		
+		WebElement ls1tcaccesstabnextbutton32 = driver.findElement(parser.getObjectLocator("ls1tcaccesstabnextbutton32"));
+		ls1tcaccesstabnextbutton32.click();
+		log.info("TC: ACCESS TAB CLICKED ON NEXT BUTTON");
+		Thread.sleep(5000);		
 		
 		log.info("***** END TC: APPROVE LS1 WITH TC USER > 5 ACCESS TAB *****");
 	}
