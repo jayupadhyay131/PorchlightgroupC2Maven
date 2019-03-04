@@ -429,4 +429,114 @@ public class TC_Listings_DealsPage extends TestBase{
 		log.info("***** END TC: APPROVE LS1 WITH TC USER > 5 ACCESS TAB *****");
 	}
 	
+	public void TC_Reject_LS1_6OpenhousesTab() throws InterruptedException {
+		
+		log.info("***** START TC: REJECT LS1 WITH TC USER > 6 OPEN HOUSES TAB *****");
+		
+		WebElement ls1tclistingavailableforohyesradio1 = driver.findElement(parser.getObjectLocator("ls1tclistingavailableforohyesradio1"));
+		ls1tclistingavailableforohyesradio1.isDisplayed();
+		log.info("TC: IS LISTING AVAILABLE FOR OEPN HOUSES YES RADIO BUTTON IS PRESENT");
+		
+		WebElement ls1tcdoesthislistingrequire2agents2 = driver.findElement(parser.getObjectLocator("ls1tcdoesthislistingrequire2agents2"));
+		ls1tcdoesthislistingrequire2agents2.isDisplayed();
+		log.info("TC: ACCESS TAB CLICKED ON NEXT BUTTON");
+		
+		WebElement ls1tcthursday1stslot3 = driver.findElement(parser.getObjectLocator("ls1tcthursday1stslot3"));
+		ls1tcthursday1stslot3.isDisplayed();
+		log.info("TC: Thursday 12pm - 2pm SLOT IS PRESENT");
+		
+		WebElement ls1tcsaturday1stslot4 = driver.findElement(parser.getObjectLocator("ls1tcsaturday1stslot4"));
+		ls1tcsaturday1stslot4.isDisplayed();
+		log.info("TC: Saturday 10am - 12pm SLOT IS PRESENT");
+		
+		WebElement ls1tcsaturday2ndslot5 = driver.findElement(parser.getObjectLocator("ls1tcsaturday2ndslot5"));
+		ls1tcsaturday2ndslot5.isDisplayed();
+		log.info("TC: Saturday 12pm - 2pm SLOT IS PRESENT");
+		
+		WebElement ls1tcsaturday3rdslot6 = driver.findElement(parser.getObjectLocator("ls1tcsaturday3rdslot6"));
+		ls1tcsaturday3rdslot6.isDisplayed();
+		log.info("TC: Saturday 2pm - 4pm SLOT IS PRESENT");
+		
+		WebElement ls1tcsunday1stslot7 = driver.findElement(parser.getObjectLocator("ls1tcsunday1stslot7"));
+		ls1tcsunday1stslot7.isDisplayed();
+		log.info("TC: Sunday 10am - 12pm SLOT IS PRESENT");
+		
+		WebElement ls1tcsunday2ndslot8 = driver.findElement(parser.getObjectLocator("ls1tcsunday2ndslot8"));
+		ls1tcsunday2ndslot8.isDisplayed();
+		log.info("TC: Sunday 12pm - 2pm SLOT IS PRESENT");
+		
+		WebElement ls1tcsunday3rdslot9 = driver.findElement(parser.getObjectLocator("ls1tcsunday3rdslot9"));
+		ls1tcsunday3rdslot9.isDisplayed();
+		log.info("TC: Sunday 2pm - 4pm SLOT IS PRESENT");
+		
+		WebElement ls1tcopenhouseseditbutton10 = driver.findElement(parser.getObjectLocator("ls1tcopenhouseseditbutton10"));
+		ls1tcopenhouseseditbutton10.isDisplayed();
+		log.info("TC: OPEN HOUSES TAB EDIT BUTTON IS PRESENT");
+		
+		WebElement ls1tcopenhousesbackbutton11 = driver.findElement(parser.getObjectLocator("ls1tcopenhousesbackbutton11"));
+		ls1tcopenhousesbackbutton11.isDisplayed();
+		log.info("TC: OPEN HOUSES TAB BACK BUTTON IS PRESENT");
+		
+//		WebElement ls1tcopenhousesapprovecheckbox12 = driver.findElement(parser.getObjectLocator("ls1tcopenhousesapprovecheckbox12"));
+//		ls1tcopenhousesapprovecheckbox12.click();
+//		log.info("TC: OPEN HOUSES TAB CLICKED ON APPROVE CHEKBOX");
+//		Thread.sleep(1000);
+		
+		WebElement ls1tcopenhousesnextbutton13 = driver.findElement(parser.getObjectLocator("ls1tcopenhousesnextbutton13"));
+		ls1tcopenhousesnextbutton13.click();
+		log.info("TC: OPEN HOUSES TAB CLICKED ON NEXT TAB BUTTON");
+		Thread.sleep(5000);		
+		
+		log.info("***** END TC: REJECT LS1 WITH TC USER > 6 OPEN HOUSES TAB *****");
+	}
+	
+	public void TC_Reject_LS1_7SummaryTab() throws InterruptedException {
+		
+		log.info("***** START TC: REJECT LS1 WITH TC USER > 7 SUMMARY TAB *****");
+		
+		WebElement ls1tcsummarytabrejectbutton1 = driver.findElement(parser.getObjectLocator("ls1tcsummarytabrejectbutton1"));
+		ls1tcsummarytabrejectbutton1.isDisplayed();
+		log.info("TC: SUMMARY TAB REJECT BUTTON IS PRESENT");
+		
+		WebElement ls1tcsummarytabbackbutton2 = driver.findElement(parser.getObjectLocator("ls1tcsummarytabbackbutton2"));
+		ls1tcsummarytabbackbutton2.click();
+		log.info("TC: SUMMARY TAB CLICKED ON BACK BUTTON");
+		Thread.sleep(5000);		
+		
+		log.info("***** END TC: REJECT LS1 WITH TC USER > 7 SUMMARY TAB *****");
+	}
+	
+	public void TC_Approve_LS1_6OpenhousesTab() throws InterruptedException {
+		
+		log.info("***** START TC: APPROVE LS1 WITH TC USER > 6 OPEN HOUSES TAB *****");
+		
+		WebElement ls1tcopenhousesapprovecheckbox12 = driver.findElement(parser.getObjectLocator("ls1tcopenhousesapprovecheckbox12"));
+		ls1tcopenhousesapprovecheckbox12.click();
+		log.info("TC: OPEN HOUSES TAB CLICKED ON APPROVE CHEKBOX");
+		Thread.sleep(1000);
+		
+		WebElement ls1tcopenhousesnextbutton13 = driver.findElement(parser.getObjectLocator("ls1tcopenhousesnextbutton13"));
+		ls1tcopenhousesnextbutton13.click();
+		log.info("TC: OPEN HOUSES TAB CLICKED ON NEXT TAB BUTTON");
+		Thread.sleep(5000);		
+		
+		log.info("***** END TC: APPROVE LS1 WITH TC USER > 6 OPEN HOUSES TAB *****");
+	}
+	
+	public void TC_Approve_LS1_7SummaryTab() throws InterruptedException {
+		
+		log.info("***** START TC: APPROVE LS1 WITH TC USER > 7 SUMMARY TAB *****");
+		
+		WebElement ls1tctotalcostofserviceis125dollars3 = driver.findElement(parser.getObjectLocator("ls1tctotalcostofserviceis125dollars3"));
+		ls1tctotalcostofserviceis125dollars3.isDisplayed();
+		log.info("TC: SUMMARY TAB Total Cost of Services = $125.00 TEXT IS PRESENT");
+		
+		WebElement ls1tcsummaryapprovebutton4 = driver.findElement(parser.getObjectLocator("ls1tcsummaryapprovebutton4"));
+		ls1tcsummaryapprovebutton4.click();
+		log.info("TC: SUMMARY TAB CLICKED ON APPROVE BUTTON");
+		Thread.sleep(5000);		
+		
+		log.info("***** END TC: APPROVE LS1 WITH TC USER > 7 SUMMARY TAB *****");
+	}
+	
 }

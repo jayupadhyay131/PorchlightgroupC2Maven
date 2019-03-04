@@ -48,33 +48,56 @@ public class TC_Listings_DealsPageTest extends TestBase{
 	@Test(priority=4)
 	public void verifyTC_Approve_LS1_1AgreementTab() throws InterruptedException {
 		tc_Listings_DealsPage.TC_Approve_LS1_1AgreementTab();
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 	}
 
 	@Test(priority=5)
 	public void verifyTC_Approve_LS1_2PropertyOverviewTab() throws InterruptedException {
 		tc_Listings_DealsPage.TC_Approve_LS1_2PropertyOverviewTab();
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 	}
 	
 	@Test(priority=6)
 	public void verifyTC_Approve_LS1_3FieldServicesTab() throws InterruptedException {
 		tc_Listings_DealsPage.TC_Approve_LS1_3FieldServicesTab();
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 	}
 	
 	@Test(priority=7)
 	public void verifyTC_Approve_LS1_4PhotographyTab() throws InterruptedException {
 		tc_Listings_DealsPage.TC_Approve_LS1_4PhotographyTab();
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 	}
 	
 	@Test(priority=8)
 	public void verifyTC_Approve_LS1_5AccessTab() throws InterruptedException {
 		tc_Listings_DealsPage.TC_Approve_LS1_5AccessTab();
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 	}
 	
+	@Test(priority=9)
+	public void verifyTC_Reject_LS1_6OpenhousesTab() throws InterruptedException {
+		tc_Listings_DealsPage.TC_Reject_LS1_6OpenhousesTab();
+		//Thread.sleep(5000);
+	}
+	
+	@Test(priority=10)
+	public void verifyTC_Reject_LS1_7SummaryTab() throws InterruptedException {
+		tc_Listings_DealsPage.TC_Reject_LS1_7SummaryTab();
+		//Thread.sleep(5000);
+	}
+	
+	@Test(priority=11)
+	public void verifyTC_Approve_LS1_6OpenhousesTab() throws InterruptedException {
+		tc_Listings_DealsPage.TC_Approve_LS1_6OpenhousesTab();
+		//Thread.sleep(5000);
+	}
+	
+	@Test(priority=12)
+	public void verifyTC_Approve_LS1_7SummaryTab() throws InterruptedException {
+		tc_Listings_DealsPage.TC_Approve_LS1_7SummaryTab();
+		//Thread.sleep(5000);
+	}
 	
 	@AfterClass
 	public void tearDown() {
