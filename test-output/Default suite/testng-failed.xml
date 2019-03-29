@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.testcases.SanityBrokerTest">
+      <class name="com.qa.testcases.SanityTCTest">
         <methods>
+          <include name="verifyTCListingsDealsPage"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyBrokerListings_ArchivedListingsPage"/>
+          <include name="verifyGotoListingsDealsPage"/>
         </methods>
-      </class> <!-- com.qa.testcases.SanityBrokerTest -->
+      </class> <!-- com.qa.testcases.SanityTCTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
